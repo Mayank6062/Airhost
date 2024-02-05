@@ -1,0 +1,95 @@
+
+<% layout("/layouts/boilerplate.ejs") %>
+<div class="">
+  <p class="border-[0.1px] border-gray-400 w-full text-center justify-center mx-auto mb-2 mt-2 max-2xl:w-[90rem] max-xl:hidden"></p>
+
+  
+   <div class="flex flex-wrap mt-3 mb-4 max-xl:hidden ">
+      
+        <div class=" opacity-60 hover:opacity-100 ml-6"> <i class="fa-solid fa-campground ml-6"></i></br>
+        Trending 
+        </div>
+       <div  class=" opacity-60 hover:opacity-100 ml-7"> <i class="fa-solid fa-house ml-4"></i></br>
+       <p class="">Rooms</p>
+       </div>
+       <div class=" opacity-60 hover:opacity-100 ml-7">  <i class="fa-solid fa-mountain-city ml-6"></i> </br>
+        <p>iconic cities</p>
+        </div>
+        <div class=" opacity-60 hover:opacity-100 ml-7"> <i class="fa-solid fa-mountain ml-6"></i></br>
+        <p>mountain</p>
+        </div>
+          <div class=" opacity-60 hover:opacity-100 ml-7">  <i class="fa-brands fa-fort-awesome ml-4"></i> </br>
+         <p>castles</p>
+        </div>
+       <div class=" opacity-60 hover:opacity-100 ml-7">  <i class="fa-solid fa-person-swimming ml-2"></i> </br>
+        <p>Artic</p>
+        </div>
+        <div class=" opacity-60 hover:opacity-100 ml-7">  <i class="fa-solid fa-campground ml-5"></i></br>
+        <p>Camping</p>
+       </div>
+        <div class=" opacity-60 hover:opacity-100 ml-7">  <i class="fa-solid fa-tractor ml-3"></i> </br>
+        <p>Farms</p>
+        </div>
+       <div class=" opacity-60 hover:opacity-100 ml-7">  <i class="fa-regular fa-snowflake ml-2"></i> </br>
+          <p>Artic</p>
+        </div>
+       
+       <div class=" opacity-60 hover:opacity-100 ml-7"> <i class="fa-solid fa-fire ml-5"></i> </br>
+         <p>Trending</p>
+       </div>
+       
+     <div class="border-[0.7px] border-black rounded-lg pt-2 pl-3 ml-[4rem] w-[6rem] opacity-60 hover:opacity-100 h-9"><i class="fa-solid fa-filter"> | </i> Filter</div> 
+
+        <div class="border-[0.7px] border-black rounded-lg h-9 pt-1 w-[16rem]  ml-[1rem] pl-2 opacity-60 hover:opacity-100 ">     
+         <input class="mr-2 mt-[0.3rem] h-3.5 w-8 appearance-none rounded-[0.4375rem] bg-neutral-300 before:pointer-events-none before:absolute before:h-3.5 before:w-3.5 before:rounded-full before:bg-transparent before:content-[''] after:absolute after:z-[2] after:-mt-[0.1875rem] after:h-5 after:w-5 after:rounded-full after:border-none after:bg-neutral-100 after:shadow-[0_0px_3px_0_rgb(0_0_0_/_7%),_0_2px_2px_0_rgb(0_0_0_/_4%)] after:transition-[background-color_0.2s,transform_0.2s] after:content-[''] checked:bg-primary checked:after:absolute checked:after:z-[2] checked:after:-mt-[3px] checked:after:ml-[1.0625rem] checked:after:h-5 checked:after:w-5 checked:after:rounded-full checked:after:border-none checked:after:bg-primary checked:after:shadow-[0_3px_1px_-2px_rgba(0,0,0,0.2),_0_2px_2px_0_rgba(0,0,0,0.14),_0_1px_5px_0_rgba(0,0,0,0.12)] checked:after:transition-[background-color_0.2s,transform_0.2s] checked:after:content-[''] hover:cursor-pointer focus:outline-none focus:ring-0 focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[3px_-1px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-5 focus:after:w-5 focus:after:rounded-full focus:after:content-[''] checked:focus:border-primary checked:focus:bg-primary checked:focus:before:ml-[1.0625rem] checked:focus:before:scale-100 checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] dark:bg-neutral-600 dark:after:bg-neutral-400 dark:checked:bg-primary dark:checked:after:bg-primary dark:focus:before:shadow-[3px_-1px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca]" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+         <label class="inline-block pl-[0.15rem] hover:cursor-pointer" for="flexSwitchCheckDefault">Display total after taxes</label>
+        </div>
+
+</div>
+
+<p class="border-[0.1px] border-gray-400  w-full text-center justify-center mx-auto mb-2 mt-2 max-2xl:w-[90rem] max-xl:hidden"></p>
+
+
+
+
+  <div class="row flex flex-wrap overflow-hidden max-[1025px]:ml-[10rem] max-[890px]:ml-[2rem]  ml-10 mt-[3rem]">
+      <% for(let listing of allListings) { %>
+      <a class="ml-4 max-[1190px]:ml-[1rem] max-[1190px]:w-[60vh] max-[1025px]:ml-[3rem] w-[50vh] max-[1025px]:w-[70vh] h-full -xl:ml-0" href="/listings/<%= listing._id %>">
+  <div class ="card mx-auto  ml-4 mb-[4rem] relative  hover:opacity-70">
+      <img class="card-img-top mt-[1rem] ml-[4px] w-[110%] mx-auto h-[20rem] rounded-2xl object-cover hover:border-gray-600 hover:scale-105 hover:border-[1px] border-gray-500" src="<%=listing.image.url %>" alt="listing_image">
+      <i class="fa-regular fa-heart text-xl  text-white inset-4 ml-[20rem] max-[1025px]:ml-[30rem] absolute hover:text-red-600 max-[1190px]:ml-[25rem]"></i>
+    
+      <div class="absolute inset-4 opacity-0 text-sm hover:opacity-50 text-white"> 
+        <p>An image</p>
+       
+      </div>
+
+     
+
+      <div class = "card-body text-[1rem] mt-[1rem] p-0">
+            <p class ="card-text ">
+             <b><%= listing.title %></b></br>
+             &#8377; <%=listing.price.toLocaleString("en-IN") %>/ night
+             <i class="tax-info hidden"> &nbsp; +18% GST</i>
+             </p>
+      
+       </div> 
+    </div>
+<% } %>
+</div> 
+</a>
+</div>
+<script>
+    let texSwitch = document.getElementById("flexSwitchCheckDefault");
+    texSwitch.addEventListener("click", () => {
+       let taxinfo = document.getElementsByClassName("tax-info");
+       for(info of taxinfo) {
+        if(info.style.display != "inline") {
+            info.style.display = "inline";
+        }
+        else {
+            info.style.display = "none";
+        }
+       }
+    })
+</script> 

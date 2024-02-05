@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airhost | Holiday rentals,cabins,beach house & more</title>
+    <link rel=" icon" type="image/png" href="public/ffb9bc06766fd2534983c893e5758306.png" />
+    <link href="public/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="/rating.css" rel="stylesheet" />
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.js"></script>
+
+
+</head> 
+<body>
+
+  <div class="flex w-full flex-wrap items-center justify-between  ">
+    <div class="ml-16  flex ">
+         <a class="text-4xl mt-[1rem] text-red-600" href="/artical4"><i class="fa-brands fa-airbnb"></i></a>
+      <div class=" mr-auto flex flex-col pl-0  lg:flex-row w-[100%] " data-te-navbar-nav-ref>
+      
+        <div class=" mr-auto flex flex-col pl-0  lg:flex-row  w-[100%] justify-end ml-[60rem]   mt-[1rem]" data-te-navbar-nav-ref>
+            <div class=" flex rounded-3xl pr-2  justify-end ">
+                  <a class="text-lg mt-3" href="/listings/new" data-te-nav-link-ref>Ready to Airhost it? </a>
+            </div>
+
+            <div class="border-[0.3px] border-black  rounded-lg flex  mt-2  p-2 pt-1 bg-red-500 h-[40px]  justify-end"> 
+
+              <div  class="ml-[1rem] relative ">
+                     <button class="accordion text-white text-lg"><b> <i class="fa-solid fa-house-medical text-white pr-2 "></i> Airhost setup </b></button>
+                    <div class="panel hidden overflow-hidden absolute border-[0.3px] border-black  w-[9rem] pl-6 h-[100px] pt-[10px] bg-[#f7f9f7] shadow-2xl rounded-xl ml-[4rem]" id="search">
+                      <div onclick="hideShow1()" class="absolute top-0 right-1 w-max  hover:bg-white" >
+                        <div role="button" class="w-max pl-1 pr-1">
+                           <i class="fa-solid fa-circle-xmark text-xl"></i>
+                        </div>
+                    </div> 
+        <form action="/login">
+          <button class=" border-[0.8px] bg-red-500 hover:bg-red-700 hover:border-red-600  w-[6rem] text-white rounded-xl shadow-lg  p-2 ">Log in</button>
+        </form>
+        <form action="/signup">
+          <button class=" border-[0.8px] bg-red-500  hover:bg-red-700 hover:border-red-600 w-[6rem] text-white rounded-xl shadow-lg  p-2 "> sign up</button>
+        </form>
+      </div>
+                </div> 
+                </div>
+        </div> 
+      </div> 
+    </div>
+ </div>
+
+
+ <div class="flex">
+    <pre class=" text-5xl mt-[4rem]  text-red-500 font-sans font-semibold ">Airbnb it <br><p class="relative text-5xl text-black font-serif font-semibold mt-[1rem]">You could earn</p><br> <p class=" text-xl font-serif text-black  font-semibold ">1 night at an estimated approx <br> ₹2,488 to ₹4,488 at a night</p><br>    <button class=" " onclick="hideShow()"> <pre class=" text-black font-serif text-lg border-black border-[1px] p-[12px] rounded-3xl">Map Area<br><p class="opacity-45 hover:opacity-100 text-lg  text-black" id="answer">Entire place . at 2 bedrooms</p></pre></button> </pre> 
+  
+
+    <div id="main" class=" main hidden flex-wrap border-[1px] bg-[#f9f9f9] rounded-3xl absolute shadow-2xl ">
+        
+        <div class="box flex">
+           <label for="name" class="text-xl">num. of<br> <p class="opacity-50 text-lg">Bedrooms</p></label>
+           <button class="dec  border-[1px] border-black rounded-full w-14 ml-[155px] opacity-10 hover:opacity-100">-</button>
+           <input type="text" name="qty" id="1" value="0" class="inputfield ml-[2rem]  w-6">
+           <button class="inc border-[1px] border-black rounded-full w-14 opacity-50 hover:opacity-100">+</button>
+        </div>
+    </div>
+    <div id="map" class="h-[43rem] w-[50rem] ml-[10rem] mt-[1rem] rounded-3xl border-[0.2px] "></div>
+  </div>
+
+  <p class="mt-[3rem] text-6xl ml-[23rem] font-semibold">Airhost it easily with Airhost Setup</p>
+<img src="https://a0.muscache.com/im/pictures/65214d06-ffb4-4b70-93c0-01d368e76649.jpg?im_w=2560&im_q=highq" class="w-[90rem] mt-[3rem] h-[40rem]">
+
+<div class="flex mt-[2rem] ml-[5rem]">
+  <div class="">
+    <p class="text-lg font-semibold">One-to-one guidance from a Superhost</p>
+    <p class="font-light">We’ll match you with a Superhost in your area,<br>
+       who’ll guide you from your first question to your  <br>
+       first guest – by phone, video call or chat.</p>
+  </div>
+<div class="ml-[6rem]"> 
+  <p class="text-lg font-semibold">An experienced guest for your first booking</p>
+     <p class="font-light">For your first booking, you can choose to welcome <br> 
+      an experienced guest who has at least three stays <br>
+      and a good track record on Airbnb.</p>
+</div>
+
+<div class="ml-[7rem]"> 
+<p class="text-lg font-semibold">Specialised support from Airbnb</p>
+<p class="font-light">New Hosts get one-tap access to specially trained <br> 
+  Community Support agents who can help with <br>
+  everything from account issues to billing support.</p>
+</div>
+</div>
+
+<div class="ml-[35rem] mt-[2rem]"> 
+<img src=" https://a0.muscache.com/im/pictures/cecbf134-6674-410f-9345-603716048771.jpg?im_w=480&im_q=highq" class="w-[12rem]">
+</div>
+
+<p class="mt-[1rem] text-6xl ml-[12rem] font-semibold">Airbnb it with top‑to‑bottom protection</p>
+
+<div class="mt-[3rem] flex ml-[50rem]">
+  <p class="text-lg">Airhost</p>
+  <p class="ml-[12rem] text-lg">Competitors</p>
+</div>
+
+<p class="border-[0.6px] ml-[9em] w-[70rem] mt-[1rem]"></p>
+
+<div class="flex ml-[12rem] mt-[1rem]">
+  <div>
+    <p class="text-xl font-semibold mt-[1rem] ">Guest identity verification</p>
+    <p class=" font-light mt-[1rem] ">Our comprehensive verification system checks details such <br>
+       as name, address, government ID and more to confirm the <br>
+       identity of guests who book on Airbnb.
+      </p>
+  </div>
+ <div>
+  <p class="ml-[13rem] mt-[2rem] text-3xl text-green-700"><i class="fa-solid fa-check"></i></p>
+ </div>
+ <div>
+  <p class="ml-[15rem] mt-[2rem] text-3xl text-red-600"><i class="fa-solid fa-xmark"></i></p>
+ </div>
+</div>
+
+<p class="border-[0.6px] ml-[9em] w-[70rem] mt-[1rem]"></p>
+
+<div class="flex ml-[12rem] mt-[1rem]">
+  <div>
+    <p class="text-xl font-semibold mt-[1rem]">Reservation screening</p>
+    <p class=" font-light mt-[1rem] ">	
+      Our proprietary technology analyses hundreds of factors in <br>
+       each reservation and blocks certain bookings that show a <br>
+       high risk for disruptive parties and property damage.
+      </p>
+  </div>
+ <div>
+  <p class="ml-[13rem] mt-[2rem] text-3xl text-green-700"><i class="fa-solid fa-check"></i></p>
+ </div>
+ <div>
+  <p class="ml-[15rem] mt-[2rem] text-3xl text-red-600"><i class="fa-solid fa-xmark"></i></p>
+ </div>
+</div>
+
+<p class="border-[0.6px] ml-[9em] w-[70rem] mt-[1rem]"></p>
+
+
+<div class="flex ml-[12rem] mt-[1rem]">
+  <div>
+    <p class="text-xl font-semibold mt-[1rem]">$3m damage protection</p>
+    <p class=" font-light mt-[1rem] ">Airbnb reimburses you for damage caused by guests to your <br>
+       home and belongings and includes these specialised <br>protections:
+      </p>
+  </div>
+ <div>
+  <p class="ml-[13rem] mt-[2rem] text-3xl text-green-700"><i class="fa-solid fa-check"></i></p>
+ </div>
+ <div>
+  <p class="ml-[15rem] mt-[2rem] text-3xl text-red-600"><i class="fa-solid fa-xmark"></i></p>
+ </div>
+</div>
+
+<p class="border-[0.6px] ml-[9em] w-[70rem] mt-[1rem]"></p>
+
+
+<div class="flex ml-[12rem] mt-[1rem]">
+  <div>
+    <p class="mt-[1rem] text-lg">Art & valuables</p>
+  </div>
+ <div class="ml-[19rem]">
+  <p class="ml-[13rem] mt-[2rem] text-3xl text-green-700"><i class="fa-solid fa-check"></i></p>
+ </div>
+ <div>
+  <p class="ml-[15rem] mt-[2rem] text-3xl text-red-600"><i class="fa-solid fa-xmark"></i></p>
+ </div>
+</div>
+
+<p class="border-[0.6px] ml-[9em] w-[70rem] mt-[1rem]"></p>
+
+
+<div class="flex ml-[12rem] mt-[1rem]">
+  <div>
+    <p class="mt-[1rem] text-lg">Auto & boat</p>
+  </div>
+ <div class="ml-[21rem]">
+  <p class="ml-[13rem] mt-[2rem] text-3xl text-green-700"><i class="fa-solid fa-check"></i></p>
+ </div>
+ <div>
+  <p class="ml-[15rem] mt-[2rem] text-3xl text-red-600"><i class="fa-solid fa-xmark"></i></p>
+ </div>
+</div>
+
+<p class="border-[0.6px] ml-[9em] w-[70rem] mt-[1rem]"></p>
+
+
+
+<div class="flex ml-[12rem] mt-[1rem]">
+  <div>
+    <p class="mt-[1rem] text-lg">Pet damage</p>
+  </div>
+ <div class="ml-[21rem]">
+  <p class="ml-[13rem] mt-[2rem] text-3xl text-green-700"><i class="fa-solid fa-check"></i></p>
+ </div>
+ <div>
+  <p class="ml-[15rem] mt-[2rem] text-3xl text-red-600"><i class="fa-solid fa-xmark"></i></p>
+ </div>
+</div>
+
+<p class="border-[0.6px] ml-[9em] w-[70rem] mt-[1rem]"></p>
+
+
+
+<div class="flex ml-[12rem] mt-[1rem]">
+  <div>
+    <p class="mt-[1rem] text-lg">Income loss</p>
+  </div>
+ <div class="ml-[21rem]">
+  <p class="ml-[13rem] mt-[2rem] text-3xl text-green-700"><i class="fa-solid fa-check"></i></p>
+ </div>
+ <div>
+  <p class="ml-[15rem] mt-[2rem] text-3xl text-red-600"><i class="fa-solid fa-xmark"></i></p>
+ </div>
+</div>
+
+<p class="border-[0.6px] ml-[9em] w-[70rem] mt-[1rem]"></p>
+
+
+<div class="flex ml-[12rem] mt-[1rem]">
+  <div>
+    <p class="mt-[1rem] text-lg">Deep cleaning</p>
+  </div>
+ <div class="ml-[20rem]">
+  <p class="ml-[13rem] mt-[2rem] text-3xl text-green-700"><i class="fa-solid fa-check"></i></p>
+ </div>
+ <div>
+  <p class="ml-[15rem] mt-[2rem] text-3xl text-red-600"><i class="fa-solid fa-xmark"></i></p>
+ </div>
+</div>
+
+<p class="border-[0.6px] ml-[9em] w-[70rem] mt-[1rem]"></p>
+
+
+
+<div class="flex ml-[12rem] mt-[1rem]">
+  <div>
+    <p class="text-xl font-semibold mt-[1rem]">$1m USD liability insurance</p>
+    <p class=" font-light mt-[1rem] ">You’re protected in the rare event that a guest gets hurt or <br>
+      their belongings are damaged or stolen.
+      </p>
+  </div >
+ <div class="ml-[1rem]">
+  <p class="ml-[13rem] mt-[2rem] text-3xl text-green-700"><i class="fa-solid fa-check"></i></p>
+ </div>
+ <div>
+  <p class="ml-[15rem] mt-[2rem] text-3xl text-red-600"><i class="fa-solid fa-xmark"></i></p>
+ </div>
+</div>
+
+<p class="border-[0.6px] ml-[9em] w-[70rem] mt-[1rem]"></p>
+
+
+
+<div class="flex ml-[12rem] mt-[1rem]">
+  <div>
+    <p class="text-xl font-semibold mt-[1rem]">24-hour safety line</p>
+    <p class=" font-light mt-[1rem] ">If you ever feel unsafe, our app provides one-tap access to  <br>
+      specially trained safety agents, day or night.
+      </p>
+  </div >
+ <div class="ml-[1rem]">
+  <p class="ml-[13rem] mt-[2rem] text-3xl text-green-700"><i class="fa-solid fa-check"></i></p>
+ </div>
+ <div>
+  <p class="ml-[15rem] mt-[2rem] text-3xl text-red-600"><i class="fa-solid fa-xmark"></i></p>
+ </div>
+</div>
+
+<p class="border-[0.6px] ml-[9em] w-[70rem] mt-[1rem]"></p>
+
+<p class=" font-light mt-[1rem] ml-[13rem]">Comparison is based on public information and free offerings by top competitors as of 22/10. Find details and <br>
+  exclusions here.
+  </p>
+
+
+
+  <div class="flex mt-[5rem]">
+    <pre class="text-4xl font-bold font-serif ml-[4rem] mt-[6rem]">Your questions<br> & <br>answered </pre>
+        
+    <div class="ml-[5rem]">
+  <button class="accordion bg-[#eee] text-[#444] cursor-pointer p-[18px] w-[100%] text-left align-text-top font-light text-xl transition-all hover:bg-[#ccc] active:bg-[#ccc]">Is my place right for Airbnb?</button>
+  <div class="panel p-[18px] bg-white  hidden overflow-hidden font-light text-lg">
+    <p>
+      Airbnb guests are interested in all kinds of places. We have listings for tiny  <br>
+      homes, cabins, tree houses and more. Even a spare room can be a great place <br>
+       to stay.
+    </p>
+  </div>
+  
+  <button class="accordion bg-[#eee] text-[#444] cursor-pointer font-light text-xl p-[18px] w-[100%] text-left align-text-top transition-all hover:bg-[#ccc] active:bg-[#ccc]">Do I have to host all the time?</button>
+  <div class="panel p-[18px] bg-white  hidden overflow-hidden font-light text-lg">
+    <p>
+Not at all – you control your calendar. You can host once a year, a few nights <br> 
+a month or more often.
+    </p>
+  </div>
+  
+  <button class="accordion bg-[#eee] text-[#444] cursor-pointer p-[18px] font-light text-xl w-[100%] text-left align-text-top transition-all hover:bg-[#ccc] active:bg-[#ccc]">How much should I interact with guests?</button>
+  <div class="panel p-[18px] bg-white  hidden overflow-hidden font-light text-lg">
+    <p>
+     
+It’s up to you. Some Hosts prefer to message guests only at key moments – <br> 
+like sending a short note when they check in – while others also enjoy meeting <br>
+their guests in person. You’ll find a style that works for you and your guests.
+    </p>
+  </div>
+  
+  <button class="accordion bg-[#eee] text-[#444] cursor-pointer p-[18px] font-light text-xl w-[100%] text-left align-text-top transition-all hover:bg-[#ccc] active:bg-[#ccc]">Any tips on being a great Airbnb Host?</button>
+  <div class="panel p-[18px] bg-white  hidden overflow-hidden font-light text-lg">
+    <p>
+      Getting the basics down goes a long way. Keep your place clean, respond to <br>
+       guests promptly and provide necessary amenities like fresh towels. Some <br>
+        Hosts like adding a personal touch such as putting out fresh flowers or <br>
+         sharing a list of local places to explore – but it’s not required.
+    <b> Read on for more hosting tips  </b>  
+    </p>
+  </div>
+  
+  <button class="accordion bg-[#eee] text-[#444] cursor-pointer p-[18px] font-light text-xl  w-[100%] text-left align-text-top transition-all hover:bg-[#ccc] active:bg-[#ccc]">Can I bring my service animal with me?</button>
+  <div class="panel p-[18px] bg-white  hidden overflow-hidden font-light text-lg">
+    <p>
+      We understand that service animals have a crucial function for their owner. That’s why <br> 
+      guests don’t have to disclose the presence of a service animal before booking, <br>
+       we always encourage transparent communication to ensure a smooth  <br> 
+       experience for all. Learn more about service animal policies for guests and Hosts.</p>
+  </div>
+  
+  <button class="accordion bg-[#eee] text-[#444] cursor-pointer font-light text-xl p-[18px] w-[100%] text-left align-text-top transition-all hover:bg-[#ccc] active:bg-[#ccc]">What are Airbnb’s fees?</button>
+  <div class="panel p-[18px] bg-white  hidden overflow-hidden font-light text-lg">
+    <p>
+      
+Airbnb typically collects a flat service fee of 3% of the reservation subtotal <br> 
+when you get paid. We also collect a fee from guests when they book. In <br>
+many areas Airbnb also collects and pays sales and tourism taxes <br>
+automatically on your behalf.
+Learn more about fees
+      </p>
+  </div>
+  
+  <button class="accordion bg-[#eee] text-[#444] cursor-pointer font-light text-xl  p-[18px] w-[100%] text-left align-text-top transition-all hover:bg-[#ccc] active:bg-[#ccc]">How can Hosts add accessibility features to listings?</button>
+  <div class="panel p-[18px] bg-white  hidden overflow-hidden font-light text-lg">
+    <p>
+      A Host’s space may be more accessible than they think. They can edit their listing by <br> 
+       room and confirm each accessibility feature with at least one clear photo. Learn more <br>
+        about adding accessibility features to listings for stays. Learn more about adding  <br> 
+        accessibility features to listings for Experiences.
+      </p>
+  </div>
+   </div>
+  </div>
+
+
+<div class="mt-[2rem] flex">
+  <div>
+    <img src="https://a0.muscache.com/im/pictures/65214d06-ffb4-4b70-93c0-01d368e76649.jpg?im_w=2560&im_q=highq" class="w-[45rem] h-[30rem]">
+  </div>
+
+  <div class="mt-[4rem]">
+    <p class="ml-[4rem] text-5xl  font-semibold ">Still have questions?</p>
+    <p class="font-light text-2xl ml-[20px] mt-[2rem]">Get answers from an experienced Superhost near you.</p>
+  
+    <button class="border-[0.1px] border-black rounded-lg ml-[6rem] mt-[3rem] p-[1rem]">Match with a Superhost</button>
+  </div>
+</div>
+
+<p class="border-[0.8px] w-[90rem] mt-[3rem]"></p>
+
+
+<div class="flex mt-7">
+  <div class="ml-7  max-[995px]:-ml-[3rem]">
+      <p class="ml-[6rem] mt-4 font-semibold">Support</p>
+      <form method="GET" action="/artical4">
+      <button  class="ml-[6rem] font-light hover:border-b-black border-b-[0.3px]  mt-1">Help Centre<button>
+      </form>
+
+      <form method="GET" action="/AirCover">
+          <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">AirCover</button>
+      </form>
+
+      <form method="GET" action="/Anti-discrimination">
+      <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Anti-discrimination</button>
+      </form>
+
+      <form method="GET" action="/Disability-support">
+          <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Disability support</button>
+      </form>
+
+      <form method="GET" action="/Cancellation-options">
+          <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Cancellation options</button>
+      </form>
+
+      <form method="GET" action="/Report-neighbourhood-concern">
+          <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Report neighbourhood concern</button>
+      </form>
+  </div>
+
+  <div class="ml-[10rem]  max-[1190px]:ml-[2rem] max-[900px]:-ml-[3rem] max-[830px]:-ml-[5rem]">
+      <p class="ml-[6rem] mt-4 font-semibold">Hosting</p>
+      <form method="GET" action="/Airbnb-your-home">
+          <button class="ml-[6rem] font-light hover:border-b-black border-b-[0.3px] mt-1">Airhost your home</button>
+      </form>
+
+      <form method="GET" action="/AirCover-for-Hosts">
+          <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">AirCover for Hosts</button>
+      </form>
+
+      <form method="GET" action="/Hosting-resources">
+          <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Hosting resources</button>
+      </form>
+
+      <form >
+      <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Community forum</button>
+      </form
+
+      <form method="GET" action="/Hosting-responsibly">
+      <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Hosting responsibly</button>
+      </form>
+  </div>
+
+  <div class="ml-[12rem] max-[1190px]:ml-[3rem]  max-[830px]:-ml-[25px]">
+      <p class="ml-[6rem] mt-4 font-semibold">Airbnb</p>
+      <form method="GET" action="/Newsroom">
+      <button class="ml-[6rem] font-light hover:border-b-black border-b-[0.3px] w-20 mt-1">Newsroom</button>
+      </form>
+
+      <form method="GET" action="/New-features">
+          <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px] w-28 mt-2">New features</button>
+      </form>
+
+      <form method="GET" action="/Careers">
+          <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px] w-20  mt-2">Careers</button>
+      </form>
+
+      <form method="GET" action="/Investors">
+          <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px] w-20  mt-2">Investors</button>
+      </form>
+
+      <form method="GET" action="/Airbnb.org-emergency-stays">
+          <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Airhost.org emergency stays</button>
+      </form>
+  </div>
+</div> 
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
+<p class="mt-7 border-[0.1px] border-gray-300" ></p>
+<div class = "f-info flex h-[8rem] flex-wrap justify-center text-center align-center ">
+  <div class ="f-info-socials w-[100%] text-xl flex items-center justify-center">
+      <form method="get" action="https:www.facebook.com/AirbnbIndia">
+          <button class="fa-brands fa-square-facebook mr-2"></button>
+      </form>
+      <form method="get"  action="https:www.instagram.com/airbnb/">
+          <button class="fa-brands fa-square-instagram mr-2"></button>
+      </form>
+      <form method="get" action="https:twitter.com/i/flow/login?redirect_after_login=%2Fairbnb_in" >
+          <button class="fa-brands fa-square-twitter"></button>
+      </form>
+      <form method="get" action="https:www.linkedin.com/company/airbnb/" >
+          <button class="fa-brands fa-linkedin ml-[8px]"></button>
+      </form>
+  </div>
+  <div class="f-info-brand  w-[100%] justify-center  align-middle flex items-center ">&copy; Wanderlust Private Limited</div>
+  <div class ="f-info-links hover:underline w-[100%] align-middle flex items-center justify-center">
+      <a href="/privacy">Privacy</a>
+      <a href="/terms">Terms</a>
+  </div>
+</div> 
+
+
+
+<script>
+  let mapToken = "<%= process.env.MAP_TOKEN %>";
+  console.log(mapToken);
+  mapboxgl.accessToken = mapToken;
+  const map = new mapboxgl.Map({
+  container: 'map',
+  style: 'mapbox://styles/mapbox/satellite-streets-v12',
+  center: [77.19072000,28.65136000], 
+  zoom: 9
+  });
+  </script>
+  
+  
+  <script>
+  const marker = new mapboxgl.Marker({ color: 'red'})
+  .setLngLat(listing.geometry.coordinates) 
+  .setPopup(new mapboxgl.Popup({offset:25})
+  .setHTML(`<h1>${listing.title}</h1><p>Exact Location well be provided after booking!</p`))
+  .addTo(map);
+  </script>
+  
+
+<script>
+  var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+<script >
+  let div1 = document.getElementById("search");
+  let display1 = 0;
+  function hideShow1() {
+    if(display1 == 1) {
+      div1.style.display = 'block';
+      display1 = 0;
+    }
+    else {
+      div1.style.display = 'none';
+      display1 = 1;
+    }
+  }
+</script>
+
+
+
+<script>
+  let incrementButton = document.getElementsByClassName('inc');
+  let decrementButton = document.getElementsByClassName('dec');
+  for(let i=0; i<incrementButton.length; i++) {
+    let button = incrementButton[i];
+    button.addEventListener('click', function(event) {
+      let buttonClicked = event.target;
+      let input = buttonClicked.parentElement.children[2];
+      let inputValue = input.value;
+      let newValue = parseInt(inputValue) + 1;
+      input.value = newValue;
+    })
+  }
+
+  for(let i=0; i<decrementButton.length; i++) {
+    let button = decrementButton[i];
+    button.addEventListener('click', function(event) {
+      let buttonClicked = event.target;
+      let input = buttonClicked.parentElement.children[2];
+      let inputValue = input.value;
+      let newValue = parseInt(inputValue) - 1;
+      if(newValue >= 0) {
+      input.value = newValue;
+      }
+      else {
+        input.value = 0;
+        
+      }
+      
+    })
+  }
+</script>
+<script>
+  function calculate() {
+    let field1 = document.getElementById("1").value;
+      let field2 = document.getElementById("2").value;
+      let field3 = document.getElementById("3").value;
+      let field4 = document.getElementById("4").value;
+
+      let result = ((field1)+(field2)+(field3)+(field4));
+      if(!isNaN(result)) {
+        document.getElementById("answer").innerHTML= "totall: "+result;
+      }
+  }
+</script>
+<script >
+  let div = document.getElementById('main');
+  let display = 0;
+  function hideShow() {
+    if(display == 1) {
+      div.style.display = 'block';
+      display = 0;
+    }
+    else {
+      div.style.display = 'none';
+      display = 1;
+    }
+  }
+</script>
+
+
+
+</body>
+</html>

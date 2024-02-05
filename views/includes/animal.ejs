@@ -1,0 +1,404 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airhost | Holiday rentals,cabins,beach house & more</title>
+    <link rel=" icon" type="image/png" href="public/ffb9bc06766fd2534983c893e5758306.png" />
+    <link href="public/style.css" rel="stylesheet">
+   
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="/rating.css" rel="stylesheet" />
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.js"></script>
+    
+</head> 
+    
+<body>
+  <div class="flex w-full flex-wrap items-center justify-between mt-1 ">
+    <div class="ml-16  flex ">
+      <form method="GET" action="/artical4">
+        <button class="text-4xl mt-[1rem] text-black"><i class="fa-brands fa-airbnb"></i></button>
+      </form>
+
+      <form   method="GET" action="/artical4" class=" mr-auto flex flex-col pl-0  lg:flex-row w-[100%] " data-te-navbar-nav-ref>
+          <button class="ml-1  font-semibold text-black text-xl" data-te-nav-link-ref><pre class="font-serif">Help center</pre></button>
+          </form>
+
+          <form >   
+            <div class="relative ml-[20rem] ">
+               <input type="text" onclick="hideShow1()"  class="block text-black  border-[0.1px] relative hover:border-[2px] border-black hover:border-black focus:border-black focus:border-[2px] rounded-full h-[2.5rem] w-[20rem]" placeholder="Search how-tos and more">
+               <button onclick="hideShow1()" class="fa-solid fa-magnifying-glass absolute border-[0.1px] hover:border-[2px] text-[#f9f9f9] bg-red-600  border-black rounded-full bottom-8 ml-[280px] p-[11px]" type="submit"></button>
+
+<div id="1" class="border-[0.2px] hidden absolute border-black rounded-2xl bg-[#f7f7f7] shadow-2xl w-[38rem] h-[17rem]  pt-[1rem] pl-[4rem]">
+  <div onclick="hideShow1()" class="absolute top-3 right-3 w-max  hover:bg-white" >
+    <div role="button" class="w-max pl-1 pr-1">
+       <i class="fa-solid fa-circle-xmark text-xl"></i>
+    </div>
+</div> 
+  <div class="flex mt-[20px]">
+    <i class="fa-solid fa-newspaper border-[0.1px] border-black rounded-xl p-[12px] bg-gray-200"></i> <a href="/artical1" class="mt-[8px] ml-[1rem] text-lg">Cancelling your reservation for a stay</a>
+  </div>
+  <div class="flex mt-[20px]">
+    <i class="fa-solid fa-newspaper border-[0.1px] border-black rounded-xl p-[12px] bg-gray-200"></i> <a href="/artical2" class="mt-[8px] ml-[1rem] text-lg">Change the date or time of your Experience reservation</a>
+  </div>
+  <div class="flex mt-[20px]">
+    <i class="fa-solid fa-newspaper border-[0.1px] border-black rounded-xl p-[12px] bg-gray-200"></i>  <a href="/artical3" class="mt-[8px] ml-[1rem] text-lg">If your Host cancels your reservation</a>
+  </div>
+  </div>
+  
+  
+         </form>
+            
+        <div class="top-0 mt-0 pt-0 mr-auto flex flex-col pl-0  lg:flex-row w-[100%] justify-end  ml-[18rem]" data-te-navbar-nav-ref>
+            <div class=" flex rounded-3xl pr-2  justify-end ">
+                  <a class=" " href="/listings/new" data-te-nav-link-ref>Airbnb your home</a>
+            </div>
+              <div class="border-[0.3px] border-black  flex rounded-3xl  pr-2 pl-2 h-[2rem]  justify-end">
+          
+                <div data-te-nav-item-ref>
+                  <a class=" text-black" aria-current="page" href="/signup" data-te-nav-link-ref><b>Sign up</b></a>
+                  <var class="border-[0.9px] ml-1 mr-1 h-[4rem] border-black"> </var>
+                </div>
+                <div  data-te-nav-item-ref>
+                  <a class=" " href="/login" data-te-nav-link-ref><b>Log in</b></a>
+                </div>
+             
+              </div>
+        </div> 
+      </div> 
+    </div>
+  </div>
+<p class="border-[0.1px]  border-black"> </p>
+ 
+
+<div class="flex text-sm mt-6 ml-[7rem] "> 
+  <p class="ml-[1rem]  "> Home</p><p class="ml-[5px]"> ></p> 
+  <p class="ml-[1rem]  "> All topics</p>  <p class="ml-[5px]"> ></p> 
+  <p class="ml-[1rem] "> Searchine and booking</p><p class="ml-[5px]"> ></p> 
+  <p class="ml-[1rem] "> Booking place to stay</p><p class="ml-[5px]"> ></p> 
+  <p class="ml-[1rem]  "> Requirements</p> <p class="ml-[5px]"> ></p> 
+  <p class="ml-[1rem]  "> Acessbility policy</p> <p class="ml-[5px]"> ></p> 
+</div>
+
+
+<div class="ml-[60rem] w-[20rem] pl-6  pt-3 pb-3 rounded-2xl  border-[0.8px] border-black bg-[#f9f9f9] shadow-xl">
+  Get help with your reservations, <br> account, and more.
+  <div class="flex">
+    <form action="/login">
+      <button class=" border-[0.8px] bg-red-500 hover:bg-red-700 hover:border-red-600 ml-[1rem] w-[6rem] text-white rounded-xl shadow-lg mt-3 p-2 ">Log in</button>
+    </form>
+    <form action="/signup">
+      <button class=" border-[0.8px] bg-red-500 ml-[2rem] hover:bg-red-700 hover:border-red-600 w-[6rem] text-white rounded-xl shadow-lg mt-3 p-2 "> sign up</button>
+    </form>
+  </div>
+</div>
+
+
+
+<p class="opacity-50 text-md ml-[8rem] ">Community policy</p>
+<p class="text-4xl mt-[1rem]  ml-[7rem]">Accessibility Policy</p>
+<p class="opacity-70 text-md ml-[8rem]  ">
+  Our community is built on the principles of inclusion, belonging, and respect, which <br>
+  includes welcoming and supporting people with disabilities. In general, guests who <br>
+  require reasonable accommodations and services should not be discriminated against <br>
+  or denied service while using Airbnb.<br>
+  <p class="mt-[12px] opacity-70 text-md ml-[8rem]">
+  In some jurisdictions, legal requirements may expand or limit the reasonable<br>
+   accommodations a Host must provide. Hosts and guests must comply with these legal<br>
+    requirements.
+  </p>
+  </p>
+<p class="mt-[2rem] ml-[8rem] text-2xl">Service Animals and Emotional Support Animals</p>
+<p class="mt-[9px] ml-[8rem] opacity-70  text-md"><b>Service Animal:</b> A dog or miniature horse that is individually trained to do work or<br>
+   perform tasks for people with disabilities.</p>
+<ul class="mt-[9px] ml-[10rem] opacity-70 flex text-md list-disc">*  What we allow :</ul>
+
+<li class="mt-[9px] ml-[14rem] opacity-70 flex text-md list-decimal">
+  <p class="text-sm mr-2 opacity-40">o</p> Guests are allowed to be accompanied by service animals during a stay or <br>
+  Experience and are not required to disclose the presence of a service <br>
+   animal before booking. A Host may qualify for an exemption in certain <br>
+   circumstances — for instance, if the service animal directly threatens their <br>
+   health or safety.
+</li>
+<li class="mt-[9px] ml-[14rem] opacity-70 flex text-md ">
+  <p class="text-sm mr-2 opacity-40">o</p> Hosts are only allowed to ask the following about a guest’s need for a <br>
+  service animal :
+</li>
+<li class="mt-[9px] ml-[19rem] opacity-70 text-md list">
+ Whether the guest requires their service animal because of a <br> disability
+</li>
+<li class="mt-[9px] ml-[19rem] opacity-70 text-md list"> What work or task the service animal has been trained to perform</li>
+
+<li class="mt-[9px] ml-[14rem] opacity-70 flex text-md "> <p class="text-sm mr-2 opacity-40">o</p>
+  Hosts and guests are responsible for understanding and complying with all <br>
+   applicable state and local laws, rules, and regulations.</li>
+
+   <ul class="mt-[9px] ml-[10rem] opacity-70 flex text-md list-disc">*  What we don’t allow :</ul>
+<li  class="mt-[9px] ml-[14rem] opacity-70 flex text-md "> <p class="text-sm mr-2 opacity-40">o</p>
+  When a guest is accompanied by a service animal, Hosts are not allowed to</li>
+
+<li class="mt-[9px] ml-[19rem] opacity-70 text-md list">Refuse a reservation</li>
+<li class="mt-[9px] ml-[19rem] opacity-70 text-md list">Charge pet fees or other additional fees</li>
+<li class="mt-[9px] ml-[19rem] opacity-70 text-md list">Apply differential treatment</li>
+<li class="mt-[9px] ml-[19rem] opacity-70 text-md list">Use discriminatory language</li>
+<li class="mt-[9px] ml-[19rem] opacity-70 text-md list">Hold guests to different rules</li>
+
+<li  class="mt-[9px] ml-[14rem] opacity-70 flex text-md "> <p class="text-sm mr-2 opacity-40">o</p>
+  A guest’s service animal must not be :</li>
+  <li class="mt-[9px] ml-[19rem] opacity-70 text-md list">Out of control</li>
+  <li class="mt-[9px] ml-[19rem] opacity-70 text-md list">Unhousebroken</li>
+  <li class="mt-[9px] ml-[19rem] opacity-70 text-md list">Left alone at the listing without prior approval</li>
+  <li class="mt-[9px] ml-[19rem] opacity-70 text-md list">Allowed into areas that are considered unauthorized to the guest</li>
+  <li class="mt-[9px] ml-[19rem] opacity-70 text-md list">Allowed in a public space without being harnessed, leashed, or <br> tethered and not under the guest’s control</li>
+
+  <p class="mt-[9px] ml-[8rem] opacity-70  text-md"><b>Emotional Support Animal:</b> An animal that provides companionship, relieves <br> 
+    loneliness, or helps with depression, anxiety, or certain phobias but is not required to <br> 
+    have special training to perform tasks that assist people with disabilities
+</p>
+<ul class="mt-[9px] ml-[10rem] opacity-70 flex text-md list-disc">*  What we allow :</ul>
+
+<li class="mt-[9px] ml-[14rem] opacity-70 flex text-md list-decimal">
+  <p class="text-sm mr-2 opacity-40">o</p> Unless the reservation is a stay in New York or California (USA) or another <br>
+  location where applicable law prohibits it:
+</li>
+
+<li class="mt-[9px] ml-[19rem] opacity-70 text-md list">Hosts may charge pet fees for a guest who is traveling with an <br> emotional support animal</li>
+<li class="mt-[9px] ml-[19rem] opacity-70 text-md list">Hosts are allowed to decline the presence of emotional support <br> animals from a stay or Experience</li>
+<ul class="mt-[9px] ml-[10rem] opacity-70 flex text-md list-disc">*  What we don’t allow :</ul>
+
+
+<li class="mt-[9px] ml-[14rem] opacity-70 flex text-md list-decimal">
+  <p class="text-sm mr-2 opacity-40">o</p> For jurisdictions where Hosts are required to accept emotional support  <br>
+  animals (unless the Host has an exemption) a Host cannot:
+</li>
+<li class="mt-[9px] ml-[19rem] opacity-70 text-md list">Charge pet fees, decline a guest, or apply different rules, treatment,<br> or behavior to a guest traveling with an emotional support animal</li>
+<li class="mt-[9px] ml-[19rem] opacity-70 text-md list">Ask for information or documentation about a guest’s emotional <br>support animal beyond the questions outlined above for service <br> animals</li>
+
+
+<li class="mt-[9px] ml-[14rem] opacity-70 flex text-md list-decimal">
+  <p class="text-sm mr-2 opacity-40">o</p> For jurisdictions where Hosts are required to accept emotional support <br> animals, a guest’s emotional support animal must not be:
+</li>
+<li class="mt-[9px] ml-[19rem] opacity-70 text-md list">Out of control</li>
+<li class="mt-[9px] ml-[19rem] opacity-70 text-md list">Unhousebroken</li>
+<li class="mt-[9px] ml-[19rem] opacity-70 text-md list">Left alone at the listing without prior approval</li>
+<li class="mt-[9px] ml-[19rem] opacity-70 text-md list">Allowed into areas that are considered unauthorized to the guest</li>
+<li class="mt-[9px] ml-[19rem] opacity-70 text-md list">Allowed in a public space without being harnessed, leashed, or <br> 
+  tethered and not under the guest’s control</li>
+
+  <p class="mt-[2rem] ml-[8rem] text-2xl">Reasonable Accommodations</p>
+  <p class="mt-[9px] ml-[8rem] opacity-70  text-md">We encourage hosts and guests to communicate in advance of a booking about <br>
+    reasonable accommodations. Hosts should try to accommodate a guest’s reasonable <br>
+     requests around accessibility needs.
+</p>
+<ul class="mt-[9px] ml-[10rem] opacity-70 flex text-md list-disc">*  What we allow :</ul>
+
+<li class="mt-[9px] ml-[14rem] opacity-70 flex text-md list-decimal">
+  <p class="text-sm mr-2 opacity-40">o</p> Guests are allowed to request reasonable accommodations at a stay or <br>
+  Experience that would help them access a stay/Experience, communicate <br> 
+   during a reservation, or participate in an Experience. Hosts are allowed to <br> 
+   make a reasonable counter offer to a guest’s original reasonable <br>
+   accommodation request.
+</li>
+
+<li class="mt-[9px] ml-[14rem] opacity-70 flex text-md list-decimal">
+  <p class="text-sm mr-2 opacity-40">o</p>Hosts are allowed to refuse certain unreasonable or unattainable requests <br> that:
+</li>
+<li class="mt-[9px] ml-[19rem] opacity-70 text-md list">Increase the safety risk to the Host or others</li>
+<li class="mt-[9px] ml-[19rem] opacity-70 text-md list">Fundamentally change the nature of an Experience or impact it for <br> other guests</li>
+<li class="mt-[9px] ml-[19rem] opacity-70 text-md list">Require a structural modification to a building or listing</li>
+<li class="mt-[9px] ml-[19rem] opacity-70 text-md list">Require the Host to take on added responsibilities that are time- <br> intensive or put a significant physical or financial burden on them</li>
+<li class="mt-[9px] ml-[19rem] opacity-70 text-md list">Ask a Host to violate local laws or HOA/building requirements</li>
+
+<ul class="mt-[9px] ml-[10rem] opacity-70 flex text-md list-disc">*  What we don’t allow :</ul>
+
+<li class="mt-[9px] ml-[14rem] opacity-70 flex text-md list-decimal">
+  <p class="text-sm mr-2 opacity-40">o</p> Hosts are not allowed to refuse a guest’s reasonable request for <br> 
+   accommodations, when the request is specific, clearly expressed, made <br> 
+   with sufficient notice, and is not unreasonable or unattainable (See our list <br> 
+   of requests that qualify as unreasonable or unattainable above.)
+</li>
+
+<li class="mt-[9px] ml-[14rem] opacity-70 flex text-md list-decimal">
+  <p class="text-sm mr-2 opacity-40">o</p> Hosts are not allowed to commit to providing a reasonable <br> 
+  accommodation and fail to fulfill it at the time of the reservation.
+</li>
+
+<ul class="mt-[9px] ml-[10rem] opacity-70 flex text-md list-disc">*  Additional considerations :</ul>
+
+<li class="mt-[9px] ml-[14rem] opacity-70 flex text-md list-decimal">
+  <p class="text-sm mr-2 opacity-40">o</p>A Host will not be penalized if the Host’s failure to make a reasonable <br> 
+  accommodation is deemed out of their control or if the Host has <br> 
+  objectively shown why the request is unreasonable or unattainable for <br> 
+  them.
+</li>
+<p class="mt-[2rem] ml-[8rem] text-2xl">What happens when a Host or guest does not comply with our<br> policies?</p>
+
+<p class="mt-[9px] ml-[8rem] opacity-70  text-md">We ask our community to work together to make Airbnb as accessible as reasonably <br> 
+  possible. Airbnb may take steps up to and including suspending or removing the Host <br> 
+  or guest from the Airbnb platform if they are unwilling to comply with our policies.
+</p>
+
+
+<div class="flex mt-[12px] ml-[8rem] opacity-70  text-md"> 
+  <p class="font-semibold text-lg">Did this article help?</p>
+  <p class="flex ml-[2rem] font-serif opacity-80 border-b-[0.7px] hover:border-b-[2px] border-black hover:opacity-100 text-md">Yes</p>
+  <p class="flex  ml-[2rem] font-serif opacity-80  text-md border-b-[0.7px] hover:border-b-[2px] border-black hover:opacity-100">No</p>
+
+</div>
+<p class="border-[0.9px]  ml-[8rem] mt-[3rem] w-[40rem]"></p>
+<p class="mt-[2rem] ml-[8rem] text-2xl">Related articles</p>
+<p class="mt-[2rem] ml-[8rem] opacity-50">Guest</p>
+<p class=" ml-[8rem] text-xl border-b-[0.3px] border-black w-[24rem]">Welcoming guests with accessibility needs</p>
+
+<p class="mt-[9px] ml-[8rem] opacity-60  text-md">We welcome and support people with accessibility needs. These members of our community <br>
+  should be able to trust that their Hosts will provide…
+</p>
+
+<p class="border-[0.9px] ml-[8rem] mt-[2rem] w-[40rem]"></p>
+<p class=" ml-[8rem] text-xl border-b-[0.3px] mt-[1rem]  border-black w-[20rem]">How Airbnb supports accessibility</p>
+
+<p class="mt-[9px] ml-[8rem] opacity-60  text-md">Find out what we’re doing to make it easier for people with disabilities and other accessibility<br> needs to travel on Airbnb, and how we’re wo…
+</p>
+
+<p class="border-[0.9px] ml-[8rem] mt-[2rem] w-[40rem]"></p>
+<p class="mt-[1rem] ml-[8rem] opacity-50">Guest</p>
+<p class=" ml-[8rem] text-xl border-b-[0.3px] border-black w-[18rem]">Searching for pet-friendly places</p>
+
+<p class="mt-[9px] ml-[8rem] opacity-60  text-md">Check the house rules section of the listing description to find out if you can bring your pet, or if <br> the Host has pets on the property.
+</p>
+
+
+
+
+
+<p class="mt-[7rem] border-[0.8px]" ></p>
+<div class="flex mt-7">
+  <div class="ml-7  max-[995px]:-ml-[3rem]">
+      <p class="ml-[6rem] mt-4 font-semibold">Support</p>
+      <form method="GET" action="/artical4">
+      <button  class="ml-[6rem] font-light hover:border-b-black border-b-[0.3px]  mt-1">Help Centre<button>
+      </form>
+
+      <form method="GET" action="/AirCover">
+          <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">AirCover</button>
+      </form>
+
+      <form method="GET" action="/Anti-discrimination">
+      <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Anti-discrimination</button>
+      </form>
+
+      <form method="GET" action="/Disability-support">
+          <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Disability support</button>
+      </form>
+
+      <form method="GET" action="/Cancellation-options">
+          <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Cancellation options</button>
+      </form>
+
+      <form method="GET" action="/Report-neighbourhood-concern">
+          <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Report neighbourhood concern</button>
+      </form>
+  </div>
+
+  <div class="ml-[10rem]  max-[1190px]:ml-[2rem] max-[900px]:-ml-[3rem] max-[830px]:-ml-[5rem]">
+      <p class="ml-[6rem] mt-4 font-semibold">Hosting</p>
+      <form method="GET" action="/Airbnb-your-home">
+          <button class="ml-[6rem] font-light hover:border-b-black border-b-[0.3px] mt-1">Airhost your home</button>
+      </form>
+
+      <form method="GET" action="/AirCover-for-Hosts">
+          <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">AirCover for Hosts</button>
+      </form>
+
+      <form method="GET" action="/Hosting-resources">
+          <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Hosting resources</button>
+      </form>
+
+      <form >
+      <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Community forum</button>
+      </form
+
+      <form method="GET" action="/Hosting-responsibly">
+      <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Hosting responsibly</button>
+      </form>
+  </div>
+
+  <div class="ml-[12rem] max-[1190px]:ml-[3rem]  max-[830px]:-ml-[25px]">
+      <p class="ml-[6rem] mt-4 font-semibold">Airbnb</p>
+      <form method="GET" action="/Newsroom">
+      <button class="ml-[6rem] font-light hover:border-b-black border-b-[0.3px] w-20 mt-1">Newsroom</button>
+      </form>
+
+      <form method="GET" action="/New-features">
+          <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px] w-28 mt-2">New features</button>
+      </form>
+
+      <form method="GET" action="/Careers">
+          <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px] w-20  mt-2">Careers</button>
+      </form>
+
+      <form method="GET" action="/Investors">
+          <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px] w-20  mt-2">Investors</button>
+      </form>
+
+      <form method="GET" action="/Airbnb.org-emergency-stays">
+          <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Airhost.org emergency stays</button>
+      </form>
+  </div>
+</div> 
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
+<p class="mt-7 border-[0.1px] border-gray-300" ></p>
+<div class = "f-info flex h-[8rem] flex-wrap justify-center text-center align-center ">
+  <div class ="f-info-socials w-[100%] text-xl flex items-center justify-center">
+      <form method="get" action="https:www.facebook.com/AirbnbIndia">
+          <button class="fa-brands fa-square-facebook mr-2"></button>
+      </form>
+      <form method="get"  action="https:www.instagram.com/airbnb/">
+          <button class="fa-brands fa-square-instagram mr-2"></button>
+      </form>
+      <form method="get" action="https:twitter.com/i/flow/login?redirect_after_login=%2Fairbnb_in" >
+          <button class="fa-brands fa-square-twitter"></button>
+      </form>
+      <form method="get" action="https:www.linkedin.com/company/airbnb/" >
+          <button class="fa-brands fa-linkedin ml-[8px]"></button>
+      </form>
+  </div>
+  <div class="f-info-brand  w-[100%] justify-center  align-middle flex items-center ">&copy; Wanderlust Private Limited</div>
+  <div class ="f-info-links hover:underline w-[100%] align-middle flex items-center justify-center">
+      <a href="/privacy">Privacy</a>
+      <a href="/terms">Terms</a>
+  </div>
+</div> 
+
+
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script >
+    let div1 = document.getElementById('1');
+    let display1 = 0;
+    function hideShow1() {
+      if(display1 == 1) {
+        div1.style.display = 'block';
+        display1 = 0;
+      }
+      else {
+        div1.style.display = 'none';
+        display1 = 1;
+      }
+    }
+  </script>
+
+
+  
+</body>
+</html>

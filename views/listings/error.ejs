@@ -1,0 +1,23 @@
+
+<% layout("/layouts/boilerplate") %>
+<div class="p-4 mb-4 text-red-800 ml-[10rem] h-[22rem] flex-wrap border-red-700  border-2 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400 dark:border-red-800 max-[1030px]:ml-[0px]">
+    <div class="flex items-center ml-[22rem] max-[770px]:ml-[12rem] max-[645px]:ml-[0rem]">
+        <i class="fa-solid fa-circle-exclamation text-xl"></i>
+        <h3 class=" font-medium text-xl pl-3 ">This is a danger alert </h3>
+    </div>
+    <div class="mt-2 mb-4 text-xl font-bold">
+        <div class="mt-8">
+            <span class="actual-error  text-2xl font-bold "><%=err%></span>
+        </div>
+    </div>
+    <div class="flex ml-[22rem] mt-7 max-[770px]:ml-[15rem] max-[645px]:ml-[0rem]">
+        <form method="GET" action="*" name="Form" >
+            <button class="border-2 mt-4 text-white ml-3 pt-2 mr-2 pl-3 bg-[#fe424d] h-[3rem] w-[8rem]  rounded-2xl text-lg p-0 hover:border-black hover:bg-stone-500 flex">
+            <i class="fa-solid fa-eye text-sm mt-1 pr-1 "></i>View more</button>
+        </form>
+   
+        <form method ="GET" action="/listings" name="Form">
+            <button class="border-2 ml-8 mb-6 text-white bg-[#fe424d] mt-[1rem] p-2 w-[6rem] rounded-2xl text-lg  hover:border-black hover:bg-stone-500">Dismiss</button>
+        </form>
+    </div>
+</div>

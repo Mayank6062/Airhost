@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airhost | Holiday rentals,cabins,beach house & more</title>
+    <link rel=" icon" type="image/png" href="public/ffb9bc06766fd2534983c893e5758306.png" />
+    <link href="public/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="/rating.css" rel="stylesheet" />
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.js"></script>
+    
+</head> 
+<body>
+    <div class="flex w-full flex-wrap items-center justify-between mt-1 ">
+        <div class="ml-16 flex ">
+             <a class="text-4xl text-black" href="/artical4"><i class="fa-brands fa-airbnb"></i></a>
+          <div class=" mr-auto flex flex-col pl-0  lg:flex-row w-[100%] " data-te-navbar-nav-ref>
+              <a class="ml-1 mt-2 font-semibold text-black text-xl" href="/artical4" data-te-nav-link-ref><pre class="font-serif">Help center</pre></a>
+    
+<form >   
+                <div class="relative ml-[20rem] ">
+                   <input type="text" onclick="hideShow1()"  class="block text-black  border-[0.1px] relative hover:border-[2px] border-black rounded-full h-[2.5rem] w-[20rem]" placeholder="Search how-tos and more">
+                   <button onclick="hideShow1()" class="fa-solid fa-magnifying-glass absolute border-[0.1px] hover:border-[2px] text-[#f9f9f9] bg-red-600  border-black rounded-full bottom-1.5 ml-[280px] pb-[25px] top-[2px] p-[9px]" ></button>
+                </div>
+    
+    <div id="search" class="border-[0.2px] hidden absolute border-black rounded-2xl bg-[#f7f7f7] shadow-2xl w-[38rem] h-[17rem] ml-[20rem] pt-[1rem] pl-[4rem]">
+      <div onclick="hideShow1()" class="absolute top-3 right-3 w-max  hover:bg-white" >
+        <div role="button" class="w-max pl-1 pr-1">
+           <i class="fa-solid fa-circle-xmark text-xl"></i>
+        </div>
+    </div> 
+      <div class="flex mt-[20px]">
+        <i class="fa-solid fa-newspaper border-[0.1px] border-black rounded-xl p-[12px] bg-gray-200"></i> <a href="/artical1" class="mt-[8px] ml-[1rem] text-lg">Cancelling your reservation for a stay</a>
+      </div>
+      <div class="flex mt-[20px]">
+        <i class="fa-solid fa-newspaper border-[0.1px] border-black rounded-xl p-[12px] bg-gray-200"></i> <a href="/artical2" class="mt-[8px] ml-[1rem] text-lg">Change the date or time of your Experience reservation</a>
+      </div>
+      <div class="flex mt-[20px]">
+        <i class="fa-solid fa-newspaper border-[0.1px] border-black rounded-xl p-[12px] bg-gray-200"></i>  <a href="/artical3" class="mt-[8px] ml-[1rem] text-lg">If your Host cancels your reservation</a>
+      </div>
+      </div>
+ </form>
+                
+            <div class=" mr-auto flex flex-col pl-0  lg:flex-row w-[100%] justify-end  ml-[18rem]" data-te-navbar-nav-ref>
+                <div class=" flex rounded-3xl pr-2  justify-end ">
+                      <a class=" mt-2" href="/listings/new" data-te-nav-link-ref>Airhost your home</a>
+                </div>
+                  <div class="border-[0.3px] border-black  flex rounded-3xl mt-1 pr-2 pl-2 h-[2rem]  justify-end">
+              
+                    <div data-te-nav-item-ref>
+                      <a class=" text-black" aria-current="page" href="/signup" data-te-nav-link-ref><b>Sign up</b></a>
+                      <var class="border-[0.9px] ml-1 mr-1 h-[4rem] border-black"> </var>
+                    </div>
+                    <div  data-te-nav-item-ref>
+                      <a class=" " href="/login" data-te-nav-link-ref><b>Log in</b></a>
+                    </div>
+                  </div>
+            </div> 
+          </div> 
+        </div>
+      </div>
+    <p class="border-[0.1px] mt-5 border-black"> </p>
+  
+    <div class="flex text-sm mt-6 ml-[9rem] "> 
+      <a href="#home" class="ml-[1rem]"> Home</p><p class="ml-[5px]"> ></a> 
+      <p class="ml-[1rem]  "> All topics</p>  <p class="ml-[5px]"> ></p> 
+      <p class="ml-[1rem] "> Searching and booking</p><p class="ml-[5px]"> ></p> 
+      <p class="ml-[1rem] "> Booking places to stay</p><p class="ml-[5px]"> ></p> 
+      <p class="ml-[1rem]  "> The basics</p> <p class="ml-[5px]"> ></p> 
+      <p class="ml-[1rem]  "> AirCover for guests</p> <p class="ml-[5px]"> ></p> 
+    </div>
+
+<p class="ml-[9rem] opacity-60 mt-[1rem]"> Guide • Guest</p>
+<p class="text-4xl font-semibold ml-[9rem] mt-[1rem]">AirCover for guests</p>
+
+<div class="flex">
+<img src="https://images.contentstack.io/v3/assets/bltec2ed8e3c4b1e16d/blt5912675266dfa56f/62619649b9aa584a4e327561/AC_Guests_HG_EN_S@3x.png" class="ml-[9rem] mt-[1rem] w-[40rem]">
+   
+<div class=" inline-block  ml-[8rem] mr-[9rem]">
+    <div class=" w-[20rem] pl-6  pt-3 pb-3 rounded-2xl  border-[0.8px] border-black bg-[#f9f9f9] shadow-xl ">
+        Get help with your reservations, <br> account, and more.
+        <div class="flex">
+          <form action="/login">
+            <button class=" border-[0.8px] bg-red-500 hover:bg-red-700 hover:border-red-600 ml-[1rem] w-[6rem] text-white rounded-xl shadow-lg mt-3 p-2 ">Log in</button>
+          </form>
+          <form action="/signup">
+            <button class=" border-[0.8px] bg-red-500 ml-[2rem] hover:bg-red-700 hover:border-red-600 w-[6rem] text-white rounded-xl shadow-lg mt-3 p-2 "> sign up</button>
+          </form>
+        </div>
+      </div>
+    </div>
+</div>
+
+<p class="opacity-70 mt-[1rem] ml-[10rem]">
+  Every booking comes with AirCover for guests. If there’s a serious issue with your <br>
+  Airbnb that your Host can’t resolve, we’ll help you find a similar place, depending on <br>
+  availability at comparable pricing. If a similar place isn’t available or you’d prefer not to <br>
+  rebook, we’ll give you a full or partial refund.
+</p>
+
+<p class="opacity-70 mt-[1rem] ml-[10rem]">
+  If anything comes up, your Host is your best point of contact; it’s likely they’ll be able <br> 
+  to fix it. You can message your Host directly from your inbox to let them know what’s <br> 
+  going on.
+</p>
+
+<p class="mt-[1rem] ml-[10rem] opacity-70 mb-[1rem]">In this article</p>
+
+<div class="flex ml-[10rem] mt-[1rem]">
+  <i class="fa-solid fa-bookmark text-sm "></i> <p class="ml-[13px] border-b-[1px] border-black">Host cancellations</p>
+</div>
+
+<div class="flex ml-[10rem] mt-[1rem]">
+  <i class="fa-solid fa-bookmark text-sm"></i> <p class="ml-[13px] border-b-[1px] border-black ">Host cancellations</p>
+</div>
+
+<div class="flex ml-[10rem] mt-[1rem]">
+  <i class="fa-solid fa-bookmark text-sm"></i> <p class="ml-[13px] border-b-[1px] border-black">Unable to check in</p>
+</div>
+
+<div class="flex ml-[10rem] mt-[1rem]">
+<i class="fa-solid fa-bookmark text-sm"></i> <p class="ml-[13px] border-b-[1px] border-black">Inaccurate listings</p>
+</div>
+
+<div class="flex ml-[10rem] mt-[1rem]">
+<i class="fa-solid fa-bookmark text-sm"></i> <p class="ml-[13px] border-b-[1px] border-black">24-hour Safety Line</p>
+</div>
+
+<div class="flex ml-[10rem] mt-[1rem]">
+<i class="fa-solid fa-bookmark text-sm"></i> <p class="ml-[13px] border-b-[1px] border-black">How AirCover for guests works</p>
+</div>
+ 
+
+<p class="border-[1px] ml-[9rem] w-[50rem] mt-[3rem]"> </p>
+<p class="ml-[10rem] text-2xl mt-[2rem]">Host cancellations</p>
+<p class="ml-[10rem] mt-[1rem] opacity-65">If your Host cancels within 30 days of check-in, we’ll help you find a similar place, <br> 
+  depending on availability at comparable pricing. If a similar place isn’t available or <br> 
+  you’d prefer not to rebook, we’ll give you a refund.
+</p>
+<p class="ml-[10rem] mt-[2rem]">Learn more about what to expect <b class="border-b-[1px] border-black ml-[5px]"> if your Host cancels your reservation. </b></p>
+
+<p class="border-[1px] ml-[9rem] w-[50rem] mt-[3rem]"> </p>
+
+<p class="ml-[10rem] text-2xl mt-[2rem]">Unable to check in</p>
+<p class="ml-[10rem] mt-[1rem] opacity-65">When you have a confirmed reservation, you’ll have your Host’s email and phone <br>
+  number in the message thread for your trip. If you can’t get into your Airbnb on arrival <br>
+  and your Host doesn’t respond or can’t resolve the issue, we’ll help you find a similar <br> 
+  place, depending on availability at comparable pricing. If a similar place isn’t available <br>
+  or you’d prefer not to rebook, we’ll give you a refund.
+</p>
+<p class="ml-[10rem] mt-[2rem]">Check out what to do next <b class="border-b-[1px] border-black ml-[5px]"> if you can’t get in touch with your Host </b></p>
+
+<p class="border-[1px] ml-[9rem] w-[50rem] mt-[3rem]"> </p>
+
+<p class="ml-[10rem] text-2xl mt-[2rem]">Inaccurate listings</p>
+<p class="ml-[10rem] mt-[1rem] opacity-65">If the listing is different than advertised, your Host is a great resource to fix the issue. If <br>
+   the listing is significantly different than advertised and your Host can’t resolve the <br> 
+    issue, we’ll help you find a similar place, depending on availability at comparable <br>
+    pricing. If a similar place isn’t available or you’d prefer not to rebook, we’ll give you a <br>
+    full or partial refund.
+</p>
+
+<p class="border-[1px] ml-[9rem] w-[50rem] mt-[3rem]"> </p>
+
+<p class="ml-[10rem] text-2xl mt-[2rem]">24-hour Safety Line</p>
+<p class="ml-[10rem] mt-[1rem] opacity-65">If you ever feel unsafe, we’re here to help you get priority access to specially trained <br>
+   safety agents who will assist you with your safety issues or directly connect you to  <br>
+   local emergency authorities, day or night.
+</p>
+<p class="ml-[10rem] mt-[2rem]">Need to reach us? <b class="border-b-[1px] border-black ml-[5px]"> Contact us</b>  by phone, email or chat.</p>
+
+
+<p class="ml-[10rem] text-2xl mt-[2rem]">How AirCover for guests works</p>
+<p class="ml-[10rem] mt-[1rem] opacity-65">AirCover for guests provides support for serious issues with your booking (e.g. Host <br> 
+  cancellation within 30 days of check-in) or during your stay (e.g. the heating not <br> 
+  working in winter, the listing has fewer bedrooms than listed, it’s a different type of <br>
+  home – a private room instead of an entire home, a major advertised amenity such as a <br> 
+  pool or kitchen is missing) but it doesn’t include more minor inconveniences, like a <br>
+  broken toaster.
+</p>
+
+<p class="ml-[10rem] mt-[1rem]"> Your Host is the best person to contact if anything comes up. You can <b class="border-b-[1px] border-black">message your<br>
+  Host</b> directly from your inbox to let them know what’s going on.
+</p>
+
+<p class="ml-[13rem] mt-[1rem] opacity-65 "> If an issue does come up during your stay :</p>
+
+<p class="ml-[13rem] mt-[1rem] opacity-65">1. Take photos or videos of the issue, if you can.</p>
+
+<p class="ml-[13rem] mt-[1rem] opacity-65">2. Contact your Host within 72 hours of discovering the problem and describe the <br> issue to them to see if they can resolve it.</p>
+
+<p class="ml-[13rem] mt-[1rem] opacity-65">3. If your Host can’t resolve the issue or doesn’t respond at all, contact us as soon <br> as possible.</p>
+
+<p class="ml-[13rem] mt-[1rem] opacity-65">4. We’ll review it and if we find it’s an issue that’s supported by AirCover for guests <br> 
+  and you’d like to leave the place, we’ll help you find a similar place to stay, <br>
+   depending on availability at comparable pricing. If a similar place isn’t available or <br> 
+   you’d prefer not to rebook, we’ll give you a full or partial refund.
+</p>
+
+<div class="border-black border-[1px] rounded-xl p-[4px] pl-[1rem] mt-[2rem] ml-[12rem] w-[47rem]">
+  <i class="fa-solid fa-file text-orange-400 mr-[12px]"></i> AirCover for guests is not an insurance policy. It doesn’t cover travel-related issues (e.g. <br> 
+  your trip is delayed due to a storm, your luggage is damaged by your carrier). Learn more <br> 
+  here.
+</div>
+
+<p class="ml-[12rem] mt-[2rem] opacity-65 ">If you're a Host, learn more about <b class="border-b-[1px] border-black"> AirCover for Hosts </b> and<b  class="border-b-[1px] border-black"> recent improvements </b> we've <br> made.</p>
+
+<div class="flex mt-[2rem] ml-[12rem] opacity-70  text-md"> 
+  <p class="font-semibold text-lg">Did this article help?</p>
+  <p class="flex ml-[2rem] font-serif opacity-80 border-b-[0.7px] hover:border-b-[2px] border-black hover:opacity-100 text-md">Yes</p>
+  <p class="flex  ml-[2rem] font-serif opacity-80  text-md border-b-[0.7px] hover:border-b-[2px] border-black hover:opacity-100">No</p>
+
+</div>
+<p class="border-[1px] ml-[12rem] mt-[2rem] w-[40rem]"></p>
+
+
+<p class="mt-[2rem] ml-[12rem] text-2xl font-semibold">Related articles</p>
+<p class="mt-[2rem] ml-[12rem] opacity-50">Guest</p>
+<p class=" ml-[12rem] text-lg border-b-[0.3px] border-black w-[18rem]">
+  Get help or contact Airbnb Support</p>
+
+<p class="mt-[9px] ml-[12rem] opacity-60  text-md">
+  Most Hosts and guests are able to quickly resolve issues on their own. <br>Explore ways to get the help you need before, during, or after a trip…
+</p>
+
+<p class="border-[0.9px] ml-[12rem] mt-[2rem] w-[40rem]"></p>
+<p class="mt-[2rem] ml-[12rem] opacity-50">Guest</p>
+<p class=" ml-[12rem] text-lg border-b-[0.3px] border-black w-[19rem]">
+  If your Host cancels your reservation</p>
+<p class=" ml-[12rem] text-md border-b-[0.3px] mt-[1rem] w-[40rem] opacity-60  ">If your reservation is cancelled by your Host, we’ll automatically give you a full refund. If the cancellation happens within 30 days of you…</p>
+
+
+
+<p class="border-[0.9px] ml-[12rem] mt-[2rem] w-[40rem]"></p>
+<p class="mt-[1rem] ml-[12rem] opacity-50">Guest</p>
+<p class=" ml-[12rem] text-lg border-b-[0.3px] border-black w-[24rem]">
+  If you have a problem or issue during your stay</p>
+<p class=" ml-[12rem] text-md mt-[1rem] w-[40rem] opacity-60 ">
+  If anything unexpected comes up during your stay, message your Host to discuss a solution first. It’s likely that they’ll be able to help yo…</p>
+
+  <p class="border-[0.9px] ml-[12rem] mt-[2rem] w-[40rem]"></p>
+
+
+
+  <div class="flex mt-7">
+    <div class="ml-7  max-[995px]:-ml-[3rem]">
+        <p class="ml-[6rem] mt-4 font-semibold">Support</p>
+        <form method="GET" action="/artical4">
+        <button  class="ml-[6rem] font-light hover:border-b-black border-b-[0.3px]  mt-1">Help Centre<button>
+        </form>
+
+        <form method="GET" action="/AirCover">
+            <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">AirCover</button>
+        </form>
+
+        <form method="GET" action="/Anti-discrimination">
+        <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Anti-discrimination</button>
+        </form>
+
+        <form method="GET" action="/Disability-support">
+            <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Disability support</button>
+        </form>
+
+        <form method="GET" action="/Cancellation-options">
+            <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Cancellation options</button>
+        </form>
+
+        <form method="GET" action="/Report-neighbourhood-concern">
+            <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Report neighbourhood concern</button>
+        </form>
+    </div>
+
+    <div class="ml-[10rem]  max-[1190px]:ml-[2rem] max-[900px]:-ml-[3rem] max-[830px]:-ml-[5rem]">
+        <p class="ml-[6rem] mt-4 font-semibold">Hosting</p>
+        <form method="GET" action="/Airbnb-your-home">
+            <button class="ml-[6rem] font-light hover:border-b-black border-b-[0.3px] mt-1">Airhost your home</button>
+        </form>
+
+        <form method="GET" action="/AirCover-for-Hosts">
+            <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">AirCover for Hosts</button>
+        </form>
+
+        <form method="GET" action="/Hosting-resources">
+            <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Hosting resources</button>
+        </form>
+
+        <form >
+        <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Community forum</button>
+        </form
+
+        <form method="GET" action="/Hosting-responsibly">
+        <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Hosting responsibly</button>
+        </form>
+    </div>
+
+    <div class="ml-[12rem] max-[1190px]:ml-[3rem]  max-[830px]:-ml-[25px]">
+        <p class="ml-[6rem] mt-4 font-semibold">Airbnb</p>
+        <form method="GET" action="/Newsroom">
+        <button class="ml-[6rem] font-light hover:border-b-black border-b-[0.3px] w-20 mt-1">Newsroom</button>
+        </form>
+
+        <form method="GET" action="/New-features">
+            <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px] w-28 mt-2">New features</button>
+        </form>
+
+        <form method="GET" action="/Careers">
+            <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px] w-20  mt-2">Careers</button>
+        </form>
+
+        <form method="GET" action="/Investors">
+            <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px] w-20  mt-2">Investors</button>
+        </form>
+
+        <form method="GET" action="/Airbnb.org-emergency-stays">
+            <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Airhost.org emergency stays</button>
+        </form>
+    </div>
+</div> 
+
+ <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
+<p class="mt-7 border-[0.1px] border-gray-300" ></p>
+<div class = "f-info flex h-[8rem] flex-wrap justify-center text-center align-center ">
+    <div class ="f-info-socials w-[100%] text-xl flex items-center justify-center">
+        <form method="get" action="https:www.facebook.com/AirbnbIndia">
+            <button class="fa-brands fa-square-facebook mr-2"></button>
+        </form>
+        <form method="get"  action="https:www.instagram.com/airbnb/">
+            <button class="fa-brands fa-square-instagram mr-2"></button>
+        </form>
+        <form method="get" action="https:twitter.com/i/flow/login?redirect_after_login=%2Fairbnb_in" >
+            <button class="fa-brands fa-square-twitter"></button>
+        </form>
+        <form method="get" action="https:www.linkedin.com/company/airbnb/" >
+            <button class="fa-brands fa-linkedin ml-[8px]"></button>
+        </form>
+    </div>
+    <div class="f-info-brand  w-[100%] justify-center  align-middle flex items-center ">&copy; Wanderlust Private Limited</div>
+    <div class ="f-info-links hover:underline w-[100%] align-middle flex items-center justify-center">
+        <a href="/privacy">Privacy</a>
+        <a href="/terms">Terms</a>
+    </div>
+</div> 
+
+</footer> 
+
+
+
+<script>
+function openCity(evt, cityName) {
+var i, tabcontent, tablinks;
+tabcontent = document.getElementsByClassName("tabcontent");
+for (i = 0; i < tabcontent.length; i++) {
+tabcontent[i].style.display = "none";
+}
+tablinks = document.getElementsByClassName("tablinks");
+for (i = 0; i < tablinks.length; i++) {
+tablinks[i].className = tablinks[i].className.replace(" active", "");
+}
+document.getElementById(cityName).style.display = "block";
+evt.currentTarget.className += " active";
+}
+document.getElementById("defaultOpen").click();
+</script> 
+
+
+<script >
+        let div1 = document.getElementById("search");
+        let display1 = 0;
+        function hideShow1() {
+          if(display1 == 1) {
+            div1.style.display = 'block';
+            display1 = 0;
+          }
+          else {
+            div1.style.display = 'none';
+            display1 = 1;
+          }
+        }
+</script>
+
+
+</body>
+</html>

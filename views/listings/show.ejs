@@ -1,0 +1,161 @@
+
+<% layout("/layouts/boilerplate.ejs") %>
+<script>
+  const listing = <%-JSON.stringify(listing) %>;
+</script>
+
+<div class="row  ml-6  rounded-3xl">
+    <div class="text-3xl mt-4 ml-[15rem] max-lg:ml-[0rem] max-xl:ml-[6rem] mb-4 ">
+      <h3> <%= listing.title %> </h3>
+    </div>
+
+      <div class ="card  ">
+          <img src= "<%= listing.image.url%>" class="card-img-top mx-auto h-[70vh] w-[130vh] mr-[3rem] rounded-3xl hover:opacity-90 hover:border-black border-[1px] " alt="listing_image">
+
+            <div class="card-body">
+                <div class=" card-text ml-[15rem] max-lg:ml-[0rem] max-xl:ml-[6rem] ">
+                  <p class="text-xl mt-2"><b>Owned by:  </b><%= listing.owner.username%></p>
+                    <p class="text-xl mt-2"><b>Description :  </b><%= listing.description %></p>
+                    <p class="text-xl mt-2"><b>Price :</b>&#8377; <%= listing.price.toLocaleString("en-IN") %> /night </p>
+                    <p class="text-xl mt-2"><b>Location : </b><%= listing.location %></p>
+                     <p class="text-xl mt-2"><b>Country : </b><%= listing.country%></p>
+                </div>
+            </div>
+      </div>
+<% if(currUser && currUser._id.equals(listing.owner._id)) { %>
+  <div class="  flex ml-[15rem] max-lg:ml-[0rem] max-xl:ml-[6rem] mt-7 mb-6">
+       <a class="border border-black bg-black  p-2 w-[7rem] rounded-2xl text-center hover:bg-stone-500 text-white" href="/listings/<%= listing._id %>/edit">EDIT</a>
+       <form method ="POST" action="/listings/<%=listing._id %>?_method=DELETE">
+        <button class="border border-black bg-black text-white p-2 w-[7rem] rounded-2xl text-center ml-7 hover:bg-stone-500"> Delete</button>
+        </form>
+  </div>
+<% } %>
+
+   <div class="ml-[15rem] mt-2 max-lg:ml-[0rem] max-xl:ml-[6rem] " >
+    <hr>
+     <% if(currUser)  {  %>  
+    <h4 class="mt-4 mb-1 text-lg ">Leave a Review :</h4>
+
+    <form action= "/listings/<%= listing.id %>/reviews" method="POST">
+    
+<fieldset class="starability-slot">
+  <legend> Rating:</legend>
+  <input type="radio" id="no-rate" class="input-no-rate" name="review[rating]" value="1" checked aria-label="No rating." />
+  <input type="radio" id="first-rate1" name="review[rating]" value="1" />
+  <label for="first-rate1" title="Terrible">1 star</label>
+  <input type="radio" id="first-rate2" name="review[rating]" value="2" />
+  <label for="first-rate2" title="Not good">2 stars</label>
+  <input type="radio" id="first-rate3" name="review[rating]" value="3" />
+  <label for="first-rate3" title="Average">3 stars</label>
+  <input type="radio" id="first-rate4" name="review[rating]" value="4" />
+  <label for="first-rate4" title="Very good">4 stars</label>
+  <input type="radio" id="first-rate5" name="review[rating]" value="5" />
+  <label for="first-rate5" title="Amazing">5 stars</label>
+</fieldset>
+
+
+      <div>
+            <label for="comment">Comments</label><br>
+            <textarea class="border-[1px] mt-1 pb-3 invalid:border-red-700 outline-none peer border-neutral-500  w-[50rem] text-black opacity-50 rounded-lg hover:opacity-100  h-20 max-[825px]:w-[575px] max-[825px]:h-[6rem] max-[600px]:w-[350px] max-[600px]:h-[7rem]  valid:border-green-600" required name ="review[comment]" id ="comment"></textarea>
+            <i class="fa-regular fa-circle-check   text-green-700 invisible peer-valid:visible absolute mt-[2rem] text-xl ml-[2px]"></i>
+           <i class="fa-regular fa-circle-xmark invisible peer-invalid:visible text-red-500 absolute mt-[2rem] text-2xl -ml-[25px] max-[1024px]:-mt-[4rem] max-[824px]:mt-[2rem] "></i>
+          <div class="invisible peer-invalid:visible text-red-700 font-light inline-block absolute -ml-[22rem]   max-[600px]:mt-[7rem] ">
+              Please add some comment for review*
+          </div>
+      </div>
+
+      </div>
+      <button class="border  border-black p-1 w-[6rem] rounded-2xl text-center ml-[15rem]  hover:text-white hover:bg-neutral-800 text-lg mt-[1rem] max-[1200px]:ml-[5rem] max-[1025px]:ml-[0px] mb-[2rem]">submit</button>
+    </form>
+        <%  } %>
+    </div> 
+    <p class="border-[0.7px] w-[63rem] ml-[16rem] max-[1200px]:ml-[7rem] max-[1200px]:w-[56rem] max-[1020px]:ml-[1rem] max-[1020px]:w-[47rem] max-[780px]:w-[38rem]"></p>
+
+   <% if(listing.reviews.length > 0){ %>
+ <div class="row">
+     <p class="text-lg font-bold ml-[15rem] mt-5 ">All Reviews</p>
+        <% for(review of listing.reviews) { %>
+          <div class="card ml-[16rem] mt-4   inline-block w-[22rem] pl-2 pb-2  border-[1px] rounded-2xl max-xl:ml-[6rem] max-lg:ml-[0rem] max-[770px]:w-[18rem]">
+              <div class="card-body">
+                    <p class="card-title text-xl mt-1">@<%= review.author.username %></p> 
+                 <div class="starability-result ml-2 mt-3 mb-2" data-rating="<%= review.rating %>"></div>
+                       <p class="card-text mt-1"><%= review.comment %></p>
+                       <form method="POST" action= "/listings/<%= listing._id %>/reviews/<%= review._id %>?_method= DELETE">
+                       <button class =" border-black border-[1px] m-1 p-1 rounded-xl dark:bg-black text-white hover:bg-gray-700 mt-9">Delete</button>
+                      </form>
+                 </div>
+              </div>
+             <%} %>
+            </div>
+         <% } %>
+  </div>  
+
+
+  <div class="ml-72 text-xl mx-auto max-lg:ml-[0rem] max-xl:ml-[0rem] ">
+    <h1 class="mt-4 font-semibold">Where you'll be :</h1>
+    <div id="map" class="h-[500px] m-[30px] w-[130vh] rounded-xl border-black border-[1px] max-[1066px]:w-[110vh] max-[900px]:w-[80vh] "></div>
+  </div>
+</div>
+
+
+  <h1 class="ml-[70rem] font-semibold text-3xl mt-[6rem] max-[1190px]:hidden">you can select Date & time from here for stay in Airhost</h1>
+<form action=method="post">
+  <input type = "datetime-local" name=" " value=""  class="h-7 ml-[70rem]  max-[1190px]:hidden">
+</form> 
+
+<h1 class="ml-[70rem] font-semibold text-3xl mt-[9rem] max-[1190px]:hidden">you can select num of weeks from here for stay in Airhost</h1>
+<form action=method="post">
+  <input type = "week" name=" " value=""   class="h-7 ml-[70rem] max-[1190px]:hidden ">
+</form> 
+
+<div class="mx-auto text-center mb-5 border-[1px]   h-[70vh]   w-[130vh] pr-[24rem] -mt-[24rem]  ml-[3rem]  pt-7 pb-[8rem] bg-white rounded-3xl max-[1190px]:mt-[8rem]  max-[1088px]:w-[100vh]  max-[846px]:h-[50vh] max-[846px]:border-none">
+  <h1 class="text-[2.75rem] mx-auto text-center "><b>Introducing<br>
+    Guest Favourites</b></h1>
+    <p class="mx-auto text-center mt-4 text-xl">When you see a Guest Favourite, you’ll know <br>it’s one of the 2 million most loved homes<br> on Airhost.</p>
+    <form method="GET" action="/listings" >
+    <button type="submit" class="text-white mt-7 mx-auto text-center w-[12rem] h-[3rem] bg-black  hover:bg-neutral-700  font-medium rounded-lg text-sm px-4 py-2 hover:border-2 border-black ">Start exploring</button> </form>
+    <img src="https://a0.muscache.com/im/pictures/mediaverse/N8AnnouncementCurtainBackgroundLocalizedLarge/original/d991c3d1-aa3e-4d0a-a65a-e09c87ff0a51.jpeg?im_w=2560" class="w-[475px] ml-[30rem] -mt-[21rem] h-[525px] rounded-3xl max-[1088px]:w-[367px] max-[1088px]:ml-[25rem] max-[846px]:h-[50vh] max-[846px]:w-[300px] max-[846px]:ml-[20rem]">
+</div>
+</div>
+ 
+
+<script>
+  let mapToken = "<%= process.env.MAP_TOKEN %>";
+  console.log(mapToken);
+  mapboxgl.accessToken = mapToken;
+const map = new mapboxgl.Map({
+container: 'map',
+style: 'mapbox://styles/mapbox/satellite-streets-v12',
+center: [77.19072000,28.65136000], 
+zoom: 9
+});
+</script>
+
+
+<script>
+const marker = new mapboxgl.Marker({ color: 'red'})
+.setLngLat(listing.geometry.coordinates) 
+.setPopup(new mapboxgl.Popup({offset:25})
+.setHTML(`<h1>${listing.title}</h1><p>Exact Location well be provided after booking!</p`))
+.addTo(map);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+
+  
+
+  

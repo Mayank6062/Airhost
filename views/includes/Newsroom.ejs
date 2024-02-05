@@ -1,0 +1,1777 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airhost | Holiday rentals,cabins,beach house & more</title>
+    <link rel=" icon" type="image/png" href="public/ffb9bc06766fd2534983c893e5758306.png" />
+    <link href="public/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="/rating.css" rel="stylesheet" />
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.js"></script>
+    
+</head> 
+<body>
+  <div class="flex w-full flex-wrap items-center justify-between mt-1 ">
+    <div class="ml-16  flex ">
+         <a class="text-4xl text-red-500" href="/Newsroom"><i class="fa-brands fa-airbnb"></i></a>
+      <div class=" mr-auto flex flex-col pl-0  lg:flex-row w-[100%] " data-te-navbar-nav-ref>
+          <a class="ml-1 mt-2 font-semibold text-black text-xl" href="/Newsroom" data-te-nav-link-ref><pre class="font-serif">News</pre></a>
+
+          <form >   
+            <div class="relative ml-[20rem] ">
+               <input type="text" onclick="hideShow1()"  class="block text-black  border-[0.1px] relative hover:border-[2px] border-black rounded-full h-[2.5rem] w-[20rem]" placeholder="Search how-tos and more">
+               <button onclick="hideShow1()" class="fa-solid fa-magnifying-glass absolute border-[0.1px] hover:border-[2px] text-[#f9f9f9] bg-red-600  border-black rounded-full bottom-1.5 ml-[280px] pb-[25px] top-[2px] p-[9px]" ></button>
+            </div>
+
+<div id="search" class="border-[0.2px] hidden absolute border-black rounded-2xl bg-[#f7f7f7] shadow-2xl w-[38rem] h-[19rem] ml-[20rem] pt-[1rem] pl-[4rem]">
+  <div onclick="hideShow1()" class="absolute top-3 right-3 w-max  hover:bg-white" >
+    <div role="button" class="w-max pl-1 pr-1">
+       <i class="fa-solid fa-circle-xmark text-xl"></i>
+    </div>
+</div> 
+  <div class="flex mt-[20px]">
+    <i class="fa-solid fa-newspaper border-[0.1px] border-black rounded-xl p-[12px] bg-gray-200"></i> <a href="/artical1" class="mt-[8px] ml-[1rem] text-lg">Cancelling your reservation for a stay</a>
+  </div>
+  <div class="flex mt-[20px]">
+    <i class="fa-solid fa-newspaper border-[0.1px] border-black rounded-xl p-[12px] bg-gray-200"></i> <a href="/artical2" class="mt-[8px] ml-[1rem] text-lg">Change the date or time of your Experience reservation</a>
+  </div>
+  <div class="flex mt-[20px]">
+    <i class="fa-solid fa-newspaper border-[0.1px] border-black rounded-xl p-[12px] bg-gray-200"></i>  <a href="/artical3" class="mt-[8px] ml-[1rem] text-lg">If your Host cancels your reservation</a>
+  </div>
+  </div>
+  
+  
+         </form>
+            
+        <div class=" mr-auto flex flex-col pl-0  lg:flex-row w-[100%] justify-end  ml-[25rem]" data-te-navbar-nav-ref>
+            <div class=" flex rounded-3xl pr-3  justify-end font-semibold ">
+                  <a class=" mt-2" href="/listings" data-te-nav-link-ref>About us</a>
+            </div>
+              <div class="border-[0.3px] border-black  flex rounded-3xl mt-1 pr-2 pl-2 h-[2rem]  justify-end">
+          
+                <div data-te-nav-item-ref>
+                  <a class=" text-black" aria-current="page" href="/signup" data-te-nav-link-ref><b>Sign up</b></a>
+                  <var class="border-[0.9px] ml-1 mr-1 h-[4rem] border-black"> </var>
+                </div>
+                <div  data-te-nav-item-ref>
+                  <a class=" " href="/login" data-te-nav-link-ref><b>Log in</b></a>
+                </div>
+             
+              </div>
+        </div> 
+      </div> 
+    </div>
+  </div>
+  <p class="border-[0.1px] mt-5 border-black"> </p>
+ 
+<div class="flex ml-[2rem]">
+  <div class="mt-[16rem]">
+    <p class="opacity-65">January 17, 2024</p>
+    <p class="mt-[1rem] text-5xl font-semibold hover:border-b-2 hover:border-b-black w-fit">Introducing the Airbnb </p>
+    <p class="text-5xl font-semibold hover:border-b-2 hover:border-b-black w-fit"> Housing Council</p>
+    <button class="border-[0.2px] rounded-xl p-[15px] border-black hover:border-[2px] hover:border-white  bg-red-500 mt-[3rem]">Read more</button>
+  </div>
+  <div>
+    <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2024/01/US_10787413_ChristinaHudson_2002_NEW_1600px.jpg?zoom=3&resize=1100%2C725" class="ml-[6rem] rounded-2xl mt-[5rem] w-[50rem]">
+  </div>
+</div>
+
+
+<p class="mt-[5rem] ml-[8rem] text-4xl font-semibold">Latest News</p>
+
+<div class="flex ml-[8rem] mt-[3rem]">
+  <div class="">
+    <div class="flex">
+      <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/10/4.-Snow-Igloo-Pelkosenniemi-Finland.jpeg?resize=1024%2C686" class="rounded-2xl w-[18rem]">
+      <p class=" ml-[1rem] mt-[2rem] hover:font-semibold text-xl cursor-pointer">Hit the slopes this winter: <br> 10 of the most wishlisted <br> ski-in/out stays</p>
+    </div>
+    <p class="opacity-65 inset-10">January 17, 2024</p>
+  </div>
+
+  <div class="ml-[9rem]"> 
+    <div class="flex">
+      <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2024/01/02_Airbnb_BlueMonday_Italy.jpg?resize=1024%2C686" class="rounded-2xl w-[18rem]">
+      <p class="ml-[1rem] mt-[2rem] hover:font-semibold text-xl cursor-pointer">Travelers escape the winter <br> blues with trip planning</p>
+    </div>
+    <p class="opacity-65 ">January 17, 2024</p>
+  </div>
+</div>
+
+
+<div class="flex ml-[8rem] mt-[3rem]">
+  <div class="">
+    <div class="flex">
+      <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/04/Metropolis-Sentral-Star-Metals-Patio-Firepit.jpg?resize=1024%2C686" class="rounded-2xl w-[18rem]">
+      <p class=" ml-[1rem] mt-[2rem] hover:font-semibold text-xl cursor-pointer">Hit the slopes this winter: <br> 10 of the most wishlisted <br> ski-in/out stays</p>
+    </div>
+    <p class="opacity-65 inset-10">December 17, 2024</p>
+  </div>
+
+  <div class="ml-[9rem]"> 
+    <div class="flex">
+      <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/06/Newsroom_TrustSafety_006.jpg?resize=1024%2C686" class="rounded-2xl w-[18rem]">
+      <p class="ml-[1rem] mt-[2rem] hover:font-semibold text-xl cursor-pointer">Travelers escape the winter <br> blues with trip planning</p>
+    </div>
+    <p class="opacity-65 ">December 17, 2024</p>
+  </div>
+</div>
+
+
+<p class="mt-[8rem] text-5xl ml-[5rem] font-semibold">One-of-a-kind stays, only on Airbnb</p>
+<p class="ml-[8rem] mt-[1rem] font-light text-xl">Explore  the unique, limited-time stays that give guests a rare <br> glimpse into some of the most iconic places in pop culture.</p>
+
+
+
+<div class="overflow-x-scroll w-[90%]  p-[10px] ml-[5rem] mt-[3rem] ">
+  <div class="flex ">
+    <div class="relative">
+      <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/11/01-Santas-Post-Office-Airbnb-Exterior-Credit-Samir-Zarrouck.jpg?resize=950%2C633&zoom=2" alt="Cinque Terre" class="w-[25rem] h-[25rem] rounded-t-2xl">
+      <div class="border-[0.1px] rounded-b-2xl border-black w-[25rem] h-[10rem]">
+        <p class=" mt-[1rem] ml-[1rem] text-lg">Eles wanted: Spend the holiday at Santa's Official
+          Post Office, now on Airbnb</p>
+        <p  class="mt-[12px] ml-[1rem] text-lg opacity-60">December 3, 2023</p>
+      </div>
+    </div>
+
+    <div class="relative ml-[2rem]">
+      <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/09/01-Shrek-Airbnb-Exterior-Credit-Alix-McIntosh-1.jpg?resize=950%2C633&zoom=2" alt="Cinque Terre" class="w-[25rem] h-[25rem] rounded-t-2xl">
+      <div class="border-[0.1px] rounded-b-2xl border-black w-[25rem] h-[10rem]">
+        <p class=" mt-[1rem] ml-[1rem] text-lg">Eles wanted: Spend the holiday at Santa's Official
+          Post Office, now on Airbnb</p>
+        <p  class="mt-[12px] ml-[1rem] text-lg opacity-60">December 3, 2023</p>
+      </div>
+    </div>
+
+    <div class="relative ml-[2rem]">
+      <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/09/02-House-of-Sunny-Airbnb-Wardrobe-Credit-Alix-McIntosh.jpg?resize=950%2C633&zoom=2" alt="Cinque Terre" class="w-[25rem] h-[25rem] rounded-t-2xl">
+      <div class="border-[0.1px] rounded-b-2xl border-black w-[25rem] h-[10rem]">
+        <p class=" mt-[1rem] ml-[1rem] text-lg">Spend the night in Shrek’s Swamp, now on Airbnb </p>
+        <p  class="mt-[12px] ml-[1rem] text-lg opacity-60">September 26, 2023</p>
+      </div>
+    </div>
+
+    <div class="relative ml-[2rem]">
+      <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/06/01-Kens-DreamHouse-Airbnb-Exterior-Credit-Hogwash-Studios-2.jpg?resize=950%2C633&zoom=2" alt="Cinque Terre" class="w-[25rem] h-[25rem] rounded-t-2xl">
+      <div class="border-[0.1px] rounded-b-2xl border-black w-[25rem] h-[10rem]">
+        <p class=" mt-[1rem] ml-[1rem] text-lg">Spend the night in House of Sunny’s latest collection, now on Airbnb </p>
+
+        <p  class="mt-[12px] ml-[1rem] text-lg opacity-60"> September 12, 2023</p>
+      </div>
+    </div>
+
+    <div class="relative ml-[2rem]">
+      <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/06/DJI_20230524063911_0068_D_Gassho_Village-Aerial_Credit-Satoshi-Nagare_4200x2800px.jpg?resize=950%2C633&zoom=2" alt="Cinque Terre" class="w-[25rem] h-[25rem] rounded-t-2xl">
+      <div class="border-[0.1px] rounded-b-2xl border-black w-[25rem] h-[10rem]">
+        <p class=" mt-[1rem] ml-[1rem] text-lg">Barbie’s Malibu DreamHouse is back on Airbnb – but this time, Ken’s hosting </p>
+        <p  class="mt-[12px] ml-[1rem] text-lg opacity-60">June 26, 2023</p>
+      </div>
+    </div>
+
+    <div class="relative ml-[2rem]">
+      <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/05/01-DDP-Airbnb-Enhypen-Credit-Chun-Youngsang.jpg?resize=950%2C633&zoom=2" alt="Cinque Terre" class="w-[25rem] h-[25rem] rounded-t-2xl">
+      <div class="border-[0.1px] rounded-b-2xl border-black w-[25rem] h-[10rem]">
+        <p class=" mt-[1rem] ml-[1rem] text-lg">Rediscover Japan in World Heritage Site Gokayama, now on Airbnb </p>
+        <p  class="mt-[12px] ml-[1rem] text-lg opacity-60">June 20, 2023</p>
+      </div>
+    </div>
+
+    <div class="relative ml-[2rem]">
+      <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/03/01-Ted-Lasso-Airbnb-Exterior-Credit-Henry-Woide-1-1.jpg?resize=950%2C633&zoom=2" alt="Cinque Terre" class="w-[25rem] h-[25rem] rounded-t-2xl">
+      <div class="border-[0.1px] rounded-b-2xl border-black w-[25rem] h-[10rem]">
+        <p class=" mt-[1rem] ml-[1rem] text-lg">Preview Seoul Fashion Week with K-Pop’s ENHYPEN at Dongdaemun Design Plaza now on Airbnb </p>
+        <p  class="mt-[12px] ml-[1rem] text-lg opacity-60">May 16, 2023 </p>
+    </div>
+  </div>
+
+  <div class="relative ml-[2rem]">
+    <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/02/01-Opera-Airbnb-Theater-Credit-Blue-Max-Media-1-1.jpg?resize=950%2C633&zoom=2" alt="Cinque Terre" class="w-[25rem] h-[25rem] rounded-t-2xl">
+    <div class="border-[0.1px] rounded-b-2xl border-black w-[25rem] h-[10rem]">
+      <p class=" mt-[1rem] ml-[1rem] text-lg">Palais Garnier, home of The Phantom of the Opera, is now on Airbnb </p>
+      <p  class="mt-[12px] ml-[1rem] text-lg opacity-60"> February 12, 2023 </p>
+  </div>
+</div>
+
+<div class="relative ml-[2rem]">
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/01/01-Houseplant-Airbnb-Seth-Rogen-Portrait-Credit-Yuri-Hasegawa-and-Hogwash-Studios.jpg?resize=950%2C633&zoom=2" alt="Cinque Terre" class="w-[25rem] h-[25rem] rounded-t-2xl">
+  <div class="border-[0.1px] rounded-b-2xl border-black w-[25rem] h-[10rem]">
+    <p class=" mt-[1rem] ml-[1rem] text-lg">Get glazed with Seth Rogen at his creative retreat, now on Airbnb</p>
+    <p  class="mt-[12px] ml-[1rem] text-lg opacity-60">january 31, 2023  </p>
+</div>
+</div>
+
+
+<div class="relative ml-[2rem]">
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2022/12/01-Hobbiton-Airbnb-The-Shire-Credit-Larnie-Nicolson.jpg?resize=950%2C633&zoom=2" alt="Cinque Terre" class="w-[25rem] h-[25rem] rounded-t-2xl">
+  <div class="border-[0.1px] rounded-b-2xl border-black w-[25rem] h-[10rem]">
+    <p class=" mt-[1rem] ml-[1rem] text-lg">The one-and-only Hobbiton from The Lord of the Rings is now on Airbnb</p>
+    <p  class="mt-[12px] ml-[1rem] text-lg opacity-60">December 6, 2022 </p>
+</div>
+</div>
+
+    
+  </div>
+</div>
+
+
+<div class="flex mt-[5rem] ml-[5rem]">
+  <div> 
+    <p class="text-2xl mt-[4rem] ">Follow Airbnb for <br> news and travel <br>inspiration</p>
+    <div class="flex mt-[1rem]">
+      <a href="https://twitter.com/airbnb"><i class="fa-solid fa-xmark text-2xl "></i></a>
+      <a href="https://www.instagram.com/airbnb/"><i class="fa-solid fa-camera-retro ml-[1rem] text-2xl"></i></a>
+      <a href="https://www.linkedin.com/company/airbnb/"><i class="fa-brands fa-linkedin-in ml-[1rem] text-2xl"></i></a>
+    </div>
+   
+  </div>
+  <div class="ml-[5rem]">
+    <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/05/Rudi-Road-Trip_D4_ListingID-11463775_0907.jpg?w=600" class="rounded-xl w-[20rem]">
+  </div>
+  <div>
+    <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/05/210521_JChou_BChesky_JCP4282_FNL.jpg?w=600" class="rounded-xl w-[20rem] ml-[2rem]">
+  </div>
+  <div>
+    <p class="text-2xl mt-[4rem] ml-[4rem]">Hear more from <br>Co‑founder and CEO <br> Brian Chesky</p>
+    <button class="ml-[4rem] border-[0.2px] mt-[1rem] border-black p-[12px] rounded-xl">Learn more </button>
+  </div>
+</div>
+
+
+<p class="mt-[8rem] text-5xl ml-[5rem] font-semibold">The economic opportunities of hosting</p>
+<p class="ml-[5rem] mt-[1rem] font-light text-2xl">From community stories, to the latest Host earnings data and trends, <br> discover how it has never been easier to host and earn on Airhost.</p>
+
+
+
+
+<div class="overflow-x-scroll w-[90%]  p-[10px] ml-[5rem] mt-[3rem] ">
+  <div class="flex ">
+    <div class="relative">
+      <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/11/Newsroom-Image-Concert-post-GETTY-11.3.23.jpg?resize=950%2C633&zoom=2" alt="Cinque Terre" class="w-[25rem] h-[25rem] rounded-t-2xl">
+      <div class="border-[0.1px] rounded-b-2xl border-black w-[25rem] h-[10rem]">
+        <p class=" mt-[1rem] ml-[1rem] text-lg">The $100 million 'shero' summer effect
+        </p>
+        <p  class="mt-[12px] ml-[1rem] text-lg opacity-60">November 3, 2023</p>
+      </div>
+    </div>
+
+    <div class="relative ml-[2rem]">
+      <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/10/ACL_MWL_No4-1.jpeg?resize=950%2C633&zoom=2" alt="Cinque Terre" class="w-[25rem] h-[25rem] rounded-t-2xl">
+      <div class="border-[0.1px] rounded-b-2xl border-black w-[25rem] h-[10rem]">
+        <p class=" mt-[1rem] ml-[1rem] text-lg">Hosts in the live music capital of the world are tuning up for ACL</p>
+        <p  class="mt-[12px] ml-[1rem] text-lg opacity-60">October 2, 2023</p>
+      </div>
+    </div>
+
+    <div class="relative ml-[2rem]">
+      <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/09/Geoff-and-Mark-Newfoundland-and-Labrador.jpeg?resize=950%2C633&zoom=2" alt="Cinque Terre" class="w-[25rem] h-[25rem] rounded-t-2xl">
+      <div class="border-[0.1px] rounded-b-2xl border-black w-[25rem] h-[10rem]">
+        <p class=" mt-[1rem] ml-[1rem] text-lg">Airbnb’s most hospitable Hosts across Canada </p>
+        <p  class="mt-[12px] ml-[1rem] text-lg opacity-60">September 12, 2023</p>
+      </div>
+    </div>
+
+    <div class="relative ml-[2rem]">
+      <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/06/758cc5e9-bfdc-49c2-b281-996255e2f29d.jpeg?resize=950%2C633&zoom=2" alt="Cinque Terre" class="w-[25rem] h-[25rem] rounded-t-2xl">
+      <div class="border-[0.1px] rounded-b-2xl border-black w-[25rem] h-[10rem]">
+        <p class=" mt-[1rem] ml-[1rem] text-lg">Chicago and Denver rank as top cities to start hosting in the US </p>
+
+        <p  class="mt-[12px] ml-[1rem] text-lg opacity-60"> June 21, 2023 </p>
+      </div>
+    </div>
+
+    <div class="relative ml-[2rem]">
+      <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2019/04/396428-GettyImages-559106599-ForYou.jpg?resize=950%2C633&zoom=2" alt="Cinque Terre" class="w-[25rem] h-[25rem] rounded-t-2xl">
+      <div class="border-[0.1px] rounded-b-2xl border-black w-[25rem] h-[10rem]">
+        <p class=" mt-[1rem] ml-[1rem] text-lg">US educators are earning extra income by hosting on Airhost </p>
+        <p  class="mt-[12px] ml-[1rem] text-lg opacity-60">May 31, 2023</p>
+      </div>
+    </div>
+
+    <div class="relative ml-[2rem]">
+      <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2022/12/Discover-Feed_Gent_Landrieu_141017_0022_RET.jpg?resize=950%2C633&zoom=2" alt="Cinque Terre" class="w-[25rem] h-[25rem] rounded-t-2xl">
+      <div class="border-[0.1px] rounded-b-2xl border-black w-[25rem] h-[10rem]">
+        <p class=" mt-[1rem] ml-[1rem] text-lg">More EU Hosts rely on Airbnb income, popularity of rooms grows
+        </p>
+        <p  class="mt-[12px] ml-[1rem] text-lg opacity-60">May 3, 2023</p>
+      </div>
+    </div>
+
+    <div class="relative ml-[2rem]">
+      <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/05/Louisville-stay.jpeg?resize=950%2C633&zoom=2" alt="Cinque Terre" class="w-[25rem] h-[25rem] rounded-t-2xl">
+      <div class="border-[0.1px] rounded-b-2xl border-black w-[25rem] h-[10rem]">
+        <p class=" mt-[1rem] ml-[1rem] text-lg">Louisville leads as top trending summer spot before Kentucky Derby weekend </p>
+        <p  class="mt-[12px] ml-[1rem] text-lg opacity-60">May 3, 2023</p>
+    </div>
+  </div>
+
+  <div class="relative ml-[2rem]">
+    <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/04/51029753_0227.jpg?resize=950%2C633&zoom=2" alt="Cinque Terre" class="w-[25rem] h-[25rem] rounded-t-2xl">
+    <div class="border-[0.1px] rounded-b-2xl border-black w-[25rem] h-[10rem]">
+      <p class=" mt-[1rem] ml-[1rem] text-lg">Helping Hosts in Massachusetts make their homes more energy efficient </p>
+      <p  class="mt-[12px] ml-[1rem] text-lg opacity-60"> April 20, 2023</p>
+  </div>
+</div>
+
+<div class="relative ml-[2rem]">
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/04/1_-_stock-photo-miami-brickell-by-nestorphotography-144491711_HR1.jpg?resize=950%2C633&zoom=2" alt="Cinque Terre" class="w-[25rem] h-[25rem] rounded-t-2xl">
+  <div class="border-[0.1px] rounded-b-2xl border-black w-[25rem] h-[10rem]">
+    <p class=" mt-[1rem] ml-[1rem] text-lg">Hosts generated over $2 billion in tax revenue in the US and Canada in 2022</p>
+    <p  class="mt-[12px] ml-[1rem] text-lg opacity-60"> April 12, 2023 </p>
+</div>
+</div>
+
+
+<div class="relative ml-[2rem]">
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/03/Waterfront-1.jpeg?resize=950%2C633&zoom=2" alt="Cinque Terre" class="w-[25rem] h-[25rem] rounded-t-2xl">
+  <div class="border-[0.1px] rounded-b-2xl border-black w-[25rem] h-[10rem]">
+    <p class=" mt-[1rem] ml-[1rem] text-lg">How four Hosts transformed their Historic Homes into iconic Airhost</p>
+    <p  class="mt-[12px] ml-[1rem] text-lg opacity-60">March 27, 2023  </p>
+</div>
+</div>
+
+    
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p class="mt-[8rem] text-5xl ml-[5rem] font-semibold">Categories</p>
+ 
+<div class="tab overflow-hidden hover:b-border-2 hover:border-black ml-[5rem] w-[70rem] mt-[3rem]">
+  <button class="tablinks bg-inherit ml-[1rem] border-b-[0.6px] hover:border-black hover:border-b-[2px] rounded-lg cursor-pointer p-[14px] active:bg-[#ccc]  transition:0.1s text-md " onclick="openCity(event, 'London')" id="defaultOpen">All</button>
+  <button class="tablinks bg-inherit ml-[1rem] border-b-[0.6px] hover:border-black hover:border-b-[2px] rounded-lg  cursor-pointer p-[14px] active:bg-[#ccc]   transition:0.1s text-md " onclick="openCity(event, 'Paris')">Company</button>
+  <button class="tablinks bg-inherit ml-[1rem] border-b-[0.6px] hover:border-black hover:border-b-[2px] rounded-lg  cursor-pointer p-[14px] active:bg-[#ccc]   transition:0.1s text-md " onclick="openCity(event, 'Tokyo')">Stays</button>
+  <button class="tablinks bg-inherit ml-[1rem] border-b-[0.6px] hover:border-black hover:border-b-[2px] rounded-lg  cursor-pointer p-[14px] active:bg-[#ccc]   transition:0.1s text-md " onclick="openCity(event, 'kyo')">Product</button>
+  <button class="tablinks bg-inherit ml-[1rem] border-b-[0.6px] hover:border-black hover:border-b-[2px] rounded-lg  cursor-pointer p-[14px] active:bg-[#ccc]   transition:0.1s text-md " onclick="openCity(event, 'Policy')">Policy</button>
+  <button class="tablinks bg-inherit ml-[1rem] border-b-[0.6px] hover:border-black hover:border-b-[2px] rounded-lg  cursor-pointer p-[14px] active:bg-[#ccc]   transition:0.1s text-md " onclick="openCity(event, 'Community')">Community</button>
+  <button class="tablinks bg-inherit ml-[1rem] border-b-[0.6px] hover:border-black hover:border-b-[2px] rounded-lg  cursor-pointer p-[14px] active:bg-[#ccc]   transition:0.1s text-md " onclick="openCity(event, 'Airbnb.org')">Airhost.org</button>
+</div>
+
+
+
+<!--11111111111111111-->
+<div id="London" class="tabcontent p-[18px] hidden row-auto  ml-[2rem] mt-[2rem] row  flex-wrap ">
+<div class ="card  ml-4  flex flex-wrap">
+
+
+<div class=" w-[19rem] ml-4" > 
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/04/Metropolis-Sentral-Star-Metals-Patio-Firepit.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px] ">
+  <p class="ml-[1rem] text-xl mt-[1rem]">Airhost-friendly apartments turns one</p>
+</div>
+<div  class=" w-[19rem] ml-4 ]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/06/Newsroom_TrustSafety_006.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Airhost using AI to help clamp down on New Year’s Eve parties globally</p>
+</div>
+<div  class=" w-[19rem] ml-4 ">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2020/03/BeloRauschNewsroomFeatured_200316.png?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">An update on withholding Host income taxes in Italy</p>
+</div>
+<div  class=" w-[19rem] ml-4">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/12/entrepreneurship.jpeg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Brian Chesky discusses power of entrepreneurship at HOPE Global Forum</p>
+</div>
+
+
+<div class=" w-[19rem] ml-4 mt-[2rem]" >
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2021/03/Discover-Feed_New-York-City_Ogden_121000_0001_RET_4K.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px] ">
+  <p class="ml-[1rem] text-xl mt-[1rem]">New survey finds strict short-term rental rules deter visitors to NYC</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/12/X-Linkedin-Post_DispelTheDarkness-Cropped-Newsroom-1.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Speaking out against hate</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/12/231017_Adana-Turkey_BG_002527.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Airhost.org shares its first impact report</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/12/Mountain-top-cabin-Bostic-North-Carolina.-Photo-courtest-of-the-Airbnb-Community.jpeg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Accessible travel tips for guests and Hosts to spread festive cheer to all</p>
+</div>
+
+
+<div class=" w-[19rem] ml-4 mt-[2rem]" >
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2021/09/20160720_Business_Jen_Portland_Elliott_1048.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px] ">
+  <p class="ml-[1rem] text-xl mt-[1rem]">Support for federal price display legislation</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2020/04/BeloRauschDarkNewsroomFeatured_200316.png?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Airhost executive team update</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2022/12/Airbnb.org-Lockup-Over-Gradient.jpg?resize=1024%2C686 class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Airhost.org welcomes Christoph Gorder as its new executive director</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/05/pridefeaturedimage69721.png?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Continuing our work to champion LGBTQ+ equality in the workplace</p>
+</div>
+
+
+<div class=" w-[19rem] ml-4 mt-[2rem]" >
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/11/c-World-Sport-Pics-Vicktor-Lockwood--e1701328689271.jpeg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px] ">
+  <p class="ml-[1rem] text-xl mt-[1rem]">Airbnb Athlete Travel Grant renewed for Paris 2024</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/11/Somerset_29527692_Max-Miechowski-216-1Newsroom-Cropped.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">New restaurant guide to support small businesses in Nashville</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2020/03/BeloRauschNewsroomFeatured_200316.png?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">How Hosts help small businesses and restaurants thrive</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/11/PJMPHOTO19Q101_SNYA72_0853-1.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Spend an unforgettable night at JUANES’ house in Colombia, now on Airbnb</p>
+</div>
+
+
+<div class=" w-[19rem] ml-4 mt-[2rem]" >
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/11/PJMPHOTO18Q436_SNYA72_0609.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px] ">
+  <p class="ml-[1rem] text-xl mt-[1rem]">Airhost’s 2024 travel predictions: Trips to Japan and solar eclipse sighting</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/11/Somerset_29527692_Max-Miechowski-216-1Newsroom-Cropped.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">An update on environmental sustainability at Airhost</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2020/03/BeloRauschNewsroomFeatured_200316.png?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Ron Klain to join Airhost as Chief Legal Officer</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/11/PJMPHOTO19Q101_SNYA72_0853-1.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">APEC and Airhost: Supporting economic opportunity through travel dispersal</p>
+</div>
+
+
+<div class=" w-[19rem] ml-4 mt-[2rem]" >
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/11/Screenshot-2023-11-16-at-10.36.34.png?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px] ">
+  <p class="ml-[1rem] text-xl mt-[1rem]">Improving energy efficiency of homes across Europe </p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/11/airbnb_Kristin_29NWS-3091.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Changing travel trends help Indigenous communities benefit from tourism</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2022/12/Discover-Feed_Gent_Landrieu_141017_0022_RET.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">A new chapter for short-term rental rules in Europe</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2020/04/BeloRauschDarkNewsroomFeatured_200316.png?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Airhost has acquired GamePlanner.AI</p>
+</div>
+
+
+<div class=" w-[19rem] ml-4 mt-[2rem]" >
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/10/Newsroom_Header-EN-US.jpeg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px] ">
+  <p class="ml-[1rem] text-xl mt-[1rem]">Airhost 2023 Winter Release: Introducing Guest Favorites, a collection of the 2 million most-loved homes on Airbnb</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/11/GF-Header.jpeg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Airhost introduces Guest Favorites</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/11/Airbnb_ShareholderLetter_NewsroomAsset_11.01-1.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Airhost Q3 2023 financial results</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/10/IGLTA_Airbnb_latinamerica.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Airhost and IGLTA reveal new travel trends among the LGBTQ+ community</p>
+</div>
+
+
+<div class=" w-[19rem] ml-4 mt-[2rem]" >
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2021/11/airbnb_keys1.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px] ">
+  <p class="ml-[1rem] text-xl mt-[1rem]">Airhost deploys AI to crack down on parties over Halloween</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/10/AdobeStock_207295738.jpeg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Airhost and European Historic Houses launch Sustainable Heritage Award</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2020/03/BeloRauschNewsroomFeatured_200316.png?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Startup supporting truckers receives Ron Conway Economic Empowerment Award</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/10/00d5f582-9b71-42cb-8a4f-a2b1cb1b3e79.jpeg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Cozy stays, beaches and Japan top our 2023 winter & holiday travel trends</p>
+</div>
+
+
+<div class=" w-[19rem] ml-4 mt-[2rem]" >
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/10/01-Turma-da-Monica-Airbnb-Exterior-Credit-Maira-Acayaba.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px] ">
+  <p class="ml-[1rem] text-xl mt-[1rem]">Monica celebrates her 60th birthday and brings her world to Airbnb</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/10/Screenshot-2023-10-10-at-2.31.58-PM.png?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Holiday hacks for the best seasonal stay yet</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/09/ColerAirship_1-1.jpeg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Northwest Arkansas recognized as a go-to destination for remote workers</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/09/Ukraine-Nate-newsroom-cropped.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Airhost and Ukraine sign joint memorandum of understanding to support post-war tourism</p>
+</div>
+
+
+<div class=" w-[19rem] ml-4 mt-[2rem]" >
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/09/House-in-Endless-Blue-70-sq.m.-Magganitis-Ikaria.jpeg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px] ">
+  <p class="ml-[1rem] text-xl mt-[1rem]">Living like a centenarian: Airbnb’s most wishlisted Blue Zone listings</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/09/Gent_Landrieu.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Welcoming progress on EU-wide short-term rental rules  </p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/09/GettyImages-1616333825-e1694548428488.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Over 1,000 people in Maui connected to temporary stays through Airhost.org</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/09/c23a4aed-ab6d-4b1c-834e-38064ba775be.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Cozy caves and tiny homes top the most wishlisted Design Category stays</p>
+</div>
+
+
+<div class=" w-[19rem] ml-4 mt-[2rem]" >
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/09/ETB4654-D.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px] ">
+  <p class="ml-[1rem] text-xl mt-[1rem]">James Manyika to join Airbnb’s Board of Directors</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/08/Airbnb_Back-to-School_Saint-Minver_UK_Hero.jpeg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Back to school: 10 converted schoolhouses and school buses on Airhost </p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/09/Llaes-Castle-Spain.jpeg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">‘Historical Homes’ category spreads love for heritage travel across Europe</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2019/01/Brussels.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Airhost kicks off local roadshow as progress continues on EU STR Proposal</p>
+</div>
+
+
+
+<div class=" w-[19rem] ml-4 mt-[2rem]" >
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2019/06/Checkin-1.png?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px] ">
+  <p class="ml-[1rem] text-xl mt-[1rem]">An update on our work to crack down on parties and disruptive behavior</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2021/04/MWL-Family-Friendly.jpeg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">How and where families are traveling on Airhost this summer </p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2022/05/of051322ck-1693_52071585168_o-3.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">The Obamas, Brian Chesky announce new Voyager Scholarship recipients</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/08/alice-olivia-x-Airbnb.org-collab-e1692247893978.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Airhost.org, alice + olivia and Lele Pons partner for World Humanitarian Day</p>
+</div>
+
+ </div>
+</div>
+
+
+<!--2222222222222-->
+
+<div  id="Paris"  class="tabcontent p-[18px] hidden row-auto  ml-[2rem] mt-[2rem] row  flex-wrap ">
+<div class ="card  ml-4  flex flex-wrap ">
+
+<div class=" w-[19rem] ml-4 ">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/04/Metropolis-Sentral-Star-Metals-Patio-Firepit.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[1rem] text-xl mt-[1rem]">Airhost-friendly apartments turns one</p>
+</div>
+<div  class=" w-[19rem] ml-4 ">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/06/Newsroom_TrustSafety_006.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Airhost using AI to help clamp down on New Year’s Eve parties globally</p>
+</div>
+<div  class=" w-[19rem] ml-4 ">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2020/03/BeloRauschNewsroomFeatured_200316.png?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">An update on withholding Host income taxes in Italy</p>
+</div>
+<div  class=" w-[19rem] ml-4 ">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/12/entrepreneurship.jpeg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Brian Chesky discusses power of entrepreneurship at HOPE Global Forum</p>
+</div>
+
+
+<div class=" w-[19rem] ml-4 mt-[2rem]">
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/12/X-Linkedin-Post_DispelTheDarkness-Cropped-Newsroom-1.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+  <p class="ml-[1rem] text-xl mt-[1rem]">Speaking out against hate</p>
+  </div>
+  <div  class=" w-[19rem] ml-4 mt-[2rem]">
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2020/04/BeloRauschDarkNewsroomFeatured_200316.png?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+  <p class="ml-[2rem] text-xl mt-[1rem]">Airhost executive team update</p>
+  </div>
+  <div  class=" w-[19rem] ml-4 mt-[2rem]">
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/05/pridefeaturedimage69721.png?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+  <p class="ml-[2rem] text-xl mt-[1rem]">Continuing our work to champion LGBTQ+ equality in the workplace</p>
+  </div>
+  <div  class=" w-[19rem] ml-4 mt-[2rem] ">
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/11/Somerset_29527692_Max-Miechowski-216-1Newsroom-Cropped.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+  <p class="ml-[2rem] text-xl mt-[1rem]">An update on environmental sustainability at Airhost</p>
+  </div>
+
+
+
+  <div class=" w-[19rem] ml-4 mt-[2rem]">
+    <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2020/03/BeloRauschNewsroomFeatured_200316.png?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+    <p class="ml-[1rem] text-xl mt-[1rem]">Ron Klain to join Airhost as Chief Legal Officer</p>
+    </div>
+    <div  class=" w-[19rem] ml-4 mt-[2rem]">
+    <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2020/04/BeloRauschDarkNewsroomFeatured_200316.png?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+    <p class="ml-[2rem] text-xl mt-[1rem]">Airbnb has acquired GamePlanner.AI</p>
+    </div>
+    <div  class=" w-[19rem] ml-4 mt-[2rem]">
+    <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/10/Newsroom_Header-EN-US.jpeg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+    <p class="ml-[2rem] text-xl mt-[1rem]">Airhost 2023 Winter Release: Introducing Guest Favorites, a collection of the 2 million most-loved homes on Airhost</p>
+    </div>
+    <div  class=" w-[19rem] ml-4 mt-[2rem] ">
+    <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/11/Airbnb_ShareholderLetter_NewsroomAsset_11.01-1.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+    <p class="ml-[2rem] text-xl mt-[1rem]">Airhost Q3 2023 financial results</p>
+    </div>
+
+
+
+<div class=" w-[19rem] ml-4 mt-[2rem]">
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2021/11/airbnb_keys1.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+  <p class="ml-[1rem] text-xl mt-[1rem]">Airhost deploys AI to crack down on parties over Halloween</p>
+  </div>
+  <div  class=" w-[19rem] ml-4 mt-[2rem]">
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2020/03/BeloRauschNewsroomFeatured_200316.png?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+  <p class="ml-[2rem] text-xl mt-[1rem]">Startup supporting truckers receives Ron Conway Economic Empowerment Award</p>
+  </div>
+  <div  class=" w-[19rem] ml-4 mt-[2rem]">
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/09/ETB4654-D.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+  <p class="ml-[2rem] text-xl mt-[1rem]">James Manyika to join Airbnb’s Board of Directors</p>
+  </div>
+  <div  class=" w-[19rem] ml-4 mt-[2rem] ">
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2019/06/Checkin-1.png?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+  <p class="ml-[2rem] text-xl mt-[1rem]">An update on our work to crack down on parties and disruptive behavior</p>
+  </div>
+
+
+
+<div class=" w-[19rem] ml-4 mt-[2rem]">
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2022/05/of051322ck-1693_52071585168_o-3.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+  <p class="ml-[1rem] text-xl mt-[1rem]">The Obamas, Brian Chesky announce new Voyager Scholarship recipients</p>
+  </div>
+  <div  class=" w-[19rem] ml-4 mt-[2rem]">
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2021/11/airbnb_keys1.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+  <p class="ml-[2rem] text-xl mt-[1rem]">Fostering responsible travel through our ground rules for guests</p>
+  </div>
+  <div  class=" w-[19rem] ml-4 mt-[2rem]">
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2020/03/BeloRauschExperiencesNewsroomFeatured_200316.png?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+  <p class="ml-[2rem] text-xl mt-[1rem]">Airhost Q2 2023 financial results</p>
+  </div>
+  <div  class=" w-[19rem] ml-4 mt-[2rem] ">
+  <img src="https://images.contentstack.io/v3/assets/bltec2ed8e3c4b1e16d/bltc5b5fba2bdc0a264/getting-paid-optimized.jpg" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+  <p class="ml-[2rem] text-xl mt-[1rem]">Getting paid</p>
+  </div>
+
+
+
+<div class=" w-[19rem] ml-4 mt-[2rem]">
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/06/Newsroom_TrustSafety_008.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+  <p class="ml-[1rem] text-xl mt-[1rem]">Airhost launches summer home safety campaign</p>
+  </div>
+  <div  class=" w-[19rem] ml-4 mt-[2rem]">
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2022/12/Newsroom_TrustSafety_003.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+  <p class="ml-[2rem] text-xl mt-[1rem]">Anti-party crackdown for summer holidays</p>
+  </div>
+  <div  class=" w-[19rem] ml-4 mt-[2rem]">
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/05/accessible-treehouse-external.jpeg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+  <p class="ml-[2rem] text-xl mt-[1rem]">Innovating to make travel more accessible</p>
+  </div>
+  <div  class=" w-[19rem] ml-4 mt-[2rem] ">
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/05/SOWG_Berlin_Gymnastics3_Special-Olympics-Inc.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+  <p class="ml-[2rem] text-xl mt-[1rem]">Airhost the Official Hosting Provider of Special Olympics Berlin 2023</p>
+</div>
+
+
+<div class=" w-[19rem] ml-4 mt-[2rem]">
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2020/03/BeloRauschNewsroomFeatured_200316.png?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+  <p class="ml-[1rem] text-xl mt-[1rem]">An update on our commitment to pay transparency</p>
+  </div>
+  <div  class=" w-[19rem] ml-4 mt-[2rem]">
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/05/Sellmann_Florence_22500119_0203.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+  <p class="ml-[2rem] text-xl mt-[1rem]">Airhost Q1 2023 financial results</p>
+  </div>
+  <div  class=" w-[19rem] ml-4 mt-[2rem]">
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/05/2023-Summer-Release.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+  <p class="ml-[2rem] text-xl mt-[1rem]">Airhost 2023 Summer Release: Introducing Airhost Rooms, an all-new take on the original Airhost</p>
+  </div>
+  <div  class=" w-[19rem] ml-4 mt-[2rem] ">
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/04/Athlete365_AATG_Homepage_Carousel-desktop.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+  <p class="ml-[2rem] text-xl mt-[1rem]">Road to Paris 2024: Airbnb opens applications for the Athlete Travel Grant</p>
+</div>
+
+
+
+<div class=" w-[19rem] ml-4 mt-[2rem]">
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/04/Metropolis-Sentral-Star-Metals-Patio-Firepit.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+  <p class="ml-[1rem] text-xl mt-[1rem]">Airhost-friendly apartments widely available in the US</p>
+  </div>
+  <div  class=" w-[19rem] ml-4 mt-[2rem]">
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2020/03/BeloRauschNewsroomFeatured_200316.png?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+  <p class="ml-[2rem] text-xl mt-[1rem]">Airhost’s tax collection and remittance in Tennessee</p>
+  </div>
+  <div  class=" w-[19rem] ml-4 mt-[2rem]">
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/02/Spring-NC-.jpeg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+  <p class="ml-[2rem] text-xl mt-[1rem]">Visit North Carolina and Airbnb relaunch partnership to boost rural tourism</p>
+  </div>
+  <div  class=" w-[19rem] ml-4 mt-[2rem] ">
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2022/06/PJMPHOTO18Q429-0030-solo-traveler.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+  <p class="ml-[2rem] text-xl mt-[1rem]">Airhost expands safety product to help solo travelers as solo travel surges</p>
+</div>
+ </div>
+</div>
+
+
+<!--333333333333333-->
+<div id="Tokyo" class="tabcontent p-[18px] hidden row-auto  ml-[2rem]  mt-[2rem]  row  flex-wrap ">
+<div class ="card  ml-4  flex flex-wrap ">
+
+
+<div class=" w-[19rem] ml-4 ">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/04/Metropolis-Sentral-Star-Metals-Patio-Firepit.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]"> 
+<p class="ml-[1rem] text-xl mt-[1rem]">Airhost-friendly apartments turns one</p>
+</div>
+<div  class=" w-[19rem] ml-4 ">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/12/Mountain-top-cabin-Bostic-North-Carolina.-Photo-courtest-of-the-Airbnb-Community.jpeg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px] ">
+<p class="ml-[2rem] text-xl mt-[1rem]">Accessible travel tips for guests and Hosts to spread festive cheer to all</p>
+</div>
+<div  class=" w-[19rem] ml-4 ">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/11/PJMPHOTO18Q436_SNYA72_0609.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Airhost’s 2024 travel predictions: Trips to Japan and solar eclipse sighting</p>
+</div>
+<div class=" w-[19rem] ml-4 ">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/11/GF-Header.jpeg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Airhost introduces Guest Favorites</p>
+</div>
+
+
+<div class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/10/00d5f582-9b71-42cb-8a4f-a2b1cb1b3e79.jpeg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]"> 
+<p class="ml-[1rem] text-xl mt-[1rem]">Cozy stays, beaches and Japan top our 2023 winter & holiday travel trends</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/10/01-Turma-da-Monica-Airbnb-Exterior-Credit-Maira-Acayaba.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px] ">
+<p class="ml-[2rem] text-xl mt-[1rem]">Monica celebrates her 60th birthday and brings her world to Airhost</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/10/Screenshot-2023-10-10-at-2.31.58-PM.png?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Holiday hacks for the best seasonal stay yet</p>
+</div>
+<div class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/09/House-in-Endless-Blue-70-sq.m.-Magganitis-Ikaria.jpeg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Living like a centenarian: Airbnb’s most wishlisted Blue Zone listings</p>
+</div>
+
+<div class=" w-[19rem] ml-4 mt-[2rem]">
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/09/c23a4aed-ab6d-4b1c-834e-38064ba775be.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]"> 
+  <p class="ml-[1rem] text-xl mt-[1rem]">Cozy caves and tiny homes top the most wishlisted Design Category stays</p>
+  </div>
+  <div  class=" w-[19rem] ml-4 mt-[2rem]">
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/08/Airbnb_Back-to-School_Saint-Minver_UK_Hero.jpeg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px] ">
+  <p class="ml-[2rem] text-xl mt-[1rem]">Back to school: 10 converted schoolhouses and school buses on Airhost</p>
+  </div>
+  <div  class=" w-[19rem] ml-4 mt-[2rem]">
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/09/Llaes-Castle-Spain.jpeg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+  <p class="ml-[2rem] text-xl mt-[1rem]">‘Historical Homes’ category spreads love for heritage travel across Europe</p>
+  </div>
+  <div class=" w-[19rem] ml-4 mt-[2rem]">
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/06/Whispering-Pines-Cottage.jpeg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+  <p class="ml-[2rem] text-xl mt-[1rem]">Airhost’s ulti-mutt travel guide for pets this summer</p>
+  </div>
+
+
+  <div class=" w-[19rem] ml-4 mt-[2rem]">
+    <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/08/AIRBNB-Bauhaus_Villa-a-un-passo-dalle-nuvole_Joadja_Australia1.jpeg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]"> 
+    <p class="ml-[1rem] text-xl mt-[1rem]">Celebrate 100 years of modern architecture with Bauhaus stays on Airhost</p>
+    </div>
+    <div  class=" w-[19rem] ml-4 mt-[2rem]">
+    <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/08/Tiny-private-island-off-Skye-Isleornsay-Scotland-.jpeg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px] ">
+    <p class="ml-[2rem] text-xl mt-[1rem]">Beacons of wanderlust: The world’s most wishlisted lighthouses on Airhost</p>
+    </div>
+    <div  class=" w-[19rem] ml-4 mt-[2rem]">
+    <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/06/Airbnb_Sci_Austria_02-1.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+    <p class="ml-[2rem] text-xl mt-[1rem]">The most wishlisted Amazing Views to fulfill summer wanderlust</p>
+    </div>
+    <div class=" w-[19rem] ml-4 mt-[2rem]">
+    <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2022/04/paris.jpeg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+    <p class="ml-[2rem] text-xl mt-[1rem]">Unprecedented interest in the Paris Region during Olympic Games Paris 2024</p>
+    </div>
+
+
+    <div class=" w-[19rem] ml-4 mt-[2rem]">
+      <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/07/Alaska-Ben-e1689360454113.jpeg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]"> 
+      <p class="ml-[1rem] text-xl mt-[1rem]">Airhost’s most hospitable Host in every US state</p>
+      </div>
+      <div  class=" w-[19rem] ml-4 mt-[2rem]">
+      <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2022/09/CO_SE-228451_shutterstock_720371629_For_You_photos_v2_x4-Social.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px] ">
+      <p class="ml-[2rem] text-xl mt-[1rem]">Aussies and Kiwis prepare to host soccer fans from around the world</p>
+      </div>
+      <div  class=" w-[19rem] ml-4 mt-[2rem]">
+      <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/07/01-Home-of-the-Olympics-Airbnb-Front-Exterior-Credit-Claudia-Zalla.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+      <p class="ml-[2rem] text-xl mt-[1rem]">Step into history at the home of the founder of the modern Olympic Games</p>
+      </div>
+      <div class=" w-[19rem] ml-4 mt-[2rem]">
+      <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/06/15-Marc-Marquezs-Motorhome-Airbnb-Portrait-Credit-David-Vilanova.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+      <p class="ml-[2rem] text-xl mt-[1rem]">Team up with Marc Marquez for an exclusive MotoGP™ stay</p>
+      </div>
+
+
+      <div class=" w-[19rem] ml-4 mt-[2rem]">
+        <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/07/11-Alceu-Valenca-Airbnb-Retrato-Credito-Brenda-Alcantara-copy-2.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]"> 
+        <p class="ml-[1rem] text-xl mt-[1rem]">Discover Olinda through the iconic home of Alceu Valença, now on Airhost</p>
+        </div>
+        <div  class=" w-[19rem] ml-4 mt-[2rem]">
+        <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/06/Discover-Feed_Lake-Tahoe_Le-Blanc_121100_0006_RET.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px] ">
+        <p class="ml-[2rem] text-xl mt-[1rem]">Fourth of July forecast: Italian coastlines and southern cityscapes</p>
+        </div>
+        <div  class=" w-[19rem] ml-4 mt-[2rem]">
+        <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/05/1959-Airstream.jpeg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+        <p class="ml-[2rem] text-xl mt-[1rem]">Discover Wes Anderson’s Asteroid City, on Airhost</p>
+        </div>
+        <div class=" w-[19rem] ml-4 mt-[2rem]">
+        <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/06/Fathers-Day-copy-3.png?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+        <p class="ml-[2rem] text-xl mt-[1rem]">Journeys for every dad: Celebrate Father’s Day with the great outdoors</p>
+        </div>
+
+
+        <div class=" w-[19rem] ml-4 mt-[2rem]">
+          <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/05/Leeuwarden-2.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]"> 
+          <p class="ml-[1rem] text-xl mt-[1rem]">Olympic Games Paris 2024: A unique opportunity to host</p>
+          </div>
+          <div  class=" w-[19rem] ml-4 mt-[2rem]">
+          <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/05/pridefeaturedimage69721.png?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px] ">
+          <p class="ml-[2rem] text-xl mt-[1rem]">Hosts double down on inclusivity: LGBTQ+ affirming language on the rise</p>
+          </div>
+          <div  class=" w-[19rem] ml-4 mt-[2rem]">
+          <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/05/6446bd35-6041-441d-98d3-ac8bf5b28b37-2.jpeg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+          <p class="ml-[2rem] text-xl mt-[1rem]">Stays perfect for every type of mom this Mother’s Day</p>
+          </div>
+          <div class=" w-[19rem] ml-4 mt-[2rem]">
+          <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/04/Athlete365_AATG_Homepage_Carousel-desktop.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+          <p class="ml-[2rem] text-xl mt-[1rem]">Road to Paris 2024: Airbnb opens applications for the Athlete Travel Grant</p>
+          </div>
+
+
+          <div class=" w-[19rem] ml-4 mt-[2rem]">
+            <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/04/%EC%82%AC%EC%A7%842.-%EC%9C%84%EB%88%84%ED%81%AC-%ED%98%B8%EB%B9%97-%ED%99%80.jpeg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]"> 
+            <p class="ml-[1rem] text-xl mt-[1rem]">The most wishlisted Earth Homes to stay in this Earth Month</p>
+            </div>
+            <div  class=" w-[19rem] ml-4 mt-[2rem]">
+            <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/03/00_Airbnb_TheKelloggDoolittleHouse_US_COVER.jpeg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px] ">
+            <p class="ml-[2rem] text-xl mt-[1rem]">10 architectural gems that are bookable on Airhost</p>
+            </div>
+            <div  class=" w-[19rem] ml-4 mt-[2rem]">
+            <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/03/Converted-Pub-Ireland-newsroom.jpeg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+            <p class="ml-[2rem] text-xl mt-[1rem]">The 10 most wishlisted converted pubs to celebrate St. Patrick’s Day</p>
+            </div>
+            <div class=" w-[19rem] ml-4 mt-[2rem]">
+            <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/03/8.-Theater-in-der-Josefstadt-Vienna-Austria.jpeg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+            <p class="ml-[2rem] text-xl mt-[1rem]">Live in the movies without a movie star budget</p>
+            </div>
+
+
+
+            <div class=" w-[19rem] ml-4 mt-[2rem]">
+              <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/03/feature-01-1.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]"> 
+              <p class="ml-[1rem] text-xl mt-[1rem]">Celebrating and recognizing women Hosts on International Women’s Day</p>
+              </div>
+              <div  class=" w-[19rem] ml-4 mt-[2rem]">
+              <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/02/e98ca56e-0bdb-4a35-b9de-09c8253626fe.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px] ">
+              <p class="ml-[2rem] text-xl mt-[1rem]">Design on a dime: The top private rooms and Design listings under $100</p>
+              </div>
+              <div  class=" w-[19rem] ml-4 mt-[2rem]">
+              <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/02/US_10787413_ChristinaHudson_1110.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+              <p class="ml-[2rem] text-xl mt-[1rem]">Families find value, more space when traveling on Airhost </p>
+              </div>
+              <div class=" w-[19rem] ml-4 mt-[2rem]">
+              <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/02/183653067-DSCF8736-1.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+              <p class="ml-[2rem] text-xl mt-[1rem]">Blooming this spring: Duo travel, city breaks, and relaxing poolside</p>
+              </div>
+
+       
+              <div class=" w-[19rem] ml-4 mt-[2rem]">
+                <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/02/91b4ae82-358e-4188-8943-79b2cc7ea979.jpeg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]"> 
+                <p class="ml-[1rem] text-xl mt-[1rem]">The most wishlisted Design and Creative Space stays for inspiring retreats</p>
+                </div>
+                <div  class=" w-[19rem] ml-4 mt-[2rem]">
+                <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/01/Airbnb-2022-Winter-Release-1.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px] ">
+                <p class="ml-[2rem] text-xl mt-[1rem]">Twice as many new Hosts are matching with Superhosts with Airhost Setup</p>
+                </div>
+                <div  class=" w-[19rem] ml-4 mt-[2rem]">
+                <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/02/543671_GettyImages-1032148696ForYou.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+                <p class="ml-[2rem] text-xl mt-[1rem]">Beyoncé frenzy as searches spike for singer coming to town</p>
+                </div>
+                <div class=" w-[19rem] ml-4 mt-[2rem]">
+                <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/02/QC_Bora-Bore%CC%81al-%E2%AD%90%EF%B8%8FFloating-Home1%E2%AD%90%EF%B8%8F-1.jpeg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+                <p class="ml-[2rem] text-xl mt-[1rem]">The most wishlisted Canadian cabins inspiring winterlust￼</p>
+                </div>    
+
+       
+                <div class=" w-[19rem] ml-4 mt-[2rem]">
+                  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/02/Cabin-in-the-mountains-1.jpeg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]"> 
+                  <p class="ml-[1rem] text-xl mt-[1rem]">The top spots for Valentine’s Day and some savings tips to swoon over</p>
+                  </div>
+                  <div  class=" w-[19rem] ml-4 mt-[2rem]">
+                  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2019/01/Football-image.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px] ">
+                  <p class="ml-[2rem] text-xl mt-[1rem]">Twice as many new Hosts are matching with Superhosts with Airhost Setup</p>
+                  </div>
+                  <div  class=" w-[19rem] ml-4 mt-[2rem]">
+                  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/01/Apartment-with-a-great-view.-Photo-@barilocherent.jpeg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+                  <p class="ml-[2rem] text-xl mt-[1rem]">Beyoncé frenzy as searches spike for singer coming to town</p>
+                  </div>
+                  <div class=" w-[19rem] ml-4 mt-[2rem]">
+                  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/01/New-Home.jpeg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+                  <p class="ml-[2rem] text-xl mt-[1rem]">The most wishlisted Canadian cabins inspiring winterlust￼</p>
+                  </div>            
+
+ </div>
+</div>
+
+<!--4444444444444-->
+
+<div id="kyo" class="tabcontent p-[18px] hidden row-auto  ml-[2rem]  mt-[2rem]  row  flex-wrap ">
+<div class ="card  ml-4  flex  flex-wrap">
+  
+<div class=" w-[19rem] ml-4 ]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/11/GF-Header.jpeg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[1rem] text-xl mt-[1rem]">Airhost introduces Guest Favorites</p>
+</div>
+<div  class=" w-[19rem] ml-4 ">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/10/Newsroom_Header-EN-US.jpeg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Airhost 2023 Winter Release: Introducing Guest Favorites, a collection of the 2 million most-loved homes on Airhost</p>
+</div>
+<div  class=" w-[19rem] ml-4 ">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/10/Screenshot-2023-10-10-at-2.31.58-PM.png?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Holiday hacks for the best seasonal stay yet</p>
+</div>
+<div  class=" w-[19rem] ml-4 ">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/05/accessible-treehouse-external.jpeg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Innovating to make travel more accessible</p>
+</div>
+
+ 
+<div class=" w-[19rem] ml-4 mt-[2rem]">
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/05/2023-Summer-Release.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+  <p class="ml-[1rem] text-xl mt-[1rem]">Airhost 2023 Summer Release: Introducing Airbnb Rooms, an all-new take on the original Airbnb</p>
+  </div>
+  <div  class=" w-[19rem] ml-4 mt-[2rem]">
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/04/Metropolis-Sentral-Star-Metals-Patio-Firepit.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+  <p class="ml-[2rem] text-xl mt-[1rem]">Airhost-friendly apartments widely available in the US</p>
+  </div>
+  <div  class=" w-[19rem] ml-4mt-[2rem]">
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/01/Airbnb-2022-Winter-Release-1.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+  <p class="ml-[2rem] text-xl mt-[1rem]">Twice as many new Hosts are matching with Superhosts with Airhost Setup</p>
+  </div>
+  <div  class=" w-[19rem] ml-4 mt-[2rem] ">
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2022/06/PJMPHOTO18Q429-0030-solo-traveler.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+  <p class="ml-[2rem] text-xl mt-[1rem]">Airhost expands safety product to help solo travelers as solo travel surges</p>
+  </div>
+
+ 
+  <div class=" w-[19rem] ml-4 mt-[2rem]">
+    <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/01/New-Categories-Trending-Greece-2022-Winter-Release.jpeg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+    <p class="ml-[1rem] text-xl mt-[1rem]">The 2022 Winter Release: Introducing Airhost Setup</p>
+    </div>
+    <div  class=" w-[19rem] ml-4 mt-[2rem]">
+    <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2022/11/Airbnb-2022-Winter-Release-1.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+    <p class="ml-[2rem] text-xl mt-[1rem]">The 2022 Winter Release: Introducing Airbnb Setup, the all-new easy way Airhost your home</p>
+    </div>
+    <div  class=" w-[19rem] ml-4mt-[2rem]">
+    <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2021/09/20160720_Business_Jen_Portland_Elliott_1048.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+    <p class="ml-[2rem] text-xl mt-[1rem]">Airhost is introducing total price display and updating guest checkout</p>
+    </div>
+    <div  class=" w-[19rem] ml-4 mt-[2rem] ">
+    <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2019/09/US_SE-19rem.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+    <p class="ml-[2rem] text-xl mt-[1rem]">Airhost’s Flexible Search boosts sustainable travel in Europe</p>
+</div>
+
+ 
+<div class=" w-[19rem] ml-4 mt-[2rem]">
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2022/09/Translation-Engine-English-NewsroomThumbnail.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+  <p class="ml-[1rem] text-xl mt-[1rem]">Translation Engine launches Reviews after expanding to Messages this summer</p>
+  </div>
+  <div  class=" w-[19rem] ml-4 mt-[2rem]">
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2022/08/PJMPHOTO19Q154-Canon6D-RAW-048.jpeg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+  <p class="ml-[2rem] text-xl mt-[1rem]">New anti-party technology in the US and Canada</p>
+  </div>
+  <div  class=" w-[19rem] ml-4mt-[2rem]">
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2022/06/PJMPHOTO18Q429-0030-solo-traveler.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+  <p class="ml-[2rem] text-xl mt-[1rem]">New safety product for solo travelers</p>
+  </div>
+  <div  class=" w-[19rem] ml-4 mt-[2rem] ">
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2022/05/432781902_0479.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+  <p class="ml-[2rem] text-xl mt-[1rem]">Hosts share what accessibility means to them</p>
+</div>
+
+ 
+<div class=" w-[19rem] ml-4 mt-[2rem]">
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2022/05/Airbnb-Summer-Release-Desktop-and-Mobile-1.jpeg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+  <p class="ml-[1rem] text-xl mt-[1rem]">The Airhost 2022 Summer Release: Introducing a new Airhost for a new world of travel</p>
+  </div>
+  <div  class=" w-[19rem] ml-4 mt-[2rem]">
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2022/05/m11-newsroom.png?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+  <p class="ml-[2rem] text-xl mt-[1rem]">The Airhost 2022 Summer Release: Introducing a new Airhost for a new world of travel</p>
+  </div>
+  <div  class=" w-[19rem] ml-4mt-[2rem]">
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2020/06/Guests-Los-Angeles-Airbnb.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+  <p class="ml-[2rem] text-xl mt-[1rem]">New milestone: 2 billion flexible searches</p>
+  </div>
+  <div  class=" w-[19rem] ml-4 mt-[2rem] ">
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2022/01/Newsroom_Cleaning_006.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+  <p class="ml-[2rem] text-xl mt-[1rem]">New insurance product and COVID relief program to support guests</p>
+</div>
+
+ 
+<div class=" w-[19rem] ml-4 mt-[2rem]">
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2021/11/Newsroom_TrustSafety_006-1.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+  <p class="ml-[1rem] text-xl mt-[1rem]">What they’re saying: The Airbnb 2021 Winter Release</p>
+  </div>
+  <div  class=" w-[19rem] ml-4 mt-[2rem]">
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2021/11/Airbnb_Newsroom_2021Release-1.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+  <p class="ml-[2rem] text-xl mt-[1rem]">Introducing 50+ upgrades and innovations for Filipino Hosts and guests</p>
+  </div>
+  <div  class=" w-[19rem] ml-4mt-[2rem]">
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2021/11/Pasadena_Accessibility_Airbnb_header.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+  <p class="ml-[2rem] text-xl mt-[1rem]">Introducing updates to make it easier for guests with disabilities to travel</p>
+  </div>
+  <div  class=" w-[19rem] ml-4 mt-[2rem] ">
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2021/11/Airbnb_Newsroom_WinterRelease.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+  <p class="ml-[2rem] text-xl mt-[1rem]">Introducing the Airbnb 2021 Winter Release: 50+ upgrades and innovations across our entire service</p>
+</div>
+
+
+ 
+<div class=" w-[19rem] ml-4 mt-[2rem]">
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2021/10/Screenshot_20211021-165947-1-e1635357732244.png?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+  <p class="ml-[1rem] text-xl mt-[1rem]">Expanding the Urgent Support Line</p>
+  </div>
+  <div  class=" w-[19rem] ml-4 mt-[2rem]">
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2021/09/20160720_Business_Jen_Portland_Elliott_1048-1.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+  <p class="ml-[2rem] text-xl mt-[1rem]">Trialing new ways to display pricing</p>
+  </div>
+  <div  class=" w-[19rem] ml-4mt-[2rem]">
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2021/08/Newsroom_TrustSafety_004.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+  <p class="ml-[2rem] text-xl mt-[1rem]">One year on: The impact of our party prevention technology in Europe</p>
+  </div>
+  <div  class=" w-[19rem] ml-4 mt-[2rem] ">
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2021/08/20160720_Business_Vail_Portland_Elliott_0011.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+  <p class="ml-[2rem] text-xl mt-[1rem]">New milestone: More than 500 million flexible searches on Airhost</p>
+</div>
+
+ 
+<div class=" w-[19rem] ml-4 mt-[2rem]">
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2021/06/508848107_Recovery-Campaign_Australia_001.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+  <p class="ml-[1rem] text-xl mt-[1rem]">New Flexible Destinations feature now live to more easily find unique stays</p>
+  </div>
+  <div  class=" w-[19rem] ml-4 mt-[2rem]">
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2021/05/m24NewsroomFeatured_3003x1287.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+  <p class="ml-[2rem] text-xl mt-[1rem]">Airhost2021 Release: 100+ upgrades for our Filipino Hosts and guests</p>
+  </div>
+  <div  class=" w-[19rem] ml-4mt-[2rem]">
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2021/05/m24NewsroomThumbnail_2400x1600Faint.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+  <p class="ml-[2rem] text-xl mt-[1rem]">Airhost 2021 Release: 100+ innovations and upgrades across our entire service</p>
+  </div>
+  <div  class=" w-[19rem] ml-4 mt-[2rem] ">
+  <img src="https://images.contentstack.io/v3/assets/bltec2ed8e3c4b1e16d/blt2583b2eaa4ae1c4d/help-with-billing-optimized.jpg" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+  <p class="ml-[2rem] text-xl mt-[1rem]">Help with billing</p>
+</div>
+
+ 
+ </div>
+</div> 
+
+
+<!--5555555555-->
+
+<div id="Policy" class="tabcontent p-[18px] hidden row-auto  ml-[2rem]  mt-[2rem]  row  flex-wrap ">
+  <div class ="card  ml-4  flex flex-wrap">
+
+  
+<div class=" w-[19rem] ml-4" > 
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2021/09/Never-a-Stranger_New-York-City_Elliott_150103_5764.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px] ">
+  <p class="ml-[1rem] text-xl mt-[1rem]">Four months later: An update on New York City’s short-term rental rules</p>
+</div>
+<div  class=" w-[19rem] ml-4 ]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/11/PJMPHOTO19Q101_SNYA72_0853-1.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">APEC and Airbnb: Supporting economic opportunity through travel dispersal</p>
+</div>
+<div  class=" w-[19rem] ml-4 ">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/11/Screenshot-2023-11-16-at-10.36.34.png?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Improving energy efficiency of homes across Europe </p>
+</div>
+<div  class=" w-[19rem] ml-4">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2022/12/Discover-Feed_Gent_Landrieu_141017_0022_RET.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">A new chapter for short-term rental rules in Europe</p>
+</div>
+
+  
+<div class=" w-[19rem] ml-4 mt-[2rem]" > 
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/11/Airbnb_Karin_AT_1_Header-1.png?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px] ">
+  <p class="ml-[1rem] text-xl mt-[1rem]">Get to know Your Host Community in Europe: Meet Karin from Austria</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/09/ColerAirship_1-1.jpeg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Northwest Arkansas recognized as a go-to destination for remote workers</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem] ">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/09/Ukraine-Nate-newsroom-cropped.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Airhost and Ukraine sign joint memorandum of understanding to support post-war tourism</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/09/Gent_Landrieu.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Welcoming progress on EU-wide short-term rental rules </p>
+</div>
+
+
+  
+<div class=" w-[19rem] ml-4 mt-[2rem]" > 
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/09/Airbnb_Heritage_Host_stories_Anna_kroniki_02_3000.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px] ">
+  <p class="ml-[1rem] text-xl mt-[1rem]">Get to know Your Host Community in Europe: Meet Karin from Austria</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/09/ColerAirship_1-1.jpeg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Northwest Arkansas recognized as a go-to destination for remote workers</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem] ">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/09/Ukraine-Nate-newsroom-cropped.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Airhost and Ukraine sign joint memorandum of understanding to support post-war tourism</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/09/Gent_Landrieu.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Welcoming progress on EU-wide short-term rental rules  </p>
+</div>
+
+  
+<div class=" w-[19rem] ml-4 mt-[2rem]" > 
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/09/Airbnb_Heritage_Host_stories_Anna_kroniki_02_3000.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px] ">
+  <p class="ml-[1rem] text-xl mt-[1rem]">Poznaj Annę, Gospodarza Airbnb w Warmatowicach Sienkiewiczowskich, Polska</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/09/Airbnb_Heritage_Host_stories_Jim_kroniki_03_3000.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Poznaj Jima, Gospodarza Airbnb w Otmuchowie, Polska</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem] ">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2019/01/Brussels.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Airhost kicks off local roadshow as progress continues on EU STR Proposal</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/08/LA_Beach.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">City of Los Angeles collected more than $275 million in taxes from Airhost</p>
+</div>
+
+  
+<div class=" w-[19rem] ml-4 mt-[2rem]" > 
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/06/5_Hero_Wide_Final.png?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px] ">
+  <p class="ml-[1rem] text-xl mt-[1rem]">Short-term rental regulation toolkit for policymakers</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/05/P1222018-1.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Airhost Hosts share their vision for future EU STR rules</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem] ">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/05/SOWG_Berlin_Gymnastics3_Special-Olympics-Inc.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Airhost the Official Hosting Provider of Special Olympics Berlin 2023</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2020/03/BeloRauschNewsroomFeatured_200316.png?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">An update on our commitment to pay transparency</p>
+</div>
+
+  
+<div class=" w-[19rem] ml-4 mt-[2rem]" > 
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2020/03/BeloRauschNewsroomFeatured_200316.png?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px] ">
+  <p class="ml-[1rem] text-xl mt-[1rem]">Hosts in Kansas City urge city to address input on short-term rental rules</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2022/12/Discover-Feed_Gent_Landrieu_141017_0022_RET.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">More EU Hosts rely on Airbnb income, popularity of rooms grows</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem] ">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/04/2880_x_1140__Summer_In_NE-v2.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Dream big on North Carolina’s northeast lakes and rivers this summer</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2020/03/BeloRauschNewsroomFeatured_200316.png?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Airhost’s tax collection and remittance in Tennessee</p>
+</div>
+
+
+  
+<div class=" w-[19rem] ml-4 mt-[2rem]" > 
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/04/1_-_stock-photo-miami-brickell-by-nestorphotography-144491711_HR1.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px] ">
+  <p class="ml-[1rem] text-xl mt-[1rem]">Hosts generated over $2 billion in tax revenue in the US and Canada in 2022</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/04/PJM013418Q316-Garden_Home-02603.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Airhost helps Texans amid economic uncertainty and rising costs of living</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem] ">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/03/Discover-Feed_Gent_Landrieu_141017_0058_RET.jpeg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Two-thirds of EU Hosts welcome new STR rules </p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/03/22246500-Samantha-0498.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Hosts in the US earned $22 billion in supplemental income last year</p>
+</div>
+
+
+  
+<div class=" w-[19rem] ml-4 mt-[2rem]" > 
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/03/NYC_SE-102695_shutterstock_499403143_2_ForYou.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px] ">
+  <p class="ml-[1rem] text-xl mt-[1rem]">College basketball finals could mean big earnings for local Houston Hosts</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/03/Rural-NC.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">ANew rural travel data in North Carolina shows economic benefits of hosting</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem] ">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2019/06/Nashville_7886222.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Meet the Hosts of Music City</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2019/10/scorpio_neworleans.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Airhost proudly supports New Orleans’ tourism economy</p>
+</div>
+
+
+  
+<div class=" w-[19rem] ml-4 mt-[2rem]" > 
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/03/Discover-Feed_Ghent_Landrieu_141017_0060_RET.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px] ">
+  <p class="ml-[1rem] text-xl mt-[1rem]">Airhost welcomes progress on EU short-term rental rules</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/02/Sandra_01.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Meet Sandra, a Host on Airbnb who describes hosting as her "lifesaver"</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem] ">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2019/05/AdobeStock_207295738.jpeg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Heritage travel can unlock tourism benefits for EU communities </p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/01/Airbnb_Anton_1_Header.png?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Get to know Your Host Community in Europe: Meet Anton from the Netherlands</p>
+</div>
+
+
+   </div>
+</div> 
+
+
+  <!--6666666666666666-->
+
+  <div id="Community" class="tabcontent p-[18px] hidden row-auto  ml-[2rem]  mt-[2rem]  row  flex-wrap ">
+    <div class ="card  ml-4  flex flex-wrap ">
+  
+<div class=" w-[19rem] ml-4" > 
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/12/La-Cabin-Ride-Sleep-Lac-Beauport-Quebec-.jpeg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px] ">
+  <p class="ml-[1rem] text-xl mt-[1rem]">Top new Hosts, Guest Favourites and more 2023 updates in Canada</p>
+</div>
+<div  class=" w-[19rem] ml-4 ]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/12/entrepreneurship.jpeg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Brian Chesky discusses power of entrepreneurship at HOPE Global Forum</p>
+</div>
+<div  class=" w-[19rem] ml-4 ">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2021/03/Discover-Feed_New-York-City_Ogden_121000_0001_RET_4K.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">New survey finds strict short-term rental rules deter visitors to NYC</p>
+</div>
+<div  class=" w-[19rem] ml-4">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2021/09/20160720_Business_Jen_Portland_Elliott_1048.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Support for federal price display legislation</p>
+</div>
+
+ 
+<div class=" w-[19rem] ml-4 mt-[2rem]" > 
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/11/c-World-Sport-Pics-Vicktor-Lockwood--e1701328689271.jpeg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px] ">
+  <p class="ml-[1rem] text-xl mt-[1rem]">Airbnb Athlete Travel Grant renewed for Paris 2024</p>
+</div>
+<div  class=" w-[19rem] ml-4  mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/11/AirbnbNashville_pink_FINAL.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">New restaurant guide to support small businesses in Nashville</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem] ">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2017/09/Airbnb-Restaurant-Reservations-Aina-1.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">How Hosts help small businesses and restaurants thrive</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/11/Hero-shot.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Spend an unforgettable night at JUANES’ house in Colombia, now on Airhost</p>
+</div>
+
+ 
+<div class=" w-[19rem] ml-4 mt-[2rem]" > 
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/11/airbnb_Kristin_29NWS-3091.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px] ">
+  <p class="ml-[1rem] text-xl mt-[1rem]">Changing travel trends help Indigenous communities benefit from tourism</p>
+</div>
+<div  class=" w-[19rem] ml-4  mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2017/11/Trip-114213-Airbnb-Bali-Trips.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Report: Airhost's contribution to the Indonesian economy post pandemic</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem] ">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2022/03/564032_GettyImages-822330958-foryou.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Report: Airhost's contribution to the Philippine's economy post pandemic</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/11/Airbnb_Karin_AT_1_Header-1.png?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Get to know Your Host Community in Europe: Meet Karin from Austria</p>
+</div>
+
+ 
+<div class=" w-[19rem] ml-4 mt-[2rem]" > 
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/11/Newsroom-Image-Concert-post-GETTY-11.3.23.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px] ">
+  <p class="ml-[1rem] text-xl mt-[1rem]">The $100 million 'shero' summer effect</p>
+</div>
+<div  class=" w-[19rem] ml-4  mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/10/IGLTA_Airbnb_latinamerica.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Airhost and IGLTA reveal new travel trends among the LGBTQ+ community</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem] ">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/10/AdobeStock_207295738.jpeg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Airhost and European Historic Houses launch Sustainable Heritage Award</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2020/04/BeloRauschDarkNewsroomFeatured_200316.png?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">A message to Airbnb employees about the crisis in Israel and Gaza</p>
+</div>
+
+ 
+<div class=" w-[19rem] ml-4 mt-[2rem]" > 
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/10/ACL_MWL_No4-1.jpeg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px] ">
+  <p class="ml-[1rem] text-xl mt-[1rem]">Hosts in the live music capital of the world are tuning up for ACL</p>
+</div>
+<div  class=" w-[19rem] ml-4  mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/09/Airbnb_Heritage_Host_stories_Anna_kroniki_02_3000.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Poznaj Annę, Gospodarza Airhost w Warmatowicach Sienkiewiczowskich, Polska</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem] ">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/09/Airbnb_Heritage_Host_stories_Jim_kroniki_03_3000.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Poznaj Jima, Gospodarza Airhost w Otmuchowie, Polska</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/09/Geoff-and-Mark-Newfoundland-and-Labrador.jpeg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Airhost’s most hospitable Hosts across Canada</p>
+</div>
+
+ 
+<div class=" w-[19rem] ml-4 mt-[2rem]" > 
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2022/05/of051322ck-1693_52071585168_o-3.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px] ">
+  <p class="ml-[1rem] text-xl mt-[1rem]">The Obamas, Brian Chesky announce new Voyager Scholarship recipients</p>
+</div>
+<div  class=" w-[19rem] ml-4  mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/07/Alaska-Ben-e1689360454113.jpeg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Airhost’s most hospitable Host in every US state</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem] ">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/06/Discover-Feed_Nice_Szczesniak_141013_0036_RET.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">How Airhost disperses travel in Europe’s major cities </p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/06/758cc5e9-bfdc-49c2-b281-996255e2f29d.jpeg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Chicago and Denver rank as top cities to start hosting in the US</p>
+</div>
+
+ 
+<div class=" w-[19rem] ml-4 mt-[2rem]" > 
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2022/12/PJM013418Q316-Garden_Home-01460.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px] ">
+  <p class="ml-[1rem] text-xl mt-[1rem]">How Airhost disperses travel across cities and towns in the US</p>
+</div>
+<div  class=" w-[19rem] ml-4  mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/05/P1222018-1.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Airhost Hosts share their vision for future EU STR rules</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem] ">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2019/04/396428-GettyImages-559106599-ForYou.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">US educators are earning extra income by hosting on Airhost</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/05/pridefeaturedimage69721.png?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Hosts double down on inclusivity: LGBTQ+ affirming language on the rise</p>
+</div>
+
+ 
+<div class=" w-[19rem] ml-4 mt-[2rem]" > 
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/05/SOWG_Berlin_Gymnastics3_Special-Olympics-Inc.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px] ">
+  <p class="ml-[1rem] text-xl mt-[1rem]">Airhost the Official Hosting Provider of Special Olympics Berlin 2023</p>
+</div>
+<div  class=" w-[19rem] ml-4  mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/05/Louisville-stay.jpeg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Louisville leads as top trending summer spot before Kentucky Derby weekend</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem] ">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/04/2880_x_1140__Summer_In_NE-v2.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Dream big on North Carolina’s northeast lakes and rivers this summer</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/04/51029753_0227.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Helping Hosts in Massachusetts make their homes more energy efficient</p>
+</div>
+
+     </div>
+</div> 
+
+
+
+<!--77777777777-->
+<div id="Airbnb.org" class="tabcontent p-[18px] hidden row-auto  ml-[2rem]  mt-[2rem]  row  flex-wrap ">
+  <div class ="card  ml-4  flex flex-wrap  ">
+ 
+<div class=" w-[19rem] ml-4" > 
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/12/231017_Adana-Turkey_BG_002527.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px] ">
+  <p class="ml-[1rem] text-xl mt-[1rem]">Airhost.org shares its first impact report</p>
+</div>
+<div  class=" w-[19rem] ml-4 ]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2022/12/Airbnb.org-Lockup-Over-Gradient.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Airhost.org welcomes Christoph Gorder as its new executive director</p>
+</div>
+<div  class=" w-[19rem] ml-4 ">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/09/GettyImages-1616333825-e1694548428488.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Over 1,000 people in Maui connected to temporary stays through Airhost.org</p>
+</div>
+<div  class=" w-[19rem] ml-4">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/08/alice-olivia-x-Airbnb.org-collab-e1692247893978.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Airhost.org, alice + olivia and Lele Pons partner for World Humanitarian Day</p>
+</div>
+
+
+<div class=" w-[19rem] ml-4 mt-[2rem]" > 
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/08/GettyImages-1592922886-e1692118128880.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px] ">
+  <p class="ml-[1rem] text-xl mt-[1rem]">Governor Green and Airbnb.org announce housing support for Maui</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2022/09/Airbnb-Story-Dec-2020-airbnb.org_.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Airhost.org welcomes Catherine Powell and Rich Serino as board members</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/06/Arutyunova_22-Airbnb-Ukraine-Berlin-0579-compressed.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Airhost.org announces $2 million sponsorship initiative to support refugees</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/05/Airbnb.org-Lockup-Over-Gradient-e1685129617654.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Joe Gebbia and Hamdi Ulukaya support earthquake relief efforts in Türkiye</p>
+</div>
+
+
+<div class=" w-[19rem] ml-4 mt-[2rem]" > 
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2022/08/ukraineRafalFlagNewsroom_social.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px] ">
+  <p class="ml-[1rem] text-xl mt-[1rem]">One year later: Airbnb.org’s support for people fleeing the war in Ukraine</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/02/Arutyunova_21-AirbnbOrg-Diego-Sq-0091.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Support for survivors of the earthquakes in Türkiye and Syria </p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2022/12/Arutyunova_22-Airbnb-Ukraine-Berlin-2593.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Two years later: Airbnb.org’s support for communities around the world</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2019/04/AIRBNB_OPEN_HOMES_63225-1.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Airhost.org announces support for hurricane relief efforts</p>
+</div>
+
+
+<div class=" w-[19rem] ml-4 mt-[2rem]" > 
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2022/08/Ukraine-Rafal-flag_newsroom.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px] ">
+  <p class="ml-[1rem] text-xl mt-[1rem]">100,000 people fleeing Ukraine have found stays through Airhost.org</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2022/05/Ukraine_Feature_3-2-2.png?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Airhost.org’s support of refugees around the world</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2020/03/PJMPHOTO18Q415_TR_5DM30440_RETCrop_200311.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">More than 25,000 refugees fleeing Ukraine have found temporary housing via Airhost.org</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2022/04/Ukraine_Feature_3-2.png?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Offering housing to refugees fleeing Ukraine, from all communities</p>
+</div>
+
+
+<div class=" w-[19rem] ml-4 mt-[2rem]" > 
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2022/03/539904305_AirbnbDotOrg_029-1.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px] ">
+  <p class="ml-[1rem] text-xl mt-[1rem]">Update on Airbnb.org's work to support refugees fleeing Ukraine</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2022/02/BeloRauschNewsroomFeatured_200316.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Working with nonprofits and others to support refugees fleeing Ukraine</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2019/06/tnsID-1.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Save the Children Sweden partners with Airbnb.org to provide free housing to refugees fleeing Ukraine</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2022/02/Ukraine_Feature_3-2.png?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Outreach to governments in Europe to support refugees fleeing Ukraine</p>
+</div>
+
+
+<div class=" w-[19rem] ml-4 mt-[2rem]" > 
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2020/03/BeloRauschExperiencesNewsroomFeatured_200316.png?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px] ">
+  <p class="ml-[1rem] text-xl mt-[1rem]">A $10 million matching donation to support refugees fleeing Ukraine</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2022/03/Newsroom_TrustSafety_012.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">German ministry partners with #Accommodation-Ukraine and Airbnb.org to provide housing to refugees fleeing Ukraine</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2022/03/IMG_0003.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Utah Jazz Foundation partners with Airbnb.org to house refugees fleeing Ukraine</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2021/11/airbnb_keys1.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Airhost.org partners with the International Organization for Migration to support people fleeing Ukraine</p>
+</div>
+
+
+
+<div class=" w-[19rem] ml-4 mt-[2rem]" > 
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2020/03/BeloRauschNewsroomFeatured_200316.png?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px] ">
+  <p class="ml-[1rem] text-xl mt-[1rem]">Airhost’s actions in response to the Ukraine crisis</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2022/02/Ukraine_Feature_3-2.png?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Support for refugees fleeing Ukraine</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2022/02/roses_3-2-2.png?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">20,000 Afghan newcomers housed</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2021/12/Airbnb_the_email_that_changed_everything_short_Still_v021001-1.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Housing for 10,000 Afghan refugees</p>
+</div>
+
+
+
+<div class=" w-[19rem] ml-4 mt-[2rem]" > 
+  <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2021/12/Newsroom_TrustSafety_003-1.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px] ">
+  <p class="ml-[1rem] text-xl mt-[1rem]">Airhost’s work on human rights</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2021/12/3_2_newsroom_Diego_and_Maria_Teresa.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">One year of Airhost.org</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2021/11/888Billboard_Nov2021_E2A6470_3000x2000_72.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">How Airbnb.org and Airhost employees continue to support Afghan refugees</p>
+</div>
+<div  class=" w-[19rem] ml-4 mt-[2rem]">
+<img src="https://news.airbnb.com/wp-content/uploads/sites/4/2021/08/newsroomFeatured.jpg?resize=1024%2C686" class="rounded-2xl border-[0.4px] hover:border-[2px] hover:border-black hover:opacity-75 ml-[10px]">
+<p class="ml-[2rem] text-xl mt-[1rem]">Airhost.org launches partnership to support Afghan refugees in Canada</p>
+</div>
+
+   </div>
+</div> 
+
+<div class="mt-[5rem] ml-[4rem] flex">
+
+  <div class="mt-[10rem]">
+    <p class="text-5xl mt-[rem] font-semibold">What makes Airhost, Airhost</p>
+    <p class="mt-[12px] text-3xl">A letter from our founders</p>
+    <button class="border-[0.1px] border-black p-[10px] rounded-xl mt-[1rem]">Read more</button>
+  </div>
+
+  <div>
+    <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2023/09/FoundersRauschSt_201203_001_photos_v2_x4_RET.jpg?w=2048" class="ml-[2rem] w-[45rem] rounded-xl"> 
+  </div>
+
+</div>
+
+
+  <p class="mt-[7rem] border-[0.8px]" ></p>
+  <div class="flex mt-7">
+    <div class="ml-7  max-[995px]:-ml-[3rem]">
+        <p class="ml-[6rem] mt-4 font-semibold">Support</p>
+        <form method="GET" action="/artical4">
+        <button  class="ml-[6rem] font-light hover:border-b-black border-b-[0.3px]  mt-1">Help Centre<button>
+        </form>
+
+        <form method="GET" action="/AirCover">
+            <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">AirCover</button>
+        </form>
+
+        <form method="GET" action="/Anti-discrimination">
+        <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Anti-discrimination</button>
+        </form>
+
+        <form method="GET" action="/Disability-support">
+            <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Disability support</button>
+        </form>
+
+        <form method="GET" action="/Cancellation-options">
+            <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Cancellation options</button>
+        </form>
+
+        <form method="GET" action="/Report-neighbourhood-concern">
+            <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Report neighbourhood concern</button>
+        </form>
+    </div>
+
+    <div class="ml-[10rem]  max-[1190px]:ml-[2rem] max-[900px]:-ml-[3rem] max-[830px]:-ml-[5rem]">
+        <p class="ml-[6rem] mt-4 font-semibold">Hosting</p>
+        <form method="GET" action="/Airbnb-your-home">
+            <button class="ml-[6rem] font-light hover:border-b-black border-b-[0.3px] mt-1">Airhost your home</button>
+        </form>
+
+        <form method="GET" action="/AirCover-for-Hosts">
+            <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">AirCover for Hosts</button>
+        </form>
+
+        <form method="GET" action="/Hosting-resources">
+            <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Hosting resources</button>
+        </form>
+
+        <form >
+        <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Community forum</button>
+        </form
+
+        <form method="GET" action="/Hosting-responsibly">
+        <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Hosting responsibly</button>
+        </form>
+    </div>
+
+    <div class="ml-[12rem] max-[1190px]:ml-[3rem]  max-[830px]:-ml-[25px]">
+        <p class="ml-[6rem] mt-4 font-semibold">Airbnb</p>
+        <form method="GET" action="/Newsroom">
+        <button class="ml-[6rem] font-light hover:border-b-black border-b-[0.3px] w-20 mt-1">Newsroom</button>
+        </form>
+
+        <form method="GET" action="/New-features">
+            <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px] w-28 mt-2">New features</button>
+        </form>
+
+        <form method="GET" action="/Careers">
+            <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px] w-20  mt-2">Careers</button>
+        </form>
+
+        <form method="GET" action="/Investors">
+            <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px] w-20  mt-2">Investors</button>
+        </form>
+
+        <form method="GET" action="/Airbnb.org-emergency-stays">
+            <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Airhost.org emergency stays</button>
+        </form>
+    </div>
+</div> 
+
+ <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
+<p class="mt-7 border-[0.1px] border-gray-300" ></p>
+<div class = "f-info flex h-[8rem] flex-wrap justify-center text-center align-center ">
+    <div class ="f-info-socials w-[100%] text-xl flex items-center justify-center">
+        <form method="get" action="https:www.facebook.com/AirbnbIndia">
+            <button class="fa-brands fa-square-facebook mr-2"></button>
+        </form>
+        <form method="get"  action="https:www.instagram.com/airbnb/">
+            <button class="fa-brands fa-square-instagram mr-2"></button>
+        </form>
+        <form method="get" action="https:twitter.com/i/flow/login?redirect_after_login=%2Fairbnb_in" >
+            <button class="fa-brands fa-square-twitter"></button>
+        </form>
+        <form method="get" action="https:www.linkedin.com/company/airbnb/" >
+            <button class="fa-brands fa-linkedin ml-[8px]"></button>
+        </form>
+    </div>
+    <div class="f-info-brand  w-[100%] justify-center  align-middle flex items-center ">&copy; Wanderlust Private Limited</div>
+    <div class ="f-info-links hover:underline w-[100%] align-middle flex items-center justify-center">
+        <a href="/privacy">Privacy</a>
+        <a href="/terms">Terms</a>
+    </div>
+</div> 
+
+
+  <script >
+    let div1 = document.getElementById("search");
+    let display1 = 0;
+    function hideShow1() {
+      if(display1 == 1) {
+        div1.style.display = 'block';
+        display1 = 0;
+      }
+      else {
+        div1.style.display = 'none';
+        display1 = 1;
+      }
+    }
+  </script> 
+
+
+<script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  // Next/previous controls
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  // Thumbnail image controls
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("demo");
+    let captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+  </script>
+
+
+
+<script>
+  function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+  
+  document.getElementById("defaultOpen").click();
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airhost | Holiday rentals,cabins,beach house & more</title>
+    <link rel=" icon" type="image/png" href="public/ffb9bc06766fd2534983c893e5758306.png" />
+    <link href="public/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="/rating.css" rel="stylesheet" />
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.js"></script>
+    
+</head> 
+
+<div class="flex w-full ">
+    <div class=" flex ">
+         <a class="text-5xl mt-[2rem] ml-[4rem] font-bold text-red-600" href="/artical4"><i class="fa-brands fa-airbnb"></i></a>
+      <div class="mr-auto flex  max-[1190px]:-ml-[9rem] max-[1090px]:-ml-[17rem] max-[920px]:-ml-[25rem] max-[790px]:-ml-[30rem] max-[699px]:-ml-[36rem] max-[600px]:-ml-[43rem]">
+      
+        <div class=" mr-auto flex flex-col pl-0  w  w-full ml-[55rem]  mt-[rem] " >
+            <div class=" flex rounded-3xl pr-2   ">
+                  <a class="text-lg mt-3" href="/listings/new" >Ready to Airhost it? </a>
+            </div>
+
+            <div class="border-[0.3px] border-black  rounded-lg flex  mt-2  p-2 pt-1 bg-red-500 h-[40px]  justify-end"> 
+
+              <div  class="ml-[1rem] relative ">
+                     <button class="accordion text-white text-lg"><b> <i class="fa-solid fa-house-medical text-white pr-2 "></i> Airhost setup </b></button>
+                    <div class="panel hidden overflow-hidden absolute border-[0.3px] top-0 -ml-[11rem] max-[790px]:mt-[1rem] max-[790px]:ml-[1rem] border-black  w-[9rem] pl-6 h-[100px] pt-[16px] -pt-[13px]  bg-[#f7f9f7] shadow-2xl rounded-xl p-[1rem]" id="search">
+                      <div onclick="hideShow1()" class="absolute top-0 right-1 w-max  hover:bg-white" >
+                        <div role="button" class="w-max pl-1 pr-1">
+                           <i class="fa-solid fa-circle-xmark text-xl"></i>
+                        </div>
+                    </div> 
+        <form action="/login">
+          <button class=" border-[0.8px] bg-red-500 hover:bg-red-700 hover:border-red-600  w-[6rem] text-white rounded-xl shadow-lg  p-2 ">Log in</button>
+        </form>
+        <form action="/signup">
+          <button class=" border-[0.8px] bg-red-500  hover:bg-red-700 hover:border-red-600 w-[6rem] text-white rounded-xl shadow-lg  p-2 "> sign up</button>
+        </form>
+      </div>
+                </div> 
+                </div>
+        </div> 
+      </div> 
+    </div>
+ </div>
+
+
+
+<body class="flex flex-col min-h-[100vh]">
+    <div class="offset-1 ml-[16rem] max-[1090px]:ml-[3rem]  max-[550px]:ml-[0px]  rounded-2xl pl-9  bg-transparent  max-[1150]:border2 ">
+    <h6 class="text-3xl font-bold border-b-2 w-[23rem] mb-2 mt-2 border-black shadow-sm">Creating A New Airhost :</h6>
+
+    <form method ="POST" action="/listings" name="Form" enctype="multipart/form-data">
+        <div class="mb-1 peer">
+     <label class="" for="title">Add a catchy title :</label> 
+     <br>
+     
+     <input class="peer relative invalid:border-red-700 valid:border-green-900 outline-none  focus:bg-white appearance-none  border-neutral-500 border-[1px] w-[50rem]  text-black  translate-x-1 opacity-50 mt-0 rounded-lg hover:opacity-100 hover:border-black hover:bg-white h-9  max-[890px]:w-[33rem] max-[700px]:w-[400px] max-[550px]:w-[300px] max-[1200px]:w-[700px] max-[1025px]:w-[670px]" name = "listing[title]" placeholder="enter tittle" type="text" required id="title"/>
+       <i class="fa-regular fa-circle-check text-xl absolute  text-green-700 invisible peer-valid:visible -ml-[2rem] pt-1 "></i>
+       <i class="fa-regular fa-circle-xmark invisible peer-invalid:visible absolute pt-1 text-xl text-red-700 -ml-[2rem]"></i>
+
+    
+     <div class="invisible peer-valid:visible  inline-block text-green-800  pt-0 pb-0 mt-0 mb-0 pr-[4rem] max-[1100px]:pr-[7rem] max-[700px]:hidden "><i>*Title Looks good</i></div>
+
+     <div class="invisible peer-invalid:visible text-red-700 font-light inline-block  pt-0 pb-0 mt-0 mb-0 max-[700px]:ml-0 max-[560px]:pr-[2rem]">
+         Please enter your title^*
+     </div>
+     </div>
+        <div class="pt-0 pb-0 mt-1 mb-0 ">
+            <label for="description">Description :</label><br>
+             <textarea class=" peer border-[1px] invalid:border-red-700 outline-none relative valid:border-green-900 border-neutral-500 focus:bg-white w-[50rem] text-black  opacity-50 translate-x-1 rounded-lg hover:opacity-100   h-14 max-[890px]:w-[33rem] max-[700px]:w-[400px] hover:border-black max-[550px]:w-[300px]  max-[1200px]:w-[700px] max-[1025px]:w-[670px]" name ="listing[description]" placeholder ="enter description" required  id="description" ></textarea>
+          <i class="fa-regular fa-circle-check text-xl  text-green-700 invisible peer-valid:visible  absolute pt-4 -ml-[2rem]  max-[600px]:ml-[1rem]"></i>
+          
+          <i class="fa-regular fa-circle-xmark invisible peer-invalid:visible absolute pt-3 text-xl text-red-700 -ml-[2rem]"></i>
+
+            <div class="invisible peer-valid:visible  inline-block text-green-800  pt-0 pb-0 mt-0 mb-0 pr-1 max-[1100px]:pr-[5rem] max-[700px]:hidden"><i>*Description must be short</i></div>
+            <div class="invisible peer-invalid:visible text-red-700 font-light inline-block  pt-0 pb-0 mt-0 mb-0 max-[700px]:ml-0">
+                Please enter your Description^*
+            </div>
+        </div>
+      
+        <div class="">
+            <label for="imageurl" > Upload Listing Image :</label><br>
+            <input class="peer border-[1px]  invalid:border-red-700 border-neutral-500 outline-none relative valid:border-green-900 focus:bg-white w-[50rem] opacity-50 translate-x-1  text-black rounded-lg  hover:opacity-100   h-8 max-[890px]:w-[33rem] max-[700px]:w-[400px] hover:border-black max-[550px]:w-[300px] max-[1200px]:w-[700px] max-[1025px]:w-[670px]" name ="listing[image]" type="file" required id="imageurl"/>
+          <i class="fa-regular fa-circle-check text-xl  text-green-700 invisible peer-valid:visible ml-2 absolute "></i>
+          <i class="fa-regular fa-circle-xmark invisible peer-invalid:visible absolute pt-1 ml-3 text-xl text-red-700"></i>
+          <p class="invisible peer-invalid:visible text-red-700 font-light">
+
+            <div class="invisible peer-invalid:visible inline-block text-red-700 font-light  pt-0 pb-0 mt-0 mb-0 max-[700px]:ml-0">Please upload your image^*</div>
+
+          <p class="invisible peer-invalid:visible text-red-700 font-light"></p>
+        </div >
+
+
+        <div class="flex max-[890px]:flex-col mt-2">
+            <div class=""> 
+                <label class="" for="price" >Price :</label><br>
+                <input class="peer border-[1px] border-neutral-500 focus:bg-white outline-none valid:border-green-900  invalid:border-red-900 w-[13rem] opacity-50 translate-x-1 text-black  rounded-lg  hover:opacity-100  h-9 max-[890px]:w-[33rem] max-[700px]:w-[400px] hover:border-black max-[550px]:w-[300px] max-[1200px]:w-[170px] max-[1025px]:w-[150px] " name ="listing[price]" placeholder ="enter Price" type="number" required id="price"/>
+
+             <i class="fa-regular fa-circle-check text-xl  text-green-700 invisible peer-valid:visible absolute pt-1 -ml-[2rem]"></i>
+          <i class="fa-regular fa-circle-xmark invisible peer-invalid:visible absolute pt-1  text-xl text-red-700 -ml-[2rem]"></i>
+
+
+                <p class="invisible peer-invalid:visible text-red-700 font-light">
+
+                <p class="invisible peer-invalid:visible text-red-700  font-light  inline-block  pt-0 pb-0 mt-0 mb-0 max-[560px]:pr-[2rem]">
+                    Please enter your  price^*
+                </p>
+            </div>
+            <div class="pr-7  max-[890px]:ml-[2px] max-[1080px]:pr-[2rem] max-[1020px]:mrl-[2rem] ml-[2.5rem] ">
+                <label for="country" >Country :</label><br>
+                <input class="peer border-[1px]  border-neutral-500 w-[35rem] outline-none valid:border-green-900 invalid:border-red-700 opacity-50 rounded-lg text-black translate-x-1 focus:bg-white  hover:opacity-100   h-9 max-[890px]:w-[33rem] max-[700px]:w-[400px] hover:border-black  max-[550px]:w-[300px] max-[1200px]:w-[475px] max-[1090px]:w-[480px] max-[1201px]:w-[490px] " name ="listing[country]" placeholder ="enter country name" type="text" required id="country"/>
+             <i class="fa-regular fa-circle-check text-xl  text-green-700 invisible peer-valid:visible   absolute -ml-[2rem]  max-[1200px]:ml-[1rem] max-[1090px]:-ml-[2rem] max-[1025px]:ml-[1rem] max-[769px]:ml-[1rem] max-[890px]:-ml-[2rem] max-[700px]:-ml-[2rem]"></i>
+          <i class="fa-regular fa-circle-xmark invisible peer-invalid:visible absolute pt-1  text-xl text-red-700 -ml-[2rem] max-[1200px]:ml-[1rem] max-[1090px]:-ml-[2rem] max-[1025px]:ml-[rem] max-[769px]:ml-[rem] max-[890px]:-ml-[2rem] max-[700px]:-ml-[2rem]"></i>
+
+
+            <div class="invisible peer-valid:visible  inline-block text-green-800   pt-0 pb-0 mt-0 mb-0 pr-[4rem] max-[700px]:hidden"><i>*country should be valid</i></div>
+
+
+                <div class="invisible peer-invalid:visible text-red-700 font-light inline-block border-red-500   pt-0 pb-0 mt-0 mb-0 max-[700px]:ml-0 ">
+                    Please enter your Country^*
+                </div>
+                
+            </div>
+        </div> 
+        <div class="">
+            <label for="location">Location :</label><br>
+            <input class= "peer border-[1px] border-neutral-500 w-[50rem] outline-none valid:border-green-900   invalid:border-red-700 opacity-50 rounded-lg translate-x-1 text-black focus:bg-white hover:opacity-100  h-9 max-[890px]:w-[33rem] max-[700px]:w-[400px] hover:border-black  max-[550px]:w-[300px] max-[1200px]:w-[700px] max-[1025px]:w-[670px] " name ="listing[location]" placeholder ="enter location" type="text" required id="location"/>
+
+            <i class="fa-regular fa-circle-check text-xl  text-green-700 invisible peer-valid:visible  absolute -ml-[2rem]"></i>
+          <i class="fa-regular fa-circle-xmark invisible peer-invalid:visible absolute pt-1 text-xl text-red-700 -ml-[2rem]"></i>
+
+
+            <p class="invisible peer-invalid:visible text-red-700 font-light">
+            <div class="invisible peer-valid:visible  inline-block text-green-800 pt-0 pb-0 mt-0 mb-0 pr-[4rem] max-[700px]:hidden "><i>*Location should be valid</i></div>
+
+
+            <p class="invisible peer-invalid:visible text-red-700 font-light inline-block pt-0 pb-0 mt-0 mb-0 max-[700px]:ml-0 max-[560px]:pr-[2rem] ">
+                Please enter your location^*
+            </p>
+        </div>
+        
+
+        <button class="border-2 text-white bg-[#fe424d] mt-[1rem] p-2 w-[6rem] rounded-2xl text-lg  hover:border-black hover:bg-stone-500">Add</button>
+    </form>
+</div>
+
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+  </script>
+  
+  <script >
+    let div1 = document.getElementById("search");
+    let display1 = 0;
+    function hideShow1() {
+      if(display1 == 1) {
+        div1.style.display = 'block';
+        display1 = 0;
+      }
+      else {
+        div1.style.display = 'none';
+        display1 = 1;
+      }
+    }
+  </script>
+  
+</body>
+</html>

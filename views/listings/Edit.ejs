@@ -1,0 +1,99 @@
+<% layout("/layouts/boilerplate.ejs") %>
+<body class="flex flex-col min-h-[100vh]">
+    <div class="offset-1 ml-[16rem] max-[1090px]:ml-[3rem]  max-[550px]:ml-[0px]  rounded-2xl pl-9  bg-transparent  max-[1150]:border2 ">
+    <h6 class="text-3xl font-bold border-b-2 w-[17rem] mb-2 mt-2 border-black shadow-sm">Edit your Airhost :</h6>
+
+    <form method ="POST" action="/listings/<%= listing._id %>?_method=PUT" enctype="multipart/form-data">
+        <div class="mb-1 peer">
+     <label class="" for="title" >Add a catchy title :</label> 
+     <br>
+     
+     <input class="peer relative invalid:border-red-700 valid:border-green-900 outline-none  focus:bg-white appearance-none  border-neutral-500 border-[1px] w-[50rem]  text-black  translate-x-1 opacity-50 mt-0 rounded-lg hover:opacity-100 hover:border-black hover:bg-white h-9  max-[890px]:w-[33rem] max-[700px]:w-[400px] max-[550px]:w-[300px] max-[1200px]:w-[700px] max-[1025px]:w-[670px]" name = "listing[title]"  value = "<%=listing.title %>" type="text" required/>
+       <i class="fa-regular fa-circle-check text-xl absolute  text-green-700 invisible peer-valid:visible -ml-[2rem] pt-1 "></i>
+       <i class="fa-regular fa-circle-xmark invisible peer-invalid:visible absolute pt-1 text-xl text-red-700 -ml-[2rem]"></i>
+
+    
+     <div class="invisible peer-valid:visible  inline-block text-green-800  pt-0 pb-0 mt-0 mb-0 pr-[4rem] max-[1100px]:pr-[7rem] max-[700px]:hidden "><i>*Title Looks good</i></div>
+
+     <div class="invisible peer-invalid:visible text-red-700 font-light inline-block  pt-0 pb-0 mt-0 mb-0 max-[700px]:ml-0 max-[560px]:pr-[2rem]">
+         Please enter your title^*
+     </div>
+     </div>
+        <div class="pt-0 pb-0 mt-1 mb-0 ">
+            <label for="description">Description :</label><br>
+             <textarea class=" peer border-[1px] invalid:border-red-700 outline-none relative valid:border-green-900 border-neutral-500 focus:bg-white w-[50rem] text-black  opacity-50 translate-x-1 rounded-lg hover:opacity-100   h-14 max-[890px]:w-[33rem] max-[700px]:w-[400px] hover:border-black max-[550px]:w-[300px]  max-[1200px]:w-[700px] max-[1025px]:w-[670px]" required  name ="listing[description]"> <%=listing.description %> </textarea>
+          <i class="fa-regular fa-circle-check text-xl  text-green-700 invisible peer-valid:visible  absolute pt-4 -ml-[2rem]  max-[600px]:ml-[1rem]"></i>
+          
+          <i class="fa-regular fa-circle-xmark invisible peer-invalid:visible absolute pt-3 text-xl text-red-700 -ml-[2rem]"></i>
+
+            <div class="invisible peer-valid:visible  inline-block text-green-800  pt-0 pb-0 mt-0 mb-0 pr-1 max-[1100px]:pr-[5rem] max-[700px]:hidden"><i>*Description must be short</i></div>
+            <div class="invisible peer-invalid:visible text-red-700 font-light inline-block  pt-0 pb-0 mt-0 mb-0 max-[700px]:ml-0">
+                Please enter your Description^*
+            </div>
+        </div>
+
+        <div class="mt-1 w-[13rem] h-auto ">
+            Origional Listing Image :<br/>
+          <img src=" <%=  origionalImageUrl %>" />
+        </div >
+        
+        <div class="mt-1">
+            <label for="image">Upload New Image :</label><br>
+            <input class="peer border-[1px]  invalid:border-red-700 border-neutral-500 outline-none relative valid:border-green-900 focus:bg-white w-[50rem] opacity-50 translate-x-1  text-black rounded-lg  hover:opacity-100   h-8 max-[890px]:w-[33rem] max-[700px]:w-[400px] hover:border-black max-[550px]:w-[300px] max-[1200px]:w-[700px] max-[1025px]:w-[670px]" name ="listing[image]"  value ="<%=listing.image %>" type="file"/>
+
+          <p class="invisible peer-invalid:visible text-red-700 font-light">
+            
+        </div >
+        <div class="flex max-[890px]:flex-col mt-1">
+            <div class=""> 
+                <label class="" for="price" >Price :</label><br>
+                <input class="peer border-[1px] border-neutral-500 focus:bg-white outline-none valid:border-green-900  invalid:border-red-900 w-[13rem] opacity-50 translate-x-1 text-black  rounded-lg  hover:opacity-100  h-9 max-[890px]:w-[33rem] max-[700px]:w-[400px] hover:border-black max-[550px]:w-[300px] max-[1200px]:w-[170px] max-[1025px]:w-[150px] "  name ="listing[price]" value ="<%=listing.price %>" required type="number"/>
+             <i class="fa-regular fa-circle-check text-xl  text-green-700 invisible peer-valid:visible absolute pt-1 -ml-[2rem]"></i>
+          <i class="fa-regular fa-circle-xmark invisible peer-invalid:visible absolute pt-1  text-xl text-red-700 -ml-[2rem]"></i>
+
+
+                <p class="invisible peer-invalid:visible text-red-700 font-light">
+
+                <p class="invisible peer-invalid:visible text-red-700  font-light  inline-block  pt-0 pb-0 mt-0 mb-0 max-[560px]:pr-[2rem]">
+                    Please enter your  price^*
+                </p>
+            </div>
+            <div class="pr-7  max-[890px]:ml-[2px] max-[1080px]:pr-[2rem] max-[1020px]:mrl-[2rem] ml-[2.5rem] ">
+                <label for="country" >Country :</label><br>
+                <input class="peer border-[1px]  border-neutral-500 w-[35rem] outline-none valid:border-green-900 invalid:border-red-700 opacity-50 rounded-lg text-black translate-x-1 focus:bg-white  hover:opacity-100   h-9 max-[890px]:w-[33rem] max-[700px]:w-[400px] hover:border-black  max-[550px]:w-[300px] max-[1201px]:w-[475px] max-[1090px]:w-[480px] max-[1200px]:w-[490px] " name ="listing[country]"  value ="<%=listing.country %>" required type="text"/>
+             <i class="fa-regular fa-circle-check text-xl  text-green-700 invisible peer-valid:visible   absolute -ml-[2rem]  max-[1200px]:ml-[12rem] max-[1090px]:-ml-[2rem] max-[1025px]:ml-[12rem] max-[769px]:ml-[12rem] max-[890px]:-ml-[2rem] max-[700px]:-ml-[2rem]"></i>
+          <i class="fa-regular fa-circle-xmark invisible peer-invalid:visible absolute pt-1  text-xl text-red-700 -ml-[2rem] max-[1200px]:ml-[28rem] max-[1090px]:-ml-[2rem] max-[1025px]:ml-[28rem] max-[769px]:ml-[28rem] max-[890px]:-ml-[2rem] max-[700px]:-ml-[2rem]"></i>
+
+
+            <div class="invisible peer-valid:visible  inline-block text-green-800   pt-0 pb-0 mt-0 mb-0 pr-[4rem] max-[700px]:hidden"><i>*country should be valid</i></div>
+
+
+                <div class="invisible peer-invalid:visible text-red-700 font-light inline-block border-red-500   pt-0 pb-0 mt-0 mb-0 max-[700px]:ml-0 ">
+                    Please enter your Country^*
+                </div>
+                
+            </div>
+        </div> 
+        <div class="">
+            <label for="location" >Location :</label><br>
+            <input class= "peer border-[1px] border-neutral-500 w-[50rem] outline-none valid:border-green-900   invalid:border-red-700 opacity-50 rounded-lg translate-x-1 text-black focus:bg-white hover:opacity-100  h-9 max-[890px]:w-[33rem] max-[700px]:w-[400px] hover:border-black  max-[550px]:w-[300px] max-[1200px]:w-[700px] max-[1025px]:w-[670px] " name ="listing[location] " value ="<%=listing.location %>" required  type="text"/>
+            <i class="fa-regular fa-circle-check text-xl  text-green-700 invisible peer-valid:visible  absolute -ml-[2rem]"></i>
+          <i class="fa-regular fa-circle-xmark invisible peer-invalid:visible absolute pt-1 text-xl text-red-700 -ml-[2rem]"></i>
+
+
+            <p class="invisible peer-invalid:visible text-red-700 font-light">
+            <div class="invisible peer-valid:visible  inline-block text-green-800   pt-0 pb-0 mt-0 mb-0 pr-[4rem] max-[700px]:hidden "><i>*Location should be valid</i></div>
+
+
+            <p class="invisible peer-invalid:visible text-red-700 font-light   inline-block pt-0 pb-0 mt-0 mb-0 max-[700px]:ml-0 max-[560px]:pr-[2rem] ">
+                Please enter your name^*
+            </p>
+        </div>
+        
+
+        <button class="border-2  text-white bg-[#fe424d] mt-[1rem] p-2 w-[6rem] rounded-2xl text-lg  hover:border-black hover:bg-stone-500">Edit</button>
+    </form>
+</div>
+<script src="public/js/script.js"></script>
+
+</body>

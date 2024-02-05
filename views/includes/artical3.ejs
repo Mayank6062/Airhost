@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airhost | Holiday rentals,cabins,beach house & more</title>
+    <link rel=" icon" type="image/png" href="public/ffb9bc06766fd2534983c893e5758306.png" />
+    <link href="public/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="/rating.css" rel="stylesheet" />
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.js"></script>
+    
+</head> 
+    
+<body>
+  <div class="flex w-full flex-wrap items-center justify-between mt-1 ">
+    <div class="ml-16  flex ">
+         <a class="text-4xl text-black" href="/artical4"><i class="fa-brands fa-airbnb"></i></a>
+      <div class=" mr-auto flex flex-col pl-0  lg:flex-row w-[100%] " data-te-navbar-nav-ref>
+          <a class="ml-1 mt-2 font-semibold text-black text-xl" href="/artical4" data-te-nav-link-ref><pre class="font-serif">Help center</pre></a>
+
+          <form >   
+            <div class="relative ml-[20rem] ">
+               <input type="text" onclick="hideShow1()"  class="block text-black  border-[0.1px] relative hover:border-[2px] border-black rounded-full h-[2.5rem] w-[20rem]" placeholder="Search how-tos and more">
+               <button onclick="hideShow1()" class="fa-solid fa-magnifying-glass absolute border-[0.1px] hover:border-[2px] text-[#f9f9f9] bg-red-600  border-black rounded-full bottom-1.5 ml-[280px] pb-[25px] top-[2px] p-[9px]" ></button>
+            </div>
+
+<div id="search" class="border-[0.2px] hidden absolute border-black rounded-2xl bg-[#f7f7f7] shadow-2xl w-[38rem] h-[17rem] ml-[20rem] pt-[1rem] pl-[4rem]">
+  <div onclick="hideShow1()" class="absolute top-3 right-3 w-max  hover:bg-white" >
+    <div role="button" class="w-max pl-1 pr-1">
+       <i class="fa-solid fa-circle-xmark text-xl"></i>
+    </div>
+</div> 
+  <div class="flex mt-[20px]">
+    <i class="fa-solid fa-newspaper border-[0.1px] border-black rounded-xl p-[12px] bg-gray-200"></i> <a href="/artical1" class="mt-[8px] ml-[1rem] text-lg">Cancelling your reservation for a stay</a>
+  </div>
+  <div class="flex mt-[20px]">
+    <i class="fa-solid fa-newspaper border-[0.1px] border-black rounded-xl p-[12px] bg-gray-200"></i> <a href="/artical2" class="mt-[8px] ml-[1rem] text-lg">Change the date or time of your Experience reservation</a>
+  </div>
+  <div class="flex mt-[20px]">
+    <i class="fa-solid fa-newspaper border-[0.1px] border-black rounded-xl p-[12px] bg-gray-200"></i>  <a href="/artical3" class="mt-[8px] ml-[1rem] text-lg">If your Host cancels your reservation</a>
+  </div>
+  </div>
+  
+  
+         </form>
+            
+        <div class=" mr-auto flex flex-col pl-0  lg:flex-row w-[100%] justify-end  ml-[18rem]" data-te-navbar-nav-ref>
+            <div class=" flex rounded-3xl pr-2  justify-end ">
+                  <a class=" mt-2" href="/listings/new" data-te-nav-link-ref>Airhost your home</a>
+            </div>
+              <div class="border-[0.3px] border-black  flex rounded-3xl mt-1 pr-2 pl-2 h-[2rem]  justify-end">
+          
+                <div data-te-nav-item-ref>
+                  <a class=" text-black" aria-current="page" href="/signup" data-te-nav-link-ref><b>Sign up</b></a>
+                  <var class="border-[0.9px] ml-1 mr-1 h-[4rem] border-black"> </var>
+                </div>
+                <div  data-te-nav-item-ref>
+                  <a class=" " href="/login" data-te-nav-link-ref><b>Log in</b></a>
+                </div>
+             
+              </div>
+        </div> 
+      </div> 
+    </div>
+  </div>
+<p class="border-[0.1px] mt-5 border-black"> </p>
+ 
+
+<div class="flex text-sm mt-6 ml-[9rem] "> 
+  <a href="#home" class="ml-[1rem]  "> Home</p><p class="ml-[5px]"> ></a> 
+  <p class="ml-[1rem]  "> All topics</p>  <p class="ml-[5px]"> ></p> 
+  <p class="ml-[1rem] "> Your reservations</p><p class="ml-[5px]"> ></p> 
+  <p class="ml-[1rem] "> Cancellation</p><p class="ml-[5px]"> ></p> 
+  <p class="ml-[1rem]  ">Host-initiated cancellation</p> <p class="ml-[5px]"> ></p> 
+  <p class="ml-[1rem]  "> If your Host cancles your reservation</p> <p class="ml-[5px]"> ></p> 
+</div>
+
+<p class=" ml-[12rem] text-sm mt-[1rem] opacity-60">How-to• Guest</p>
+<div class=" inline-block ml-[60rem]">
+<div class=" w-[20rem] pl-6  pt-3 pb-3 rounded-2xl  border-[0.8px] border-black bg-[#f9f9f9] shadow-xl">
+    Get help with your reservations, <br> account, and more.
+    <div class="flex">
+      <form action="/login">
+        <button class=" border-[0.8px] bg-red-500 hover:bg-red-700 hover:border-red-600 ml-[1rem] w-[6rem] text-white rounded-xl shadow-lg mt-3 p-2 ">Log in</button>
+      </form>
+      <form action="/signup">
+        <button class=" border-[0.8px] bg-red-500 ml-[2rem] hover:bg-red-700 hover:border-red-600 w-[6rem] text-white rounded-xl shadow-lg mt-3 p-2 "> sign up</button>
+      </form>
+    </div>
+  </div>
+</div>
+  <p class=" text-4xl font-semibold mt-0 ml-[12rem]">
+    If your Host cancels your reservation</p>
+<p class="ml-[12rem] opacity-60 mt-[1rem]">While it’s rare, sometimes a Host may need to cancel a reservation. We understand <br>
+    this can affect your plans in a big way. Rest assured that every booking made on <br>
+    Airbnb comes with<b class="border-b-[1px] border-black opacity-100 hover:opacity-100 hover:border-b-[2px] "> AirCover for guests,</b>support for guests who experience issues <br>
+     with their booking, including Host cancellations within 30 days of check-in.
+</p>
+<p class=" text-2xl font-semibold mt-[2rem] ml-[12rem]">
+    What to expect if your reservation is cancelle2</p>
+
+<p class="ml-[12rem] mt-[1rem] opacity-60">When a cancellation occurs, you’ll get an email with full details, including your refund  <br> <b class="border-b-[1px] border-black opacity-100 hover:opacity-100 hover:border-b-[2px] ">info. Refund times may differ </b>depending on how you paid.</p>
+<p class="ml-[12rem] mt-[1rem] opacity-60">If your cancellation happens within 30 days of check-in, we’ll also help you rebook <br>a similar place to stay, depending on availability at comparable pricing.</p>
+<p class="ml-[12rem] mt-[1rem] opacity-60">As always, you can <b class="border-b-[1px] border-black opacity-100 hover:opacity-100 hover:border-b-[2px] ">contact us if you need more help. </b></p>
+
+
+<div class="flex mt-[2rem] ml-[12rem] opacity-70  text-md"> 
+    <p class="font-semibold text-lg">Did this article help?</p>
+    <p class="flex ml-[2rem] font-serif opacity-80 border-b-[0.7px] hover:border-b-[2px] border-black hover:opacity-100 text-md">Yes</p>
+    <p class="flex  ml-[2rem] font-serif opacity-80  text-md border-b-[0.7px] hover:border-b-[2px] border-black hover:opacity-100">No</p>
+  
+  </div>
+  <p class="border-[1px] ml-[11rem] mt-[2rem] w-[40rem]"></p>
+
+
+
+
+    <p class="mt-[2rem] ml-[12rem] text-2xl font-semibold">Related articles</p>
+    <p class="mt-[2rem] ml-[12rem] opacity-50">Guest</p>
+    <p class=" ml-[12rem] text-xl border-b-[0.3px] border-black w-[16rem]">
+        If your Host needs to cancel</p>
+    
+    <p class="mt-[9px] ml-[12rem] opacity-60  text-md">If your host can’t accommodate your stay, don’t cancel for them—send them a cancellation <br>request so you don’t miss out getting your best ref…
+    </p>
+    
+    <p class="border-[1px] ml-[12rem] mt-[2rem] w-[40rem]"></p>
+    <p class=" ml-[12rem] text-xl border-b-[0.3px] mt-[1rem] border-black w-[14rem]">How cancellations work</p>
+    
+    <p class="mt-[9px] ml-[12rem] opacity-60  text-md">
+        Sometimes things come up and you have to cancel. To keep things running smoothly, here’s how <br> you can cancel a reservation.
+    </p>
+    
+    <p class="border-[1px] ml-[12rem] mt-[2rem] w-[40rem]"></p>
+    <p class="mt-[1rem] ml-[12rem] opacity-50">Guest</p>
+    <p class=" ml-[12rem] text-xl border-b-[0.3px] border-black w-[12rem]">AirCover for guests</p>
+    
+    <p class="mt-[9px] ml-[12rem] opacity-60  text-md">
+       
+Every booking comes with AirCover for guests. If there’s a serious issue with your Airbnb that your <br>Host can’t resolve, we’ll help you find …
+    </p>
+    
+
+
+
+
+
+
+
+
+    <p class="mt-[7rem] border-[0.8px]" ></p>
+    <div class="flex mt-7">
+      <div class="ml-7  max-[995px]:-ml-[3rem]">
+          <p class="ml-[6rem] mt-4 font-semibold">Support</p>
+          <form method="GET" action="/artical4">
+          <button  class="ml-[6rem] font-light hover:border-b-black border-b-[0.3px]  mt-1">Help Centre<button>
+          </form>
+
+          <form method="GET" action="/AirCover">
+              <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">AirCover</button>
+          </form>
+
+          <form method="GET" action="/Anti-discrimination">
+          <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Anti-discrimination</button>
+          </form>
+
+          <form method="GET" action="/Disability-support">
+              <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Disability support</button>
+          </form>
+
+          <form method="GET" action="/Cancellation-options">
+              <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Cancellation options</button>
+          </form>
+
+          <form method="GET" action="/Report-neighbourhood-concern">
+              <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Report neighbourhood concern</button>
+          </form>
+      </div>
+
+      <div class="ml-[10rem]  max-[1190px]:ml-[2rem] max-[900px]:-ml-[3rem] max-[830px]:-ml-[5rem]">
+          <p class="ml-[6rem] mt-4 font-semibold">Hosting</p>
+          <form method="GET" action="/Airbnb-your-home">
+              <button class="ml-[6rem] font-light hover:border-b-black border-b-[0.3px] mt-1">Airhost your home</button>
+          </form>
+
+          <form method="GET" action="/AirCover-for-Hosts">
+              <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">AirCover for Hosts</button>
+          </form>
+
+          <form method="GET" action="/Hosting-resources">
+              <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Hosting resources</button>
+          </form>
+
+          <form >
+          <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Community forum</button>
+          </form
+
+          <form method="GET" action="/Hosting-responsibly">
+          <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Hosting responsibly</button>
+          </form>
+      </div>
+
+      <div class="ml-[12rem] max-[1190px]:ml-[3rem]  max-[830px]:-ml-[25px]">
+          <p class="ml-[6rem] mt-4 font-semibold">Airbnb</p>
+          <form method="GET" action="/Newsroom">
+          <button class="ml-[6rem] font-light hover:border-b-black border-b-[0.3px] w-20 mt-1">Newsroom</button>
+          </form>
+
+          <form method="GET" action="/New-features">
+              <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px] w-28 mt-2">New features</button>
+          </form>
+
+          <form method="GET" action="/Careers">
+              <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px] w-20  mt-2">Careers</button>
+          </form>
+
+          <form method="GET" action="/Investors">
+              <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px] w-20  mt-2">Investors</button>
+          </form>
+
+          <form method="GET" action="/Airbnb.org-emergency-stays">
+              <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Airhost.org emergency stays</button>
+          </form>
+      </div>
+  </div> 
+
+   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
+  <p class="mt-7 border-[0.1px] border-gray-300" ></p>
+  <div class = "f-info flex h-[8rem] flex-wrap justify-center text-center align-center ">
+      <div class ="f-info-socials w-[100%] text-xl flex items-center justify-center">
+          <form method="get" action="https:www.facebook.com/AirbnbIndia">
+              <button class="fa-brands fa-square-facebook mr-2"></button>
+          </form>
+          <form method="get"  action="https:www.instagram.com/airbnb/">
+              <button class="fa-brands fa-square-instagram mr-2"></button>
+          </form>
+          <form method="get" action="https:twitter.com/i/flow/login?redirect_after_login=%2Fairbnb_in" >
+              <button class="fa-brands fa-square-twitter"></button>
+          </form>
+          <form method="get" action="https:www.linkedin.com/company/airbnb/" >
+              <button class="fa-brands fa-linkedin ml-[8px]"></button>
+          </form>
+      </div>
+      <div class="f-info-brand  w-[100%] justify-center  align-middle flex items-center ">&copy; Wanderlust Private Limited</div>
+      <div class ="f-info-links hover:underline w-[100%] align-middle flex items-center justify-center">
+          <a href="/privacy">Privacy</a>
+          <a href="/terms">Terms</a>
+      </div>
+  </div> 
+
+
+<script >
+    let div1 = document.getElementById("search");
+    let display1 = 0;
+    function hideShow1() {
+      if(display1 == 1) {
+        div1.style.display = 'block';
+        display1 = 0;
+      }
+      else {
+        div1.style.display = 'none';
+        display1 = 1;
+      }
+    }
+  </script>
+
+<script>
+jQuery(function() {
+  jQuery('#showall').click(function() {;
+  jQuery('.target').show();
+});
+
+jQuery('.Single').click(function() {
+  jQuery('.target').hide();
+  jQuery('#div'+$(this).attr('target')).show();
+});
+});
+</script>
+
+
+
+</body>
+</html>

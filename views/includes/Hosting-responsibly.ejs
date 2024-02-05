@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airhost | Holiday rentals,cabins,beach house & more</title>
+    <link rel=" icon" type="image/png" href="public/ffb9bc06766fd2534983c893e5758306.png" />
+    <link href="public/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="/rating.css" rel="stylesheet" />
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.js"></script>
+    
+</head> 
+<body>
+  <div class="flex w-full flex-wrap items-center justify-between mt-1 ">
+    <div class="ml-16  flex ">
+         <a class="text-4xl text-black" href="/artical4"><i class="fa-brands fa-airbnb"></i></a>
+      <div class=" mr-auto flex flex-col pl-0  lg:flex-row w-[100%] " data-te-navbar-nav-ref>
+          <a class="ml-1 mt-2 font-semibold text-black text-xl" href="/artical4" data-te-nav-link-ref><pre class="font-serif">Help center</pre></a>
+
+          <form >   
+            <div class="relative ml-[20rem] ">
+               <input type="text" onclick="hideShow1()"  class="block text-black  border-[0.1px] relative hover:border-[2px] border-black rounded-full h-[2.5rem] w-[20rem]" placeholder="Search how-tos and more">
+               <button onclick="hideShow1()" class="fa-solid fa-magnifying-glass absolute border-[0.1px] hover:border-[2px] text-[#f9f9f9] bg-red-600  border-black rounded-full bottom-1.5 ml-[280px] pb-[25px] top-[2px] p-[9px]" ></button>
+            </div>
+
+<div id="search" class="border-[0.2px] hidden absolute border-black rounded-2xl bg-[#f7f7f7] shadow-2xl w-[38rem] h-[17rem] ml-[20rem] pt-[1rem] pl-[4rem]">
+  <div onclick="hideShow1()" class="absolute top-3 right-3 w-max  hover:bg-white" >
+    <div role="button" class="w-max pl-1 pr-1">
+       <i class="fa-solid fa-circle-xmark text-xl"></i>
+    </div>
+</div> 
+  <div class="flex mt-[20px]">
+    <i class="fa-solid fa-newspaper border-[0.1px] border-black rounded-xl p-[12px] bg-gray-200"></i> <a href="/artical1" class="mt-[8px] ml-[1rem] text-lg">Cancelling your reservation for a stay</a>
+  </div>
+  <div class="flex mt-[20px]">
+    <i class="fa-solid fa-newspaper border-[0.1px] border-black rounded-xl p-[12px] bg-gray-200"></i> <a href="/artical2" class="mt-[8px] ml-[1rem] text-lg">Change the date or time of your Experience reservation</a>
+  </div>
+  <div class="flex mt-[20px]">
+    <i class="fa-solid fa-newspaper border-[0.1px] border-black rounded-xl p-[12px] bg-gray-200"></i>  <a href="/artical3" class="mt-[8px] ml-[1rem] text-lg">If your Host cancels your reservation</a>
+  </div>
+  </div>
+  
+  
+         </form>
+            
+        <div class=" mr-auto flex flex-col pl-0  lg:flex-row w-[100%] justify-end  ml-[18rem]" data-te-navbar-nav-ref>
+            <div class=" flex rounded-3xl pr-2  justify-end ">
+                  <a class=" mt-2" href="/listings/new" data-te-nav-link-ref>Airhost your home</a>
+            </div>
+              <div class="border-[0.3px] border-black  flex rounded-3xl mt-1 pr-2 pl-2 h-[2rem]  justify-end">
+          
+                <div data-te-nav-item-ref>
+                  <a class=" text-black" aria-current="page" href="/signup" data-te-nav-link-ref><b>Sign up</b></a>
+                  <var class="border-[0.9px] ml-1 mr-1 h-[4rem] border-black"> </var>
+                </div>
+                <div  data-te-nav-item-ref>
+                  <a class=" " href="/login" data-te-nav-link-ref><b>Log in</b></a>
+                </div>
+             
+              </div>
+        </div> 
+      </div> 
+    </div>
+  </div>
+
+
+  <p class="border-[0.1px] mt-5 border-black"> </p>
+ 
+
+  <div class="flex text-sm mt-6 ml-[9rem] "> 
+    <a href="#home" class="ml-[1rem]  "> Home</p><p class="ml-[5px]"> ></a> 
+    <p class="ml-[1rem]  "> All topics</p>  <p class="ml-[5px]"> ></p> 
+    <p class="ml-[1rem] "> Responsible hosting</p><p class="ml-[5px]"> ></p> 
+    <p class="ml-[1rem] "> Cancellation</p><p class="ml-[5px]"> ></p> 
+    <p class="ml-[1rem]  "> Asia-pacific</p> <p class="ml-[5px]"> ></p> 
+    <p class="ml-[1rem]  "> Responsible hosting in india</p> <p class="ml-[5px]"> ></p> 
+  </div>
+
+  
+  <p class="ml-[9rem] opacity-60 mt-[1rem]">Rules.Host</p>
+
+<div class="flex"> 
+  <p class="text-4xl font-semibold ml-[9rem] mt-[1rem]">Responsible hosting in India</p>
+  <div class=" inline-block  ml-[20rem] mr-[9rem]">
+      <div class=" w-[20rem] pl-6  pt-3 pb-3 rounded-2xl  border-[0.8px] border-black bg-[#f9f9f9] shadow-xl ">
+          Get help with your reservations, <br> account, and more.
+          <div class="flex">
+            <form action="/login">
+              <button class=" border-[0.8px] bg-red-500 hover:bg-red-700 hover:border-red-600 ml-[1rem] w-[6rem] text-white rounded-xl shadow-lg mt-3 p-2 ">Log in</button>
+            </form>
+            <form action="/signup">
+              <button class=" border-[0.8px] bg-red-500 ml-[2rem] hover:bg-red-700 hover:border-red-600 w-[6rem] text-white rounded-xl shadow-lg mt-3 p-2 "> sign up</button>
+            </form>
+          </div>
+        </div>
+      </div>
+  </div>
+
+<div class="ml-[8rem] border-[1px] rounded-lg w-fit">
+  <p class=" p-[12px] "><i class="fa-solid fa-volume-high text-red-600"></i> Join a local Host Club: Want to connect with Hosts in your area to get tips and advice? It’s <br> 
+    easy—find your community’s official Host Group on Facebook: </p>
+    <a class="border-b-[1px] w-fit border-black  ml-[2rem]" href="https://www.facebook.com/groups/838318690064292">Rajasthan Airbnb Host Community</a> <br>
+    <a class="border-b-[1px] w-fit border-black  ml-[2rem]" href="https://www.facebook.com/groups/2992901070940020">Uttarakhand Airbnb Host Community</a><br>
+    <a class="border-b-[1px] w-fit border-black  ml-[2rem]" href="https://www.facebook.com/groups/438765134053167">Sikkim Airbnb Host Community</a><br>
+    <a class="border-b-[1px] w-fit border-black  ml-[2rem]" href="https://www.facebook.com/groups/254928779592360">Himachal Pradesh Airbnb Host Community</a><br>
+    <a class="border-b-[1px] w-fit border-black  ml-[2rem]" href="https://www.facebook.com/groups/1382743445395361">Tamil Nadu Airbnb Host Community</a><br>
+    <a class="border-b-[1px] w-fit border-black  ml-[2rem]" href="https://www.facebook.com/groups/3981797971917479">Uttar Pradesh Airbnb Host Community</a><br>
+    <a class="border-b-[1px] w-fit border-black  ml-[2rem]" href="https://www.facebook.com/groups/340571249842368">Maharashtra Airbnb Host Community</a><br>
+    <a class="border-b-[1px] w-fit border-black  ml-[2rem]" href="https://www.facebook.com/groups/340571249842368">West Bengal & Odisha Airbnb Host Community</a><br>
+    <a class="border-b-[1px] w-fit border-black  ml-[2rem]" href="https://www.facebook.com/groups/1298442123934055">NCT of Delhi Airbnb Host Community</a><br>
+    <a class="border-b-[1px] w-fit border-black  ml-[2rem]" href="https://www.facebook.com/groups/1200393024234494">Goa Airbnb Host Community</a><br>
+    <a class="border-b-[1px] w-fit border-black  ml-[2rem]" href="https://www.facebook.com/groups/1200393024234494">Karnataka Airbnb Host Community</a><br>
+    <a class="border-b-[1px] w-fit border-black  ml-[2rem]" href="https://www.facebook.com/groups/2988271054834624">Kerala Airbnb Host Community</a><br>
+    <a class="border-b-[1px] w-fit border-black  ml-[2rem]" href="https://www.facebook.com/groups/403873957884692">Chandigarh, Haryana, and Punjab Airbnb Host Community</a><br>
+    <a class="border-b-[1px] w-fit border-black  ml-[2rem]" href="https://www.facebook.com/groups/aptelanganaairbnbhosts">AP and Telangana Host Community</a><br>
+    <a class="border-b-[1px] w-fit border-black  ml-[2rem]" href="https://www.facebook.com/groups/1692599934569842">Maldives Host Community</a><br>
+</div>
+
+
+<p class="ml-[9rem] font-light  mt-[3rem]">We encourage Hosts to think carefully about their responsibilities. Hosting offers rich  <br>
+   experiences, but it comes with a certain level of commitment. In addition to the <br>
+    Hospitality Standards, here are some ways you can be a responsible host. *</p>
+
+<p class="ml-[9rem] font-semibold mt-[2rem]">in this article</p>
+
+ <p class="ml-[9rem] mt-[1rem]"><i class="fa-solid fa-bookmark mr-[8px]"></i>Health and Cleanliness</p>
+ <p class="ml-[9rem] mt-[1rem]"><i class="fa-solid fa-bookmark mr-[8px]"></i>Safety</p>
+ <p class="ml-[9rem] mt-[1rem]"><i class="fa-solid fa-bookmark mr-[8px]"></i>Neighors</p>
+ <p class="ml-[9rem] mt-[1rem]"><i class="fa-solid fa-bookmark mr-[8px]"></i>Permissions</p>
+ <p class="ml-[9rem] mt-[1rem]"><i class="fa-solid fa-bookmark mr-[8px]"></i>General regulation</p>
+ <p class="ml-[9rem] mt-[1rem]"><i class="fa-solid fa-bookmark mr-[8px]"></i>Local regulation</p>
+ <p class="ml-[9rem] mt-[1rem]"><i class="fa-solid fa-bookmark mr-[8px]"></i>Insurance</p>
+
+ <p class="border-[1px] ml-[8rem] mt-[1rem] w-[50rem]"></p>
+<p class="ml-[9rem] mt-[1rem] text-3xl ">Health and cleanliness</p>
+
+<p class="ml-[9rem] mt-[2rem] font-light text-lg" >Global information about  <b class="text-black opacity-100 border-b-[1px] border-black w-fit"> Airbnb’s five-step enhanced cleaning process </b>can be found  <br>
+  in <b class="text-black opacity-100 border-b-[1px] border-black w-fit"> general info about hosting places to stay. </b></p>
+
+<p class="ml-[9rem] mt-[2rem] font-semibold  text-xl">Key recommendations on cleaning</p>
+<p class="ml-[9rem] mt-[1rem] font-light text-lg"> On June 9, 2020, the Tourism Ministry issued operational recommendations for <b class="text-black opacity-100 border-b-[1px] border-black w-fit">hotels, <br>
+   homestays, farmstays, B&B's,</b> another for restaurants, and a third for <b class="text-black opacity-100 border-b-[1px] border-black w-fit"> other tourism <br>
+   service providers </b>including online and offline Experience Hosts. 
+  </p>
+
+
+<li class="ml-[12rem] mt-[2rem] border-b-[1px] w-fit border-black font-semibold">India’s preventive measures for accommodation providers to contain the 
+  spread of COVID-19
+</li>
+
+<p class="ml-[9rem] mt-[3rem] font-semibold  text-xl">General resources</p>
+<li class="ml-[12rem] mt-[2rem] border-b-[1px] w-fit border-black font-semibold">
+  For general information on India's COVID-19-related guideline
+</li>
+
+
+
+<p class="border-[1px] ml-[8rem] mt-[1rem] w-[50rem]"></p>
+<p class="ml-[9rem] mt-[3rem] font-semibold  text-xl">Safety </p>
+<li class="ml-[12rem] mt-[2rem] border-b-[1px] w-fit border-black font-semibold">
+What can I do to make my space safe for guests?
+</li>
+
+
+<p class="ml-[9rem] mt-[3rem] font-semibold text-xl">Emergency procedures</p>
+<p class="ml-[9rem] mt-[2rem] font-semibold text-xl">Contact info</p>
+<p class="ml-[9rem] mt-[1rem] font-light text-lg">
+  Indicate local emergency numbers and the nearest hospital. Provide a clear <br>
+   emergency contact number for yourself, as well as backup, for easy guest reference. <br>
+   Also make clear how you should be contacted if the guest has questions or issues <br> arise.
+  </p>
+
+  <p class="ml-[9rem] mt-[3rem] font-semibold text-xl">Supplies</p>
+  <p class="ml-[9rem] mt-[1rem] font-light text-lg">
+    Make a first aid kit easily available.
+    </p>
+
+
+    <p class="ml-[9rem] mt-[3rem] font-semibold text-xl">Fire prevention</p>
+    <p class="ml-[9rem] mt-[1rem] font-light text-lg">
+      Ensure you have a functioning smoke alarm and carbon monoxide detector, and that <br>
+       your property meets government safety guidelines for your area (ex: National Building <br>
+        Code or other local building bylaws). Ensure you provide a functioning fire extinguisher <br>
+        and complete required maintenance.
+      </p>
+  
+
+      <p class="ml-[9rem] mt-[3rem] font-semibold text-xl">Exit</p>
+      <p class="ml-[9rem] mt-[1rem] font-light text-lg">
+        Ensure you have a clearly marked fire escape route, and post a map in your home.
+        </p>
+    
+
+
+        <p class="ml-[9rem] mt-[3rem] font-semibold text-xl">Privacy</p>
+        <p class="ml-[9rem] mt-[1rem] font-light text-lg">
+          Always be mindful of your guests' privacy. Fully disclose whether there are security <br>
+           cameras or other surveillance equipment at or around your listing. Make sure you are <br>
+           aware of and comply with applicable federal, state, and local laws.
+          </p>
+
+          <p class="ml-[9rem] mt-[3rem] font-semibold text-xl">Occupancy</p>
+          <p class="ml-[9rem] mt-[1rem] font-light text-lg">
+            Establish safe occupancy limits—your local government may have guidelines.
+            </p>
+  
+            <p class="ml-[9rem] mt-[3rem] font-semibold text-xl">Access</p>
+            <p class="ml-[9rem] mt-[1rem] font-light text-lg">
+              Go through your home to identify any areas where guests might trip or fall and either <br>
+              remove the hazard or mark clearly. Fix any exposed wires. Ensure stairs are safe and <br>
+               have railings. Remove or lock up any objects that may be dangerous to your guests.
+              </p>
+
+              <p class="ml-[9rem] mt-[3rem] font-semibold text-xl">Climate</p>
+              <p class="ml-[9rem] mt-[1rem] font-light text-lg">
+                Ensure your home is properly ventilated and that temperature control is clearly <br>
+                marked and functional. Ensure guests are clear about how to safely use the heater.
+                </p>
+                
+<p class="border-[1px] ml-[8rem] mt-[1rem] w-[50rem]"></p>
+
+<p class="ml-[9rem] mt-[3rem] font-semibold text-xl">Neighbors</p>
+<p class="ml-[9rem] mt-[1rem] font-light text-lg">
+  How can I be mindful of my neighbors?
+</p>
+
+<p class="ml-[9rem] mt-[3rem] font-semibold text-xl">Building rules</p>
+<p class="ml-[9rem] mt-[1rem] font-light text-lg">
+  Ensure you relay your building's common area rules to your guest. You may want to <br>
+  even notify your neighbors that you will have guests, and remind guests not to bother <br>
+  your neighbors (ex: don't knock on their door or buzz them to let you in).
+</p>
+
+<p class="ml-[9rem] mt-[3rem] font-semibold text-xl">Smoking</p>
+<p class="ml-[9rem] mt-[1rem] font-light text-lg">
+  If you don't allow smoking, we suggest posting signs to remind guests. If you do allow <br>
+   smoking, ensure you have ashtrays available in designated areas.
+</p>
+
+<p class="ml-[9rem] mt-[3rem] font-semibold text-xl">Parking</p>
+<p class="ml-[9rem] mt-[1rem] font-light text-lg">
+  Ensure you relay parking rules for your building and neighborhood to your guest.
+</p>
+
+<p class="ml-[9rem] mt-[3rem] font-semibold text-xl">Noise</p>
+<p class="ml-[9rem] mt-[1rem] font-light text-lg">
+  Remind guests about keeping noise down. You may want to consider whether you <br>
+  allow babies, pets, or parties. Develop a policy about guests inviting other people over, <br>
+  and ensure your guests are clear about your "party policy."
+</p>
+
+
+<p class="ml-[9rem] mt-[3rem] font-semibold text-xl">Pets</p>
+<p class="ml-[9rem] mt-[1rem] font-light text-lg">
+  If you allow pets, ensure guests are educated about things like local parks and local <br>
+  customs (ex: cleaning up after your dog). Have a backup plan in case a guest's pet <br>
+  upsets the neighbors (such as the number of a nearby pet hotel).
+</p>
+
+<p class="ml-[9rem] mt-[3rem] font-semibold text-xl">House Rules</p>
+<p class="ml-[9rem] mt-[1rem] font-light text-lg">
+  To avoid surprises, you may want to include the information covered above in your <br>
+  House Rules in your Airbnb listing profile.
+</p>
+
+
+<p class="border-[1px] ml-[8rem] mt-[1rem] w-[50rem]"></p>
+
+<p class="ml-[9rem] mt-[3rem] font-semibold text-xl">Permissions</p>
+<p class="ml-[9rem] mt-[1rem] font-light text-lg">
+  Whom should I notify that I'm hosting on Airbnb?
+</p>
+
+<p class="ml-[9rem] mt-[3rem] font-semibold text-xl">Contracts</p>
+<p class="ml-[9rem] mt-[1rem] font-light text-lg">
+  Check your HOA or Co-Op Board regulations to make sure there is no prohibition <br> 
+  against subletting, or any other restriction against hosting. Read your lease agreement <br>
+  and check with your landlord if applicable. You may consider adding a rider to your contract <br>
+  that addresses the concerns of these parties and outlines the responsibilities and liabilities of <br>
+   all parties.
+</p>
+<p class="ml-[9rem] mt-[3rem] font-semibold text-xl">Roommates</p>
+<p class="ml-[9rem] mt-[1rem] font-light text-lg">
+  If you have roommates, consider a roommate agreement in writing which outlines <br>
+  things like how often you plan to host, how you'll ensure guests follow House Rules, <br>
+  and even whether you'll share revenue if that makes sense for you.
+</p>
+
+
+<p class="ml-[9rem] mt-[3rem] font-semibold text-xl">Neighbors</p>
+<p class="ml-[9rem] mt-[1rem] font-light text-lg">
+  Consider whether you should notify your neighbors about your plans to host, along <br>
+  with your plan for how to make sure your guests are not disruptive.
+</p>
+
+
+<p class="ml-[9rem] mt-[3rem] font-semibold text-xl">Subsidized housing</p>
+<p class="ml-[9rem] mt-[1rem] font-light text-lg">
+  If you live in public or subsidized housing there may be special rules that apply to you.<br>
+   The manager of the property may be able to answer questions about this.
+</p>
+
+<p class="border-[1px] ml-[8rem] mt-[1rem] w-[50rem]"></p>
+
+
+
+<p class="ml-[9rem] mt-[3rem] font-semibold text-xl">General regulations</p>
+<p class="ml-[9rem] mt-[1rem] font-light text-lg">
+  Whom should I notify that I'm hosting on Airbnb?
+</p>
+
+
+<p class="ml-[9rem] mt-[3rem] font-semibold text-xl">Taxes</p>
+<p class="ml-[9rem] mt-[1rem] font-light text-lg">
+  Whom should I notify that I'm hosting on Airbnb?
+</p>
+
+<p class="ml-[9rem] mt-[3rem] font-semibold text-xl">Permissions</p>
+<p class="ml-[9rem] mt-[1rem] font-light text-lg">
+  Ensure you look up any local taxes or business license requirements that may apply. <br>
+  This may include things like hotel/transient occupancy tax, sales, and other turnover <br>
+   taxes such as Value Added Tax (VAT) or Goods and Services Tax (GST), or income tax. <br>
+   Be sure to provide your PAN to Airbnb so that the appropriate withholding tax rate  <br>
+   applies on your earnings.
+</p>
+
+
+<p class="ml-[9rem] mt-[3rem] font-semibold text-xl">PAN Collection and Withholding Tax</p>
+<p class="ml-[9rem] mt-[1rem] font-light text-lg">
+  Effective October 1, 2020, Airbnb is obligated to deduct 1% of the gross earnings of <br>
+  Hosts who are residents of India, and remit these funds to the Indian tax authorities, <br>
+   per section 194-O of the Indian Income-Tax Act. For more information, you can review <br>
+   the article on PAN collection and withholding tax, or visit the Income Tax <br>
+    Department's website.<br> <br>
+
+If the Indian host has not provided their PAN to Airbnb, we are required to withhold tax <br>
+at the rate of 5%. Please note, any funds that have already been withheld and remitted  <br>
+to tax authorities are unable to be returned by Airbnb. <br> <br>
+
+To ensure that the 1% rate applies and that taxes withheld are available as a credit to <br>
+ you, please update your PAN. <br> <br>
+
+Learn more about PAN remittance and withholding tax.
+</p>
+
+
+<p class="ml-[9rem] mt-[3rem] font-semibold text-xl">Goods and Services Tax (GST):</p>
+<p class="ml-[9rem] mt-[1rem] font-light text-lg">
+  0 - 28% of the accommodation charge including any cleaning fee. Tax rates vary based <br>
+  on the average nightly rate of the reservation. Airbnb will remit the entire portion of <br>
+   the GST collected from the guest directly to the tax authorities for hosts whose <br>
+    annual turnover is at or below the GST registration thresholds of INR 20 lakhs or INR 10 <br>
+    lakhs for Hosts whose listings are located in Arunachal Pradesh, Assam, Manipur, <br>
+    Meghalaya, Mizoram, Nagaland, Sikkim, Tripura, Himachal Pradesh and Uttarakhand. <br>
+     Hosts whose annual turnover is above the INR 20/10 lakhs thresholds mentioned <br>
+     above are required to remit the entire amount of the GST collected from the guest to <br>
+      the tax authorities. For detailed information, visit India’s government website. <br> <br>
+
+You can read more about guidance on the goods and services tax (GST) for India hosts  <br>
+in our Help Center.
+</p>
+<p class="ml-[9rem] mt-[3rem] font-semibold text-xl">Registration of guest</p>
+<p class="ml-[9rem] mt-[1rem] font-light text-lg">
+  Local regulations require maintaining a register for guest check-in and check-out <br>
+   records, including passport details for foreign tourists. <br> <br>
+
+Additionally, any Hotel / Guest House / Dharamshala / Individual House / University /<br> 
+ Hospital / Institute that provides accommodation to foreigners must submit the details of the <br>
+  residing foreigner in Form C to the registration authorities within 24  <br> 
+  hours of the arrival of the foreigner at the premises. The Form C can be <br> 
+   submitted online once the accommodation provider completes the registration process. <br>
+    The regulations also require the accommodation provider to complete and maintain the Form B <br>
+     as a corresponding register.<br><br>
+
+You can read more about guidance on the foreigner registration (FRRO) process for hosts <br> 
+in India in  our Help Center.
+</p>
+<p class="ml-[9rem] mt-[3rem] font-semibold text-xl">Permits or registrations</p>
+<p class="ml-[9rem] mt-[1rem] font-light text-lg">
+  Ensure you look up any permitting, zoning, safety, and health regulations that may <br>
+  apply. The governing authorities that regulate the use and development of property in <br>
+  your area may have useful information on such regulations.
+</p>
+<p class="ml-[9rem] mt-[3rem] font-semibold text-xl">Host damage protection and Host liability insurance</p>
+<p class="ml-[9rem] mt-[1rem] font-light text-lg">
+  AirCover for Hosts includes Host damage protection and Host liability insurance, <br>
+   which provide you with basic coverage for listed damages and liabilities. However,<br>
+    these don’t take the place of homeowner's insurance, renter's insurance, or adequate <br>
+    liability coverage. You might need to meet other insurance requirements as well. <br> <br>
+    
+We strongly encourage all Hosts to review and understand the terms of their  <br>
+insurance policy coverage. Not all insurance plans will cover damage or loss of <br>
+property caused by a guest who books your accommodation. <br> <br>
+
+Learn more about AirCover for Hosts.
+</p>
+
+<p class="ml-[9rem] mt-[3rem] font-semibold text-xl">For more information on how Airbnb works, visit our FAQs.</p>
+<p class="ml-[9rem] mt-[1rem] font-light text-lg">
+  * Please note that Airbnb has no control over the conduct of Hosts and disclaims all <br>
+   liability. Failure of Hosts to satisfy their responsibilities may result in suspension of <br>
+    activity or removal from the Airbnb website.
+</p>
+
+
+
+<div class="flex mt-[2rem] ml-[12rem] opacity-70  text-md"> 
+  <p class="font-semibold text-lg">Did this article help?</p>
+  <p class="flex ml-[2rem] font-serif opacity-80 border-b-[0.7px] hover:border-b-[2px] border-black hover:opacity-100 text-md">Yes</p>
+  <p class="flex  ml-[2rem] font-serif opacity-80  text-md border-b-[0.7px] hover:border-b-[2px] border-black hover:opacity-100">No</p>
+</div>
+
+<p class="border-[1px] ml-[8rem] mt-[1rem] w-[50rem]"></p>
+
+
+
+<p class="mt-[2rem] ml-[12rem] text-2xl font-semibold">Related articles</p>
+<p class="mt-[2rem] ml-[12rem] opacity-50">Guest</p>
+<p class=" ml-[12rem] text-xl border-b-[0.3px] border-black  w-fit">
+  Optimising your listing
+  </p>
+
+<p class="mt-[9px] ml-[12rem] opacity-60  text-md">Check out this essential guide to help you update or fine-tune your listing.
+</p>
+
+
+
+
+
+
+
+  <p class="mt-[3rem] border-[0.8px]" ></p>
+  <div class="flex mt-7">
+    <div class="ml-7  max-[995px]:-ml-[3rem]">
+        <p class="ml-[6rem] mt-4 font-semibold">Support</p>
+        <form method="GET" action="/artical4">
+        <button  class="ml-[6rem] font-light hover:border-b-black border-b-[0.3px]  mt-1">Help Centre<button>
+        </form>
+
+        <form method="GET" action="/AirCover">
+            <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">AirCover</button>
+        </form>
+
+        <form method="GET" action="/Anti-discrimination">
+        <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Anti-discrimination</button>
+        </form>
+
+        <form method="GET" action="/Disability-support">
+            <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Disability support</button>
+        </form>
+
+        <form method="GET" action="/Cancellation-options">
+            <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Cancellation options</button>
+        </form>
+
+        <form method="GET" action="/Report-neighbourhood-concern">
+            <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Report neighbourhood concern</button>
+        </form>
+    </div>
+
+    <div class="ml-[10rem]  max-[1190px]:ml-[2rem] max-[900px]:-ml-[3rem] max-[830px]:-ml-[5rem]">
+        <p class="ml-[6rem] mt-4 font-semibold">Hosting</p>
+        <form method="GET" action="/Airbnb-your-home">
+            <button class="ml-[6rem] font-light hover:border-b-black border-b-[0.3px] mt-1">Airhost your home</button>
+        </form>
+
+        <form method="GET" action="/AirCover-for-Hosts">
+            <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">AirCover for Hosts</button>
+        </form>
+
+        <form method="GET" action="/Hosting-resources">
+            <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Hosting resources</button>
+        </form>
+
+        <form >
+        <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Community forum</button>
+        </form
+
+        <form method="GET" action="/Hosting-responsibly">
+        <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Hosting responsibly</button>
+        </form>
+    </div>
+
+    <div class="ml-[12rem] max-[1190px]:ml-[3rem]  max-[830px]:-ml-[25px]">
+        <p class="ml-[6rem] mt-4 font-semibold">Airbnb</p>
+        <form method="GET" action="/Newsroom">
+        <button class="ml-[6rem] font-light hover:border-b-black border-b-[0.3px] w-20 mt-1">Newsroom</button>
+        </form>
+
+        <form method="GET" action="/New-features">
+            <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px] w-28 mt-2">New features</button>
+        </form>
+
+        <form method="GET" action="/Careers">
+            <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px] w-20  mt-2">Careers</button>
+        </form>
+
+        <form method="GET" action="/Investors">
+            <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px] w-20  mt-2">Investors</button>
+        </form>
+
+        <form method="GET" action="/Airbnb.org-emergency-stays">
+            <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Airhost.org emergency stays</button>
+        </form>
+    </div>
+</div> 
+
+ <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
+<p class="mt-7 border-[0.1px] border-gray-300" ></p>
+<div class = "f-info flex h-[8rem] flex-wrap justify-center text-center align-center ">
+    <div class ="f-info-socials w-[100%] text-xl flex items-center justify-center">
+        <form method="get" action="https:www.facebook.com/AirbnbIndia">
+            <button class="fa-brands fa-square-facebook mr-2"></button>
+        </form>
+        <form method="get"  action="https:www.instagram.com/airbnb/">
+            <button class="fa-brands fa-square-instagram mr-2"></button>
+        </form>
+        <form method="get" action="https:twitter.com/i/flow/login?redirect_after_login=%2Fairbnb_in" >
+            <button class="fa-brands fa-square-twitter"></button>
+        </form>
+        <form method="get" action="https:www.linkedin.com/company/airbnb/" >
+            <button class="fa-brands fa-linkedin ml-[8px]"></button>
+        </form>
+    </div>
+    <div class="f-info-brand  w-[100%] justify-center  align-middle flex items-center ">&copy; Wanderlust Private Limited</div>
+    <div class ="f-info-links hover:underline w-[100%] align-middle flex items-center justify-center">
+        <a href="/privacy">Privacy</a>
+        <a href="/terms">Terms</a>
+    </div>
+</div> 
+
+
+ 
+  <p class="mt-7 border-[0.8px]" ></p>
+  <div class = "f-info flex h-[8rem] flex-wrap justify-center text-center align-center ">
+      <div class ="f-info-socials w-[100%] text-xl flex items-center justify-center">
+          <form method="get" action="https://www.facebook.com/AirbnbIndia">
+              <button class="fa-brands fa-square-facebook mr-2"></button>
+          </form>
+          <form method="get"  action="https://www.instagram.com/airbnb/">
+              <button class="fa-brands fa-square-instagram mr-2"></button>
+          </form>
+          <form method="get" action="https://twitter.com/i/flow/login?redirect_after_login=%2Fairbnb_in" >
+              <button class="fa-brands fa-square-twitter"></button>
+          </form>
+          <form method="get" action="https://www.linkedin.com/company/airbnb/" >
+              <button class="fa-brands fa-linkedin ml-[8px]"></button>
+          </form>
+      </div>
+      <div class="f-info-brand  w-[100%] justify-center  align-middle flex items-center ">&copy; Wanderlust Private Limited</div>
+      <div class ="f-info-links hover:underline w-[100%] align-middle flex items-center justify-center">
+          <a href="/privacy">Privacy</a>
+          <a href="/terms">Terms</a>
+      </div>
+  </div>
+  <script >
+    let div1 = document.getElementById("search");
+    let display1 = 0;
+    function hideShow1() {
+      if(display1 == 1) {
+        div1.style.display = 'block';
+        display1 = 0;
+      }
+      else {
+        div1.style.display = 'none';
+        display1 = 1;
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airhost | Holiday rentals,cabins,beach house & more</title>
+    <link rel=" icon" type="image/png" href="public/ffb9bc06766fd2534983c893e5758306.png" />
+    <link href="public/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="/rating.css" rel="stylesheet" />
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.js"></script>
+
+<style>
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+</style>
+    
+</head> 
+<body>
+
+  <div class="flex w-full flex-wrap items-center justify-between  ">
+    <div class="ml-16  flex ">
+         <a class="text-4xl mt-[1rem] text-red-600" href="/artical4"><i class="fa-brands fa-airbnb"></i></a>
+      <div class=" mr-auto flex flex-col pl-0  lg:flex-row w-[100%] " data-te-navbar-nav-ref>
+      
+        <div class=" mr-auto flex flex-col pl-0  lg:flex-row  w-[100%] justify-end ml-[60rem]   mt-[1rem]" data-te-navbar-nav-ref>
+            <div class=" flex rounded-3xl pr-2  justify-end ">
+                  <a class="text-lg mt-3" href="/listings/new" data-te-nav-link-ref>Ready to Airhost it? </a>
+            </div>
+
+            <div class="border-[0.3px] border-black  rounded-lg flex  mt-2  p-2 pt-1 bg-red-500 h-[40px]  justify-end"> 
+
+              <div  class="ml-[1rem] relative ">
+                     <button class="accordion text-white text-lg"><b> <i class="fa-solid fa-house-medical text-white pr-2 "></i> Airhost setup </b></button>
+                    <div class="panel hidden overflow-hidden absolute border-[0.3px] border-black  w-[9rem] pl-6 h-[100px] pt-[16px] -pt-[13px] mt-[12px] bg-[#f7f9f7] shadow-2xl rounded-xl p-[1rem]" id="search">
+                      <div onclick="hideShow1()" class="absolute top-0 right-1 w-max  hover:bg-white" >
+                        <div role="button" class="w-max pl-1 pr-1">
+                           <i class="fa-solid fa-circle-xmark text-xl"></i>
+                        </div>
+                    </div> 
+        <form action="/login">
+          <button class=" border-[0.8px] bg-red-500 hover:bg-red-700 hover:border-red-600  w-[6rem] text-white rounded-xl shadow-lg  p-2 ">Log in</button>
+        </form>
+        <form action="/signup">
+          <button class=" border-[0.8px] bg-red-500  hover:bg-red-700 hover:border-red-600 w-[6rem] text-white rounded-xl shadow-lg  p-2 "> sign up</button>
+        </form>
+      </div>
+                </div> 
+                </div>
+        </div> 
+      </div> 
+    </div>
+ </div>
+
+
+ <div class="ml-[20rem] mt-[2rem]"> 
+  <img src=" https://a0.muscache.com/im/pictures/cecbf134-6674-410f-9345-603716048771.jpg?im_w=480&im_q=highq" class="w-[45rem] ">
+  </div>
+  <p class="ml-[500px] font-light text-4xl mt-[1rem]">Top-to-bottom protection.</p>
+  <p class="ml-[30rem] font-light text-4xl ">Always included, always free.</p>
+  <p class="ml-[36rem] font-light text-4xl ">Only on Airbnb.</p>
+
+
+
+  <p class="border-[1px] w-[70rem] ml-[13rem] mt-[3rem]"></p>
+
+<div class="mt-[1rem] ml-[13rem]">
+  <p class="font-semibold text-2xl ">Guest identity verification</p>
+  <p class="mt-[1rem] font-light text-xl opacity-65">
+    Our comprehensive verification system checks details such as name, address, government ID <br>
+    and more to confirm the identity of guests who book on Airbnb.</p>
+</div>
+
+
+<p class="border-[1px] w-[70rem] ml-[13rem] mt-[3rem]"></p>
+
+<div class="mt-[1rem] ml-[13rem]">
+  <p class="font-semibold text-2xl ">Reservation screening</p>
+  <p class="mt-[1rem] font-light text-xl opacity-65">
+    Our proprietary technology analyses hundreds of factors in each reservation and blocks certain <br>
+    bookings that show a high risk for disruptive parties and property damage.</p>
+</div>
+
+
+<p class="border-[1px] w-[70rem] ml-[13rem] mt-[1rem]"></p>
+
+<div class="mt-[1rem] ml-[13rem]">
+  <p class="font-semibold text-2xl ">$3m USD damage protection</p>
+  <p class="mt-[1rem] font-light text-xl opacity-65">
+    If guests do not pay for the damage caused to your home and belongings, Host damage <br>
+    protection is in place to help reimburse costs up to $3m USD, including these specialised <br>
+    protections:</p>
+</div>
+
+
+
+<p class="border-[1px] w-[70rem] ml-[13rem] mt-[1rem]"></p>
+<div class="flex mt-[2rem] ml-[16rem]">
+  <div>
+    <p class="font-semibold text-xl">Art & valuables</p>
+    <p class="font-light text-lg opacity-65">Get reimbursed for damaged art or valuables.</p>
+  </div>
+  <div class="ml-[9rem]"> 
+    <p class="font-semibold text-xl">Auto & boat</p>
+    <p class="font-light text-lg opacity-65">Get reimbursed for damage to cars, boats and <br>
+      other watercraft that you park or store at <br>
+      your home.</p>
+  </div>
+</div>
+
+
+
+
+<p class="border-[1px] w-[70rem] ml-[13rem] mt-[1rem]"></p>
+<div class="flex mt-[2rem] ml-[16rem]">
+  <div>
+    <p class="font-semibold text-xl">Pet damage</p>
+    <p class="font-light text-lg opacity-65">Get reimbursed for damage caused by a <br> guest’s pet.</p>
+  </div>
+  <div class="ml-[12rem]"> 
+    <p class="font-semibold text-xl">Income loss</p>
+    <p class="font-light text-lg opacity-65">If you have to cancel Airbnb bookings due to <br>
+      guest damage, you'll be compensated for the  <br> lost income.</p>
+  </div>
+</div>
+
+
+
+<p class="border-[1px] w-[70rem] ml-[13rem] mt-[1rem]"></p>
+
+<div class="mt-[1rem] ml-[13rem]">
+  <p class="font-semibold text-2xl ">Deep cleaning</p>
+  <p class="mt-[1rem] font-light text-xl opacity-65">
+    Get reimbursed for extra cleaning services <br>
+    needed after a guest’s stay – for example, <br>
+    professional carpet cleaning.</p>
+</div>
+
+<p class="border-[1px] w-[70rem] ml-[13rem] mt-[1rem]"></p>
+<div class="mt-[1rem] ml-[13rem]">
+  <p class="font-semibold text-2xl ">$1m USD liability insurance</p>
+  <p class="mt-[1rem] font-light text-xl opacity-65">
+    Protection in the rare event that a guest gets hurt or their belongings are damaged or stolen.</p>
+</div>
+
+
+<p class="border-[1px] w-[70rem] ml-[13rem] mt-[1rem]"></p>
+<div class="mt-[1rem] ml-[13rem]">
+  <p class="font-semibold text-2xl ">24-hour safety line</p>
+  <p class="mt-[1rem] font-light text-xl opacity-65">
+    If you ever feel unsafe, our app provides one-tap access to specially trained safety agents, day <br> or night.</p>
+</div>
+
+
+<p class="border-[1px] w-[70rem] ml-[13rem] mt-[1rem]"></p>
+<p class="font-light text-xl opacity-65 mt-[2rem] ml-[13rem]">Find complete details on how AirCover for Hosts protects you and any exclusions that apply.</p>
+
+<p class="ml-[15rem] text-7xl mt-[6rem] font-semibold">Only Airbnb gives you AirCover</p>
+
+
+
+
+
+<div class="mt-[3rem] flex ml-[50rem]">
+  <p class="text-lg">Airhost</p>
+  <p class="ml-[12rem] text-lg">Competitors</p>
+</div>
+
+<p class="border-[0.6px] ml-[9em] w-[70rem] mt-[1rem]"></p>
+
+<div class="flex ml-[12rem] mt-[1rem]">
+  <div>
+    <p class="text-xl font-semibold mt-[1rem] ">Guest identity verification</p>
+    <p class=" font-light mt-[1rem] ">Our comprehensive verification system checks details such <br>
+       as name, address, government ID and more to confirm the <br>
+       identity of guests who book on Airbnb.
+      </p>
+  </div>
+ <div>
+  <p class="ml-[13rem] mt-[2rem] text-3xl text-green-700"><i class="fa-solid fa-check"></i></p>
+ </div>
+ <div>
+  <p class="ml-[15rem] mt-[2rem] text-3xl text-green-700"><i class="fa-solid fa-check"></i></p>
+ </div>
+</div>
+
+<p class="border-[0.6px] ml-[9em] w-[70rem] mt-[1rem]"></p>
+
+<div class="flex ml-[12rem] mt-[1rem]">
+  <div>
+    <p class="text-xl font-semibold mt-[1rem]">Reservation screening</p>
+    <p class=" font-light mt-[1rem] ">	
+      Our proprietary technology analyses hundreds of factors in <br>
+       each reservation and blocks certain bookings that show a <br>
+       high risk for disruptive parties and property damage.
+      </p>
+  </div>
+ <div>
+  <p class="ml-[13rem] mt-[2rem] text-3xl text-green-700"><i class="fa-solid fa-check"></i></p>
+ </div>
+ <div>
+  <p class="ml-[15rem] mt-[2rem] text-3xl text-red-600"><i class="fa-solid fa-xmark"></i></p>
+ </div>
+</div>
+
+<p class="border-[0.6px] ml-[9em] w-[70rem] mt-[1rem]"></p>
+
+
+<div class="flex ml-[12rem] mt-[1rem]">
+  <div>
+    <p class="text-xl font-semibold mt-[1rem]">$3m damage protection</p>
+    <p class=" font-light mt-[1rem] ">Airbnb reimburses you for damage caused by guests to your <br>
+       home and belongings and includes these specialised <br>protections:
+      </p>
+  </div>
+ <div>
+  <p class="ml-[13rem] mt-[2rem] text-3xl text-green-700"><i class="fa-solid fa-check"></i></p>
+ </div>
+ <div>
+  <p class="ml-[15rem] mt-[2rem] text-3xl text-red-600"><i class="fa-solid fa-xmark"></i></p>
+ </div>
+</div>
+
+<p class="border-[0.6px] ml-[9em] w-[70rem] mt-[1rem]"></p>
+
+
+<div class="flex ml-[12rem] mt-[1rem]">
+  <div>
+    <p class="mt-[1rem] text-lg">Art & valuables</p>
+  </div>
+ <div class="ml-[19rem]">
+  <p class="ml-[13rem] mt-[2rem] text-3xl text-green-700"><i class="fa-solid fa-check"></i></p>
+ </div>
+ <div>
+  <p class="ml-[15rem] mt-[2rem] text-3xl text-red-600"><i class="fa-solid fa-xmark"></i></p>
+ </div>
+</div>
+
+<p class="border-[0.6px] ml-[9em] w-[70rem] mt-[1rem]"></p>
+
+
+<div class="flex ml-[12rem] mt-[1rem]">
+  <div>
+    <p class="mt-[1rem] text-lg">Auto & boat</p>
+  </div>
+ <div class="ml-[21rem]">
+  <p class="ml-[13rem] mt-[2rem] text-3xl text-green-700"><i class="fa-solid fa-check"></i></p>
+ </div>
+ <div>
+  <p class="ml-[15rem] mt-[2rem] text-3xl text-red-600"><i class="fa-solid fa-xmark"></i></p>
+ </div>
+</div>
+
+<p class="border-[0.6px] ml-[9em] w-[70rem] mt-[1rem]"></p>
+
+
+
+<div class="flex ml-[12rem] mt-[1rem]">
+  <div>
+    <p class="mt-[1rem] text-lg">Pet damage</p>
+  </div>
+ <div class="ml-[21rem]">
+  <p class="ml-[13rem] mt-[2rem] text-3xl text-green-700"><i class="fa-solid fa-check"></i></p>
+ </div>
+ <div>
+  <p class="ml-[15rem] mt-[2rem] text-3xl text-red-600"><i class="fa-solid fa-xmark"></i></p>
+ </div>
+</div>
+
+<p class="border-[0.6px] ml-[9em] w-[70rem] mt-[1rem]"></p>
+
+
+
+<div class="flex ml-[12rem] mt-[1rem]">
+  <div>
+    <p class="mt-[1rem] text-lg">Income loss</p>
+  </div>
+ <div class="ml-[21rem]">
+  <p class="ml-[13rem] mt-[2rem] text-3xl text-green-700"><i class="fa-solid fa-check"></i></p>
+ </div>
+ <div>
+  <p class="ml-[15rem] mt-[2rem] text-3xl text-red-600"><i class="fa-solid fa-xmark"></i></p>
+ </div>
+</div>
+
+<p class="border-[0.6px] ml-[9em] w-[70rem] mt-[1rem]"></p>
+
+
+<div class="flex ml-[12rem] mt-[1rem]">
+  <div>
+    <p class="mt-[1rem] text-lg">Deep cleaning</p>
+  </div>
+ <div class="ml-[20rem]">
+  <p class="ml-[13rem] mt-[2rem] text-3xl text-green-700"><i class="fa-solid fa-check"></i></p>
+ </div>
+ <div>
+  <p class="ml-[15rem] mt-[2rem] text-3xl text-red-600"><i class="fa-solid fa-xmark"></i></p>
+ </div>
+</div>
+
+<p class="border-[0.6px] ml-[9em] w-[70rem] mt-[1rem]"></p>
+
+
+
+<div class="flex ml-[12rem] mt-[1rem]">
+  <div>
+    <p class="text-xl font-semibold mt-[1rem]">$1m USD liability insurance</p>
+    <p class=" font-light mt-[1rem] ">You’re protected in the rare event that a guest gets hurt or <br>
+      their belongings are damaged or stolen.
+      </p>
+  </div >
+ <div class="ml-[1rem]">
+  <p class="ml-[13rem] mt-[2rem] text-3xl text-green-700"><i class="fa-solid fa-check"></i></p>
+ </div>
+ <div>
+  <p class="ml-[15rem] mt-[2rem] text-3xl text-green-700"><i class="fa-solid fa-check"></i></p>
+ </div>
+</div>
+
+<p class="border-[0.6px] ml-[9em] w-[70rem] mt-[1rem]"></p>
+
+
+
+<div class="flex ml-[12rem] mt-[1rem]">
+  <div>
+    <p class="text-xl font-semibold mt-[1rem]">24-hour safety line</p>
+    <p class=" font-light mt-[1rem] ">If you ever feel unsafe, our app provides one-tap access to  <br>
+      specially trained safety agents, day or night.
+      </p>
+  </div >
+ <div class="ml-[1rem]">
+  <p class="ml-[13rem] mt-[2rem] text-3xl text-green-700"><i class="fa-solid fa-check"></i></p>
+ </div>
+ <div>
+  <p class="ml-[15rem] mt-[2rem] text-3xl text-red-600"><i class="fa-solid fa-xmark"></i></p>
+ </div>
+</div>
+
+
+
+<p class="border-[0.6px] ml-[9em] w-[70rem] mt-[1rem]"></p>
+
+<p class="ml-[13rem] mt-[2rem] text-xl opacity-60 mb-[8rem] ">Comparison is based on public information and free offerings by top competitors as of 22/10.</p>
+
+
+
+
+
+<div class="caption-container ml-[22rem] text-5xl w-[50rem] cursor-pointer rounded-xl">
+  <p id="caption"></p>
+</div>
+<div class="container ml-[6rem] relative rounded-xl">
+
+  <!-- Full-width images with number text -->
+  <div class="mySlides  hidden cursor-pointer rounded-xl ">
+    <div class="numbertext text-[#f2f2f2] p-[12px] top-0 absolute rounded-xl ">1 / 4</div>
+      <img src="https://a0.muscache.com/im/pictures/39086809-fd16-4c95-8df2-07c8011c1f36.jpg?im_w=2560" class="w-[100rem] rounded-xl h-[40rem]" >
+  </div>
+
+  <div class="mySlides hidden cursor-pointer rounded-xl">
+    <div class="numbertext text-[#f2f2f2] p-[12px] top-0 absolute rounded-xl">2 / 4</div>
+      <img src="https://a0.muscache.com/im/pictures/e50cc1d9-838e-4b02-8502-26e2f1dead01.jpg?im_w=2560" class="w-[100rem] rounded-xl h-[40rem]">
+  </div>
+
+  <div class="mySlides hidden cursor-pointer rounded-xl">
+    <div class="numbertext text-[#f2f2f2] p-[12px] top-0 absolute rounded-xl">3 / 4</div>
+      <img src="https://a0.muscache.com/im/pictures/fafcb3f7-210c-4938-abf8-32040beaddf4.jpg?im_w=2560" class="w-[100rem]  rounded-xl h-[40rem]">
+  </div>
+
+  <div class="mySlides hidden cursor-pointer rounded-xl">
+    <div class="numbertext text-[#f2f2f2] p-[12px] top-0 absolute rounded-xl">4 / 4</div>
+      <img src="https://a0.muscache.com/im/pictures/22a95043-1c61-4311-b24d-c2e6b47bb47c.jpg?im_w=2560" class="w-[100rem] rounded-xl h-[40rem]">
+  </div>
+
+  
+
+  <!-- Next and previous buttons -->
+  <a class="prev cursor-pointer absolute top-[40%] w-auto p-[1rem] mt-[-50px] text-white font-bold rounded-xl  hover:bg-black" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next cursor-pointer absolute top-[40%] w-auto p-[1rem] mt-[-50px] text-white font-bold rounded-xl hover:bg-black right-0 " onclick="plusSlides(1)">&#10095;</a>
+ 
+  <!-- Image text -->
+  <div class="caption-container  cursor-pointer align-middle bg-[#222] p-[16px] text-white rounded-xl">
+    <p id="caption"></p>
+  </div>
+  <!-- Thumbnail images -->
+  <div class="row ml-[17rem] mt-[5px] cursor-pointer after:table">
+    <div class="column ml-[5rem] float-left text-lg">
+      <img class="demo cursor-pointer opacity-65 hover:opacity-100 active:opacity-100 h-[6rem] rounded-xl ml-[12px]" src="https://a0.muscache.com/im/pictures/39086809-fd16-4c95-8df2-07c8011c1f36.jpg?im_w=2560" class="w-[100rem] " onclick="currentSlide(1)" alt="Antique and  other valuables are   protected">
+    </div>
+    <div class="column float-left">
+      <img class="demo cursor-pointer opacity-65 hover:opacity-100 active:opacity-100 h-[6rem] rounded-xl ml-[12px]" src="https://a0.muscache.com/im/pictures/e50cc1d9-838e-4b02-8502-26e2f1dead01.jpg?im_w=2560" class="w-[100rem]" onclick="currentSlide(2)" alt="Cars and other oautomobiles are protected">
+    </div>
+    <div class="column float-left">
+      <img class="demo cursor-pointer opacity-65 hover:opacity-100 active:opacity-100 h-[6rem] rounded-xl ml-[12px]" src="https://a0.muscache.com/im/pictures/fafcb3f7-210c-4938-abf8-32040beaddf4.jpg?im_w=2560" class="w-[100rem]" onclick="currentSlide(3)" alt="Boats and other vehicals are protected">
+    </div>
+    <div class="column float-left">
+      <img class="demo cursor-pointer opacity-65 hover:opacity-100 active:opacity-100 h-[6rem] rounded-xl ml-[12px]" src="https://a0.muscache.com/im/pictures/22a95043-1c61-4311-b24d-c2e6b47bb47c.jpg?im_w=2560" class="w-[100rem]" onclick="currentSlide(4)" alt="painting and other artwork re protected">
+    </div>
+   
+  </div>
+</div>
+
+
+
+
+<div class="flex mt-[5rem]">
+  <pre class="text-4xl font-bold font-serif ml-[4rem] mt-[6rem]">Your questions<br> & <br>answered </pre>
+      
+  <div class="ml-[5rem]">
+<button class="accordion bg-[#eee] text-[#444] cursor-pointer p-[18px] w-[100%] text-left align-text-top font-light text-xl transition-all hover:bg-[#ccc] active:bg-[#ccc]">What is AirCover for Hosts?</button>
+<div class="panel p-[18px] bg-white  hidden overflow-hidden font-light text-lg">
+  <p>
+    AirCover for Hosts is top-to-bottom protection for Hosts. It includes guest identity <br>
+    verification, reservation screening, $3m USD Host damage protection, $1m USD Host <br>
+    liability insurance, $1m USD Experiences liability insurance and a 24-hour safety line.
+  </p>
+</div>
+
+<button class="accordion bg-[#eee] text-[#444] cursor-pointer font-light text-xl p-[18px] w-[100%] text-left align-text-top transition-all hover:bg-[#ccc] active:bg-[#ccc]">Is AirCover for Hosts free?</button>
+<div class="panel p-[18px] bg-white  hidden overflow-hidden font-light text-lg">
+  <p>
+
+    Yes, AirCover for Hosts is included for free every time you host.
+  </p>
+</div>
+
+<button class="accordion bg-[#eee] text-[#444] cursor-pointer p-[18px] font-light text-xl w-[100%] text-left align-text-top transition-all hover:bg-[#ccc] active:bg-[#ccc]">Where is AirCover for Hosts available?</button>
+<div class="panel p-[18px] bg-white  hidden overflow-hidden font-light text-lg">
+  <p>
+    AirCover for Hosts’ damage protection and liability insurance are available in every <br>
+    country with Airbnbs, except Japan, which has its own protection programme. <br> <br>
+
+    Guest identity verification and reservation screening are now available worldwide.
+  </p>
+</div>
+
+<button class="accordion bg-[#eee] text-[#444] cursor-pointer p-[18px] font-light text-xl w-[100%] text-left align-text-top transition-all hover:bg-[#ccc] active:bg-[#ccc]">What’s the difference between damage protection and liability insurance?</button>
+<div class="panel p-[18px] bg-white  hidden overflow-hidden font-light text-lg">
+  <p>
+   
+AirCover for Hosts includes both damage protection and liability insurance. Host <br>
+ damage protection will reimburse you if your place or belongings ever get damaged <br>
+ by a guest during an Airbnb stay. Host damage protection isn’t an insurance policy.<br>
+  Host liability insurance is provided by third-party insurance companies and applies in <br>
+  the rare event that a guest gets hurt during an Airbnb stay or Experience.
+  </p>
+</div>
+
+<button class="accordion bg-[#eee] text-[#444] cursor-pointer p-[18px] font-light text-xl  w-[100%] text-left align-text-top transition-all hover:bg-[#ccc] active:bg-[#ccc]">How does AirCover for Hosts work with my personal insurance?</button>
+<div class="panel p-[18px] bg-white  hidden overflow-hidden font-light text-lg">
+  <p>
+    
+While AirCover for Hosts protects you while you’re hosting an Airbnb stay or  <br>
+Experience, it is not a substitute for personal insurance. You may also be required by <br>
+ law to maintain certain auto insurance, which would not be satisfied by AirCover for <br>
+ Hosts. Since everyone’s situation is different, you should talk to your insurer to see <br>
+  how or if your policy overlaps with AirCover for Hosts.
+</p>
+</div>
+
+<button class="accordion bg-[#eee] text-[#444] cursor-pointer font-light text-xl p-[18px] w-[100%] text-left align-text-top transition-all hover:bg-[#ccc] active:bg-[#ccc]">Are there damages that aren’t covered?</button>
+<div class="panel p-[18px] bg-white  hidden overflow-hidden font-light text-lg">
+  <p>
+    Host Damage Protection does not cover loss of currency. Normal wear and tear or <br>
+    losses incurred due to acts of nature (like earthquakes and hurricanes) are also not  <br>
+    covered. Auto and boat protection applies to parked vehicles and vessels. Review <br>
+    the complete list of what’s covered.
+    </p>
+</div>
+
+<button class="accordion bg-[#eee] text-[#444] cursor-pointer font-light text-xl  p-[18px] w-[100%] text-left align-text-top transition-all hover:bg-[#ccc] active:bg-[#ccc]">How do I get reimbursed for damage? How long does it take?</button>
+<div class="panel p-[18px] bg-white  hidden overflow-hidden font-light text-lg">
+  <p>
+    
+If a guest has damaged your place or belongings, visit our Resolution Centre to <br>
+submit a reimbursement request. Your request will first be sent to the guest, and if <br>
+the guest does not respond or pay within 24 hours, you’ll be able to involve Airbnb to <br>
+request reimbursement. <br> <br>
+
+Reimbursement requests are resolved as quickly as possible. It typically takes two <br>
+weeks from the time you file a request with Airbnb for your payment to be issued. If <br>
+you’re a Superhost, with listings outside of Washington State, you get access to a <br>
+dedicated support line and priority routing for reimbursement requests.
+    </p>
+</div>
+ </div>
+</div>
+
+
+<div class="mt-[2rem] flex">
+<div>
+  <img src="https://a0.muscache.com/im/pictures/65214d06-ffb4-4b70-93c0-01d368e76649.jpg?im_w=2560&im_q=highq" class="w-[40rem] h-[25rem]">
+</div>
+
+<div class="mt-[4rem]">
+  <p class="ml-[2rem] text-4xl  font-semibold ">The super easy way to Airhost your place</p>
+  <p class="font-light text-2xl ml-[20px] mt-[2rem]">Airbnb Setup makes it easier to put your place on <br> Airbnb, with hands-on help from a Superhost from your <br> first question to your first guest.</p>
+
+  <div class="border-[0.3px] border-black  rounded-lg flex  mt-2  p-2 pt-1 bg-red-500 h-[40px] w-[9rem]  justify-end"> 
+
+    <div  class="ml-[1rem] relative ">
+           <button class="accordion text-white text-lg "><b> <i class="fa-solid fa-house-medical text-white pr-2 "></i> Airhost setup </b></button>
+          <div class="panel hidden overflow-hidden absolute border-[0.3px] border-black  w-[9rem] pl-6 h-[100px] pt-[10px] bg-[#f7f9f7] shadow-2xl rounded-xl " id="search">
+            
+<form action="/login">
+<button class=" border-[0.8px] bg-red-500 hover:bg-red-700 hover:border-red-600  w-[6rem] text-white rounded-xl shadow-lg  p-2 ">Log in</button>
+</form>
+<form action="/signup">
+<button class=" border-[0.8px] bg-red-500  hover:bg-red-700 hover:border-red-600 w-[6rem] text-white rounded-xl shadow-lg  p-2 "> sign up</button>
+</form>
+</div>
+      </div> 
+      </div>
+</div>
+</div>
+
+
+<p class="border-[0.8px] w-[90rem] mt-[3rem]"></p>
+
+
+<div class="flex mt-7">
+  <div class="ml-7  max-[995px]:-ml-[3rem]">
+      <p class="ml-[6rem] mt-4 font-semibold">Support</p>
+      <form method="GET" action="/artical4">
+      <button  class="ml-[6rem] font-light hover:border-b-black border-b-[0.3px]  mt-1">Help Centre<button>
+      </form>
+
+      <form method="GET" action="/AirCover">
+          <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">AirCover</button>
+      </form>
+
+      <form method="GET" action="/Anti-discrimination">
+      <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Anti-discrimination</button>
+      </form>
+
+      <form method="GET" action="/Disability-support">
+          <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Disability support</button>
+      </form>
+
+      <form method="GET" action="/Cancellation-options">
+          <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Cancellation options</button>
+      </form>
+
+      <form method="GET" action="/Report-neighbourhood-concern">
+          <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Report neighbourhood concern</button>
+      </form>
+  </div>
+
+  <div class="ml-[10rem]  max-[1190px]:ml-[2rem] max-[900px]:-ml-[3rem] max-[830px]:-ml-[5rem]">
+      <p class="ml-[6rem] mt-4 font-semibold">Hosting</p>
+      <form method="GET" action="/Airbnb-your-home">
+          <button class="ml-[6rem] font-light hover:border-b-black border-b-[0.3px] mt-1">Airhost your home</button>
+      </form>
+
+      <form method="GET" action="/AirCover-for-Hosts">
+          <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">AirCover for Hosts</button>
+      </form>
+
+      <form method="GET" action="/Hosting-resources">
+          <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Hosting resources</button>
+      </form>
+
+      <form >
+      <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Community forum</button>
+      </form
+
+      <form method="GET" action="/Hosting-responsibly">
+      <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Hosting responsibly</button>
+      </form>
+  </div>
+
+  <div class="ml-[12rem] max-[1190px]:ml-[3rem]  max-[830px]:-ml-[25px]">
+      <p class="ml-[6rem] mt-4 font-semibold">Airbnb</p>
+      <form method="GET" action="/Newsroom">
+      <button class="ml-[6rem] font-light hover:border-b-black border-b-[0.3px] w-20 mt-1">Newsroom</button>
+      </form>
+
+      <form method="GET" action="/New-features">
+          <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px] w-28 mt-2">New features</button>
+      </form>
+
+      <form method="GET" action="/Careers">
+          <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px] w-20  mt-2">Careers</button>
+      </form>
+
+      <form method="GET" action="/Investors">
+          <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px] w-20  mt-2">Investors</button>
+      </form>
+
+      <form method="GET" action="/Airbnb.org-emergency-stays">
+          <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Airhost.org emergency stays</button>
+      </form>
+  </div>
+</div> 
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
+<p class="mt-7 border-[0.1px] border-gray-300" ></p>
+<div class = "f-info flex h-[8rem] flex-wrap justify-center text-center align-center ">
+  <div class ="f-info-socials w-[100%] text-xl flex items-center justify-center">
+      <form method="get" action="https:www.facebook.com/AirbnbIndia">
+          <button class="fa-brands fa-square-facebook mr-2"></button>
+      </form>
+      <form method="get"  action="https:www.instagram.com/airbnb/">
+          <button class="fa-brands fa-square-instagram mr-2"></button>
+      </form>
+      <form method="get" action="https:twitter.com/i/flow/login?redirect_after_login=%2Fairbnb_in" >
+          <button class="fa-brands fa-square-twitter"></button>
+      </form>
+      <form method="get" action="https:www.linkedin.com/company/airbnb/" >
+          <button class="fa-brands fa-linkedin ml-[8px]"></button>
+      </form>
+  </div>
+  <div class="f-info-brand  w-[100%] justify-center  align-middle flex items-center ">&copy; Wanderlust Private Limited</div>
+  <div class ="f-info-links hover:underline w-[100%] align-middle flex items-center justify-center">
+      <a href="/privacy">Privacy</a>
+      <a href="/terms">Terms</a>
+  </div>
+</div> 
+
+
+
+
+<script>
+  var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+<script >
+  let div1 = document.getElementById("search");
+  let display1 = 0;
+  function hideShow1() {
+    if(display1 == 1) {
+      div1.style.display = 'block';
+      display1 = 0;
+    }
+    else {
+      div1.style.display = 'none';
+      display1 = 1;
+    }
+  }
+</script>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,482 @@
+
+
+<style>
+    #myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+</style>
+
+<body class="flex flex-col  ">
+    <footer class="flex-1 mt-16">
+        <p class="text-2xl ml-24  mb-9 m">Inspiration for future getaways</p>
+    <div class="tab overflow-hidden border-b-[0.1px] border-black hover:border-black  flex ml-24 mt-4 max-[1190px]:-ml-[0rem]">
+        <button class="tablinks bg-inherit  hover:border-black hover:border-b-[2px] rounded-lg cursor-pointer p-[14px] active:bg-[#ccc]  transition:0.1s text-md ml-4 hover:border-b-black border-b-[0.2px] " onclick="openCity(event, 'London')" id="defaultOpen">Popular</button>
+        <button class="tablinks bg-inherit  hover:border-black hover:border-b-[2px] rounded-lg  cursor-pointer p-[14px] active:bg-[#ccc]   transition:0.1s text-md ml-4 hover:border-b-black border-b-[0.2px]" onclick="openCity(event, 'Paris')">Arts & culture</button>
+        <button class="tablinks bg-inherit  hover:border-black hover:border-b-[2px] rounded-lg  cursor-pointer p-[14px] active:bg-[#ccc]   transition:0.1s text-md ml-4 hover:border-b-black border-b-[0.2px]" onclick="openCity(event, 'Tokyo')">Outdoors</button>
+        <button class="tablinks bg-inherit  hover:border-black hover:border-b-[2px] rounded-lg  cursor-pointer p-[14px] active:bg-[#ccc]   transition:0.1s text-md ml-4 hover:border-b-black border-b-[0.2px] " onclick="openCity(event, 'kyo')">Mountains</button>
+        <button class="tablinks bg-inherit  hover:border-black hover:border-b-[2px] rounded-lg cursor-pointer p-[14px]  active:bg-[#ccc]  transition:0.1s text-md  ml-4 hover:border-b-black border-b-[0.2px]" onclick="openCity(event, 'ram1')" >Beach</button>
+        <button class="tablinks bg-inherit  hover:border-black hover:border-b-[2px] rounded-lg  cursor-pointer p-[14px] active:bg-[#ccc]   transition:0.1s text-md  ml-4 hover:border-b-black border-b-[0.2px]" onclick="openCity(event, 'ram2')">Unique stays</button>
+        <button class="tablinks bg-inherit  hover:border-black hover:border-b-[2px] rounded-lg  cursor-pointer p-[14px] active:bg-[#ccc]   transition:0.1s text-md ml-4 hover:border-b-black border-b-[0.2px]" onclick="openCity(event, 'ram3')">Categories</button>
+        <button class="tablinks bg-inherit  hover:border-black hover:border-b-[2px] rounded-lg  cursor-pointer p-[14px] active:bg-[#2f1c1c]   transition:0.1s text-md ml-4 hover:border-b-black border-b-[0.2px]  max-[777px]:hidden" onclick="openCity(event, 'ram4')">Things to do</button>
+      </div>
+
+
+   
+        <!--1111111111111-->
+            <div id="London" class="mt-7 mb-3 tabcontent hidden flex-wrap row-auto row max-[1190px]:-ml-[5rem] "> 
+                <div class="flex ">  
+                <div  id="London" class="ml-[3rem] ">
+                <p class="ml-[3rem]">Canmore</p><pre class="ml-[3rem] opacity-50 font-serif">Pet-friendly rentals</pre>
+                <p class="ml-[3rem] mt-6">Tucson</p><pre class="ml-[3rem] opacity-50 font-serif">House rentals</pre>
+                <p class="ml-[3rem] mt-6">Anaheim</p><pre class="ml-[3rem] opacity-50 font-serif">Apartment rentals</pre>
+                </div>
+                <div class="max-[1190px]:-ml-[2rem]">
+                    <p class="ml-[4rem]">Benalmádena</p><pre class="ml-[4rem] opacity-50 font-serif">Beach house rentals</pre>
+                    <p class="ml-[4rem] mt-6">Jasper</p><pre class="ml-[4rem] opacity-50 font-serif">Cabin rentals</pre>
+                    <p class="ml-[4rem] mt-6">Monterey</p><pre class="ml-[4rem] opacity-50 font-serif">Bungalow rentalss</pre>
+                </div>
+                <div class="max-[1190px]:-ml-[2rem]">
+                    <p class="ml-[5rem]">Marbella</p><pre class="ml-[5rem] opacity-50 font-serif">Villa rentals</pre>
+                    <p class="ml-[5rem] mt-6">Mountain view</p><pre class="ml-[5rem] opacity-50 font-serif">Cabin rentals</pre>
+                    <p class="ml-[5rem] mt-6">Paso Robles</p><pre class="ml-[5rem] opacity-50 font-serif">Cottage rentals</pre>
+                </div>
+                <div class="max-[1190px]:-ml-[2rem]">
+                   <p class="ml-[6rem]">Mijas</p><pre class="ml-[6rem] opacity-50 font-serif ">Holiday rentals</pre>
+                    <p class="ml-[6rem] mt-6">Devonport</p><pre class="ml-[6rem] opacity-50 font-serif">Cottage rentals</pre>
+                    <p class="ml-[6rem] mt-6">Santa Barbara</p><pre class="ml-[6rem] opacity-50 font-serif">Beach house rentals</pre>
+                </div>
+                <div class="max-[1190px]:-ml-[4rem]  max-[855px]:hidden">
+                    <p class="ml-[7rem]">Prescott<pre class="ml-[7rem] opacity-50 font-serif">Holiday rentals</pre>
+                    <p class="ml-[7rem] mt-6">Mallacoota</p><pre class="ml-[7rem] opacity-50 font-serif">Holiday rentals</pre>
+                    <p class="ml-[7rem] mt-6">Sonoma</p><pre class="ml-[7rem] opacity-50 font-serif">Cottage rentals</pre>
+                </div>
+                <div class="max-[1190px]:-ml-[3rem] max-[1055px]:hidden">
+                    <p class="ml-[8rem]">Scottsdale</p><pre class="ml-[8rem] opacity-50 font-serif">Flat retals</pre>
+                    <p class="ml-[8rem] mt-6">Ibiza</p><pre class="ml-[8rem] opacity-50 font-serif">Holiday rentals</pre>
+                    <p class="ml-[8rem] mt-6">York</p><pre class="ml-[8rem] opacity-50 font-serif">Cottage rentals</pre>
+                </div>
+            </div>
+            </div>
+
+
+               <!--22222222222222222-->
+            <div  id="Paris" class="mt-7 mb-3 tabcontent hidden flex-wrap row-auto row max-[1190px]:-ml-[5rem]"> 
+                <div class="flex">  
+                <div  id="London" class="ml-[3rem]">
+                <p class="ml-[3rem]">Phoenix</p><pre class="ml-[3rem] opacity-50 font-serif">Holiday rentals</pre>
+                <p class="ml-[3rem] mt-6">Tucson</p><pre class="ml-[3rem] opacity-50 font-serif">Pet-friendly rentals</pre>
+                <p class="ml-[3rem] mt-6">Anaheim</p><pre class="ml-[3rem] opacity-50 font-serif">House rentals</pre>
+                </div>
+                <div class="max-[1190px]:-ml-[3rem]">
+                    <p class="ml-[4rem]">Hot Springs</p><pre class="ml-[4rem] opacity-50 font-serif">Cabin rentals</pre>
+                    <p class="ml-[4rem] mt-6">Washington</p><pre class="ml-[4rem] opacity-50 font-serif">Holiday rentals</pre>
+                    <p class="ml-[4rem] mt-6">Pairs</p><pre class="ml-[4rem] opacity-50 font-serif">family-friendly rentals</pre>
+                </div>
+                <div class="max-[1190px]:-ml-[4rem]">
+                    <p class="ml-[5rem]">Los Angeles</p><pre class="ml-[5rem] opacity-50 font-serif">Apartment rentals</pre>
+                    <p class="ml-[5rem] mt-6">Keswick</p><pre class="ml-[5rem] opacity-50 font-serif">Cottage rentals</pre>
+                    <p class="ml-[5rem] mt-6">Rhodes</p><pre class="ml-[5rem] opacity-50 font-serif">Cottage rentals</pre>
+                </div>
+                <div class="max-[1190px]:-ml-[3rem]">
+                   <p class="ml-[6rem]">San Diego</p><sapre class="ml-[6rem] opacity-50 font-serif ">House rentals</pre>
+                    <p class="ml-[6rem] mt-6">London</p><pre class="ml-[6rem] opacity-50 font-serif">Villa rentals</pre>
+                    <p class="ml-[6rem] mt-6">Nashville</p><pre class="ml-[6rem] opacity-50 font-serif">Holiday rentals</pre>
+                </div>
+                <div class="max-[1190px]:-ml-[4rem]  max-[855px]:hidden">
+                    <p class="ml-[7rem]">San Francisco<pre class="ml-[7rem] opacity-50 font-serif">Holiday rentals</pre>
+                    <p class="ml-[7rem] mt-6">Scarborough</p><pre class="ml-[7rem] opacity-50 font-serif">Holiday rentals</pre>
+                    <p class="ml-[7rem] mt-6">Dublin</p><pre class="ml-[7rem] opacity-50 font-serif">House rentals</pre>
+                </div>
+                <div class="max-[1190px]:-ml-[3rem] max-[1055px]:hidden">
+                    <p class="ml-[8rem]">Barceone</p><pre class="ml-[8rem] opacity-50 font-serif">Holiday retals</pre>
+                    <p class="ml-[8rem] mt-6">Sherwood Forest</p><pre class="ml-[8rem] opacity-50 font-serif">Cabin rentals</pre>
+                    <p class="ml-[8rem] mt-6">York</p><pre class="ml-[8rem] opacity-50 font-serif">Cottage rentals</pre>
+                </div>
+            </div>
+            </div>
+
+
+            <!--3333333333333-->
+            <div id="Tokyo" class="mt-7 mb-3 tabcontent hidden flex-wrap row-auto row max-[1190px]:-ml-[5rem]"> 
+                <div class="flex">  
+                <div  id="London" class="ml-[3rem]">
+                <p class="ml-[3rem]">Lake Martin</p><pre class="ml-[3rem] opacity-50 font-serif">Pet-friendly rentals</pre>
+                <p class="ml-[3rem] mt-6">North Rim</p><pre class="ml-[3rem] opacity-50 font-serif">House rentals</pre>
+                <p class="ml-[3rem] mt-6">Emerald Lake</p><pre class="ml-[3rem] opacity-50 font-serif">Cabin rentals</pre>
+                </div>
+                <div class="max-[1190px]:-ml-[2rem]">
+                    <p class="ml-[4rem]">Banff</p><pre class="ml-[4rem] opacity-50 font-serif">Apartment rentals</pre>
+                    <p class="ml-[4rem] mt-6">Payson</p><pre class="ml-[4rem] opacity-50 font-serif">Holiday rentals</pre>
+                    <p class="ml-[4rem] mt-6">Vanouver Isand</p><pre class="ml-[4rem] opacity-50 font-serif">Apartment rentalss</pre>
+                </div>
+                <div class="max-[1190px]:-ml-[2rem]">
+                    <p class="ml-[5rem]">Nerja</p><pre class="ml-[5rem] opacity-50 font-serif">flat rentals</pre>
+                    <p class="ml-[5rem] mt-6">Pinetop-Lakeside</p><pre class="ml-[5rem] opacity-50 font-serif">Holiday rentals</pre>
+                    <p class="ml-[5rem] mt-6">Vicoria</p><pre class="ml-[5rem] opacity-50 font-serif">House rentals</pre>
+                </div>
+                <div class="max-[1190px]:-ml-[2rem]">
+                   <p class="ml-[6rem]">Greer</p><pre class="ml-[6rem] opacity-50 font-serif ">Cabin retals</pre>
+                    <p class="ml-[6rem] mt-6">Red Rock</p><pre class="ml-[6rem] opacity-50 font-serif">Cabin rentals</pre>
+                    <p class="ml-[6rem] mt-6">Idyllwild-Pine Cove</p><pre class="ml-[6rem] opacity-50 font-serif">Holiday rentals</pre>
+                </div>
+                <div class="max-[1190px]:-ml-[5rem] max-[855px]:hidden">
+                    <p class="ml-[7rem]">Lake Havasu City<pre class="ml-[7rem] opacity-50 font-serif">Holiday rentals</pre>
+                    <p class="ml-[7rem] mt-6">Dinner plain</p><pre class="ml-[7rem] opacity-50 font-serif">Holiday rentals</pre>
+                    <p class="ml-[7rem] mt-6">Mammoth Lakes</p><pre class="ml-[7rem] opacity-50 font-serif">Holiday rentals</pre>
+                </div>
+                <div class="max-[1190px]:-ml-[5rem] max-[1055px]:hidden">
+                    <p class="ml-[8rem]">Lake Powell</p><pre class="ml-[8rem] opacity-50 font-serif">Holiday retals</pre>
+                    <p class="ml-[8rem] mt-6">Steaky Bay</p><pre class="ml-[8rem] opacity-50 font-serif">Holiday rentals</pre>
+                    <p class="ml-[8rem] mt-6">York</p><pre class="ml-[8rem] opacity-50 font-serif">Cottage rentals</pre>
+                </div>
+            </div>
+            </div>
+
+            <!--4444444444444-->
+            <div id="kyo" class="mt-7 mb-3 tabcontent hidden flex-wrap row-auto row max-[1190px]:-ml-[5rem]"> 
+                <div class="flex">  
+                <div  id="London" class="ml-[3rem]">
+                <p class="ml-[3rem]">Mentone</p><pre class="ml-[3rem] opacity-50 font-serif">Cotage rentals</pre>
+                <p class="ml-[3rem] mt-6">Blue Mountains</p><pre class="ml-[3rem] opacity-50 font-serif">Chalet rentals</pre>
+                <p class="ml-[3rem] mt-6">Townsend</p><pre class="ml-[3rem] opacity-50 font-serif">Holiday rentals</pre>
+                </div>
+                <div class="max-[1190px]:-ml-[2rem]">
+                    <p class="ml-[4rem]">Sedone</p><pre class="ml-[4rem] opacity-50 font-serif">Apartment rentals</pre>
+                    <p class="ml-[4rem] mt-6">Ashevilla</p><pre class="ml-[4rem] opacity-50 font-serif">Flat rentals</pre>
+                    <p class="ml-[4rem] mt-6">Wears Valley</p><pre class="ml-[4rem] opacity-50 font-serif">Holiday rentalss</pre>
+                </div>
+                <div class="max-[1190px]:-ml-[2rem]">
+                    <p class="ml-[5rem]">Hele</p><pre class="ml-[5rem] opacity-50 font-serif">Apartment rentals</pre>
+                    <p class="ml-[5rem] mt-6">Bowing Rock</p><pre class="ml-[5rem] opacity-50 font-serif">Cottage rentals</pre>
+                    <p class="ml-[5rem] mt-6">Cabins </p><pre class="ml-[5rem] opacity-50 font-serif">Holiday rentals</pre>
+                </div>
+                <div class="max-[1190px]:-ml-[4rem]">
+                   <p class="ml-[6rem]">Pine Mountain</p><pre class="ml-[6rem] opacity-50 font-serif ">Holiday rentals</pre>
+                    <p class="ml-[6rem] mt-6">Boone</p><pre class="ml-[6rem] opacity-50 font-serif">Holiday rentals</pre>
+                    <p class="ml-[6rem] mt-6"></p><pre class="ml-[6rem] opacity-50 font-serif"></pre>
+                </div>
+                <div class="max-[1190px]:-ml-[4rem]  max-[855px]:hidden">
+                    <p class="ml-[7rem]">Stone Moutain<pre class="ml-[7rem] opacity-50 font-serif">Cabin rentals</pre>
+                    <p class="ml-[7rem] mt-6">Hochtown</p><pre class="ml-[7rem] opacity-50 font-serif">Holiday rentals</pre>
+                    <p class="ml-[7rem] mt-6"></p><pre class="ml-[7rem] opacity-50 font-serif"></pre>
+                </div>
+                <div class="max-[1190px]:-ml-[4rem] max-[1055px]:hidden">
+                    <p class="ml-[8rem]">Island Park</p><pre class="ml-[8rem] opacity-50 font-serif">Flat retals</pre>
+                    <p class="ml-[8rem] mt-6">Pigeon Forge</p><pre class="ml-[8rem] opacity-50 font-serif">Holiday rentals</pre>
+                    <p class="ml-[8rem] mt-6"></p><pre class="ml-[8rem] opacity-50 font-serif"></pre>
+                </div>
+            </div>
+            </div>
+
+           
+            <!--5555555-->
+            <div id="ram1" class="mt-7 mb-3 tabcontent hidden flex-wrap row-auto row max-[1190px]:-ml-[5rem]"> 
+                <div class="flex">  
+                <div  id="London" class="ml-[3rem]">
+                <p class="ml-[3rem]">Dauphin Iland</p><pre class="ml-[3rem] opacity-50 font-serif">Rentals with pools</pre>
+                <p class="ml-[3rem] mt-6">Hamilton Island</p><pre class="ml-[3rem] opacity-50 font-serif">Flat rentals</pre>
+                <p class="ml-[3rem] mt-6">Big Sur</p><pre class="ml-[3rem] opacity-50 font-serif">House rentals</pre>
+                </div>
+                <div class="max-[1190px]:-ml-[2rem]">
+                    <p class="ml-[4rem]">Fort Morgan</p><pre class="ml-[4rem] opacity-50 font-serif">Holiday rentals</pre>
+                    <p class="ml-[4rem] mt-6">Lancelin</p><pre class="ml-[4rem] opacity-50 font-serif">Holiday rentals</pre>
+                    <p class="ml-[4rem] mt-6">Bodega Bay</p><pre class="ml-[4rem] opacity-50 font-serif">Holiday rentals</pre>
+                </div>
+                <div class="max-[1190px]:-ml-[2rem]">
+                    <p class="ml-[5rem]">Gulf Shores</p><pre class="ml-[5rem] opacity-50 font-serif">Holiday rentals</pre>
+                    <p class="ml-[5rem] mt-6">Melbourne Beach</p><pre class="ml-[5rem] opacity-50 font-serif">Holiday rentals</pre>
+                    <p class="ml-[5rem] mt-6">Cmbria</p><pre class="ml-[5rem] opacity-50 font-serif">Cabin rentals</pre>
+                </div>
+                <div class="max-[1190px]:-ml-[4rem]">
+                   <p class="ml-[6rem]"> Bruny Island </p><pre class="ml-[6rem] opacity-50 font-serif ">Holiday rentals</pre>
+                    <p class="ml-[6rem] mt-6">Moonta Bay</p><pre class="ml-[6rem] opacity-50 font-serif">Beachfront rentals</pre>
+                    <p class="ml-[6rem] mt-6"> Cayucos</p><pre class="ml-[6rem] opacity-50 font-serif">Holiday rentals</pre>
+                </div>
+                <div class="max-[1190px]:-ml-[4rem]  max-[855px]:hidden">
+                    <p class="ml-[7rem]">Crescent Head<pre class="ml-[7rem] opacity-50 font-serif">House rentals</pre>
+                    <p class="ml-[7rem] mt-6">Ocean Grove</p><pre class="ml-[7rem] opacity-50 font-serif">House rentals</pre>
+                    <p class="ml-[7rem] mt-6">Huntington Beach</p><pre class="ml-[7rem] opacity-50 font-serif">Holiday rentals</pre>
+                </div>
+                <div class="max-[1190px]:-ml-[5rem] max-[1055px]:hidden">
+                    <p class="ml-[8rem]">Gerringong</p><pre class="ml-[8rem] opacity-50 font-serif">Holiday rentals</pre>
+                    <p class="ml-[8rem] mt-6">Majorca</p><pre class="ml-[8rem] opacity-50 font-serif">Beach house rentals</pre>
+                    <p class="ml-[8rem] mt-6"></p><pre class="ml-[8rem] opacity-50 font-serif"></pre>
+                </div>
+            </div>
+            </div>
+
+
+            <!--666666666-->
+            <div id="ram2" class="mt-7 mb-3 tabcontent hidden flex-wrap row-auto row max-[1190px]:-ml-[5rem]"> 
+                <div class="flex">  
+                <div   class="ml-[3rem]">
+                <p class="ml-[3rem]">Yurt Rentals</p><pre class="ml-[3rem] opacity-50 font-serif">United States</pre>
+                <p class="ml-[3rem] mt-6">Farm Houses</p><pre class="ml-[3rem] opacity-50 font-serif">United States</pre>
+                <p class="ml-[3rem] mt-6">Cottage Rentals</p><pre class="ml-[3rem] opacity-50 font-serif">United States</pre>
+                </div>
+                <div class="max-[1190px]:-ml-[2rem]">
+                    <p class="ml-[4rem]">Yurt Rentals</p><pre class="ml-[4rem] opacity-50 font-serif">United Kigndom</pre>
+                    <p class="ml-[4rem] mt-6">Farm Cottges</p><pre class="ml-[4rem] opacity-50 font-serif">United Kingdom</pre>
+                    <p class="ml-[4rem] mt-6">Holiday Cottges</p><pre class="ml-[4rem] opacity-50 font-serif">United Kigndom</pre>
+                </div>
+                <div class="max-[1190px]:-ml-[2rem]">
+                    <p class="ml-[5rem]">Castle Rentals</p><pre class="ml-[5rem] opacity-50 font-serif">United States</pre>
+                    <p class="ml-[5rem] mt-6">Cabin Rentals</p><pre class="ml-[5rem] opacity-50 font-serif">Austraila</pre>
+                    <p class="ml-[5rem] mt-6">Mansion Rentals</p><pre class="ml-[5rem] opacity-50 font-serif">United States</pre>
+                </div>
+                <div class="max-[1190px]:-ml-[2rem]">
+                   <p class="ml-[6rem]">Houseboats</p><pre class="ml-[6rem] opacity-50 font-serif ">United States</pre>
+                    <p class="ml-[6rem] mt-6">Luxury Cabins</p><pre class="ml-[6rem] opacity-50 font-serif">United Kigndom</pre>
+                    <p class="ml-[6rem] mt-6">Villa Rentals</p><pre class="ml-[6rem] opacity-50 font-serif">United Kigndom</pre>
+                </div>
+                <div class="max-[1190px]:-ml-[4rem]  max-[855px]:hidden">
+                    <p class="ml-[7rem]">Holiday Caravans<pre class="ml-[7rem] opacity-50 font-serif">United Kigndom</pre>
+                    <p class="ml-[7rem] mt-6">Luxury Cabins</p><pre class="ml-[7rem] opacity-50 font-serif">United States</pre>
+                    <p class="ml-[7rem] mt-6">Holiday Bungalows</p><pre class="ml-[7rem] opacity-50 font-serif">United Kigndom</pre>
+                </div>
+                <div class="max-[1190px]:-ml-[6rem] max-[1055px]:hidden">
+                    <p class="ml-[8rem]">Private Island Rentals</p><pre class="ml-[8rem] opacity-50 font-serif">United States</pre>
+                    <p class="ml-[8rem] mt-6">Holiday Chalets</p><pre class="ml-[8rem] opacity-50 font-serif">United Kigndom</pre>
+                    <p class="ml-[8rem] mt-6"></p><pre class="ml-[8rem] opacity-50 font-serif"></pre>
+                </div>
+            </div>
+            </div>
+
+
+
+
+            <!--77777777777-->
+            <div id="ram3" class="mt-7 mb-3 tabcontent hidden flex-wrap row-auto row max-[1190px]:-ml-[5rem]"> 
+                <div class="flex">  
+                <div  id="London" class="ml-[3rem]">
+                <p class="ml-[3rem]">Amazing pools</p>
+                <p class="ml-[3rem] mt-6">Countryside</p>
+                <p class="ml-[3rem] mt-6">OMG!</p>
+                </div>
+                <div class="max-[1190px]:-ml-[2rem]">
+                    <p class="ml-[4rem]">Arctic</p>
+                    <p class="ml-[4rem] mt-6">Design</p>
+                    <p class="ml-[4rem] mt-6">Tiny homes</p>
+                </div>
+                <div class="max-[1190px]:-ml-[4rem]">
+                    <p class="ml-[5rem]">Camping</p>
+                    <p class="ml-[5rem] mt-6">Earth homes</p>
+                    <p class="ml-[5rem] mt-6">Tower</p>
+                </div>
+                <div class="max-[1190px]:-ml-[2rem]">
+                   <p class="ml-[6rem]">Camper vans</p>
+                    <p class="ml-[6rem] mt-6">Farms</p>
+                    <p class="ml-[6rem] mt-6">Windmills</p>
+                </div>
+                <div class="max-[1190px]:-ml-[4rem]  max-[855px]:hidden">
+                    <p class="ml-[7rem]">Castles</p>
+                    <p class="ml-[7rem] mt-6">National parks</p>
+                    <p class="ml-[7rem] mt-6">Luxa</p>
+                </div>
+                <div class="max-[1190px]:-ml-[5rem] max-[1055px]:hidden">
+                    <p class="ml-[8rem]">Containers</p>
+                    <p class="ml-[8rem] mt-6">Vineyards</p>
+                    <p class="ml-[8rem] mt-6">York</p>
+                </div>
+            </div>
+            </div>
+
+
+
+            <!--8888888888-->
+            <div id="ram4" class="mt-7 mb-3 tabcontent hidden flex-wrap row-auto row max-[1190px]:-ml-[5rem]"> 
+                <div class="flex">  
+                <div   class="ml-[3rem]">
+                <p class="ml-[3rem]">London</p><pre class="ml-[3rem] opacity-50 font-serif">Egland</pre>
+                <p class="ml-[3rem] mt-6">Amsterdam</p><pre class="ml-[3rem] opacity-50 font-serif">North Hollnd</pre>
+                <p class="ml-[3rem] mt-6">Tokyo</p><pre class="ml-[3rem] opacity-50 font-serif">Tokyo</pre>
+                </div>
+                <div  class="max-[1190px]:-ml-[2rem]" >
+                    <p class="ml-[4rem]">Paris</p><pre class="ml-[4rem] opacity-50 font-serif">Île-de-France</pre>
+                    <p class="ml-[4rem] mt-6">Miai</p><pre class="ml-[4rem] opacity-50 font-serif">Forida</pre>
+                    <p class="ml-[4rem] mt-6">Vienna</p><pre class="ml-[4rem] opacity-50 font-serif">Vienna</pre>
+                </div>
+                <div  class="max-[1190px]:-ml-[2rem]">
+                    <p class="ml-[5rem]">New York</p><pre class="ml-[5rem] opacity-50 font-serif">New York</pre>
+                    <p class="ml-[5rem] mt-6">Madrid</p><pre class="ml-[5rem] opacity-50 font-serif">Community of Madrid</pre>
+                    <p class="ml-[5rem] mt-6">Athens</p><pre class="ml-[5rem] opacity-50 font-serif">Greece</pre>
+                </div>
+                <div  class="max-[1190px]:-ml-[3rem]">
+                   <p class="ml-[6rem]">Barcelone</p><pre class="ml-[6rem] opacity-50 font-serif ">Cataonia</pre>
+                    <p class="ml-[6rem] mt-6">Los Angeles</p><pre class="ml-[6rem] opacity-50 font-serif">Caliornia</pre>
+                    <p class="ml-[6rem] mt-6">Prague</p><pre class="ml-[6rem] opacity-50 font-serif">Czechia</pre>
+                </div>
+                <div  class="max-[1190px]:-ml-[4rem] max-[855px]:hidden">
+                    <p class="ml-[7rem]">Island</p><pre class="ml-[7rem] opacity-50 font-serif">island</pre>
+                    <p class="ml-[7rem] mt-6">Rome</p><pre class="ml-[7rem] opacity-50 font-serif">Lazio</pre>
+                    <p class="ml-[7rem] mt-6">Orlands</p><pre class="ml-[7rem] opacity-50 font-serif">Orlando</pre>
+                </div>
+                <div  class="max-[1190px]:-ml-[5rem] max-[1055px]:hidden">
+                    <p class="ml-[8rem]">Bali</p><pre class="ml-[8rem] opacity-50 font-serif">Indonesia</pre>
+                    <p class="ml-[8rem] mt-6">Lisbon</p><pre class="ml-[8rem] opacity-50 font-serif">Lisbon</pre>
+                    <p class="ml-[8rem] mt-6">York</p><pre class="ml-[8rem] opacity-50 font-serif">Cottage rentals</pre>
+                </div>
+            </div>
+            </div>
+
+        
+
+         <p class="mt-7 border-[0.1px] border-gray-300" ></p>
+        <div class="flex mt-7">
+            <div class="ml-7  max-[995px]:-ml-[3rem]">
+                <p class="ml-[6rem] mt-4 font-semibold">Support</p>
+                <form method="GET" action="/artical4">
+                <button  class="ml-[6rem] font-light hover:border-b-black border-b-[0.3px]  mt-1">Help Centre<button>
+                </form>
+
+                <form method="GET" action="/AirCover">
+                    <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">AirCover</button>
+                </form>
+
+                <form method="GET" action="/Anti-discrimination">
+                <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Anti-discrimination</button>
+                </form>
+
+                <form method="GET" action="/Disability-support">
+                    <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Disability support</button>
+                </form>
+
+                <form method="GET" action="/Cancellation-options">
+                    <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Cancellation options</button>
+                </form>
+
+                <form method="GET" action="/Report-neighbourhood-concern">
+                    <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Report neighbourhood concern</button>
+                </form>
+            </div>
+
+            <div class="ml-[10rem]  max-[1190px]:ml-[2rem] max-[900px]:-ml-[3rem] max-[830px]:-ml-[5rem]">
+                <p class="ml-[6rem] mt-4 font-semibold">Hosting</p>
+                <form method="GET" action="/Airbnb-your-home">
+                    <button class="ml-[6rem] font-light hover:border-b-black border-b-[0.3px] mt-1">Airhost your home</button>
+                </form>
+
+                <form method="GET" action="/AirCover-for-Hosts">
+                    <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">AirCover for Hosts</button>
+                </form>
+
+                <form method="GET" action="/Hosting-resources">
+                    <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Hosting resources</button>
+                </form>
+
+                <form >
+                <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Community forum</button>
+                </form
+
+                <form method="GET" action="/Hosting-responsibly">
+                <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Hosting responsibly</button>
+                </form>
+            </div>
+
+            <div class="ml-[12rem] max-[1190px]:ml-[3rem]  max-[830px]:-ml-[25px]">
+                <p class="ml-[6rem] mt-4 font-semibold">Airbnb</p>
+                <form method="GET" action="/Newsroom">
+                <button class="ml-[6rem] font-light hover:border-b-black border-b-[0.3px] w-20 mt-1">Newsroom</button>
+                </form>
+
+                <form method="GET" action="/New-features">
+                    <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px] w-28 mt-2">New features</button>
+                </form>
+
+                <form method="GET" action="/Careers">
+                    <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px] w-20  mt-2">Careers</button>
+                </form>
+
+                <form method="GET" action="/Investors">
+                    <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px] w-20  mt-2">Investors</button>
+                </form>
+
+                <form method="GET" action="/Airbnb.org-emergency-stays">
+                    <button class="ml-[6rem]  font-light hover:border-b-black border-b-[0.3px]  mt-2">Airhost.org emergency stays</button>
+                </form>
+            </div>
+        </div> 
+
+         <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
+        <p class="mt-7 border-[0.1px] border-gray-300" ></p>
+        <div class = "f-info flex h-[8rem] flex-wrap justify-center text-center align-center ">
+            <div class ="f-info-socials w-[100%] text-xl flex items-center justify-center">
+                <form method="get" action="https:www.facebook.com/AirbnbIndia">
+                    <button class="fa-brands fa-square-facebook mr-2"></button>
+                </form>
+                <form method="get"  action="https:www.instagram.com/airbnb/">
+                    <button class="fa-brands fa-square-instagram mr-2"></button>
+                </form>
+                <form method="get" action="https:twitter.com/i/flow/login?redirect_after_login=%2Fairbnb_in" >
+                    <button class="fa-brands fa-square-twitter"></button>
+                </form>
+                <form method="get" action="https:www.linkedin.com/company/airbnb/" >
+                    <button class="fa-brands fa-linkedin ml-[8px]"></button>
+                </form>
+            </div>
+            <div class="f-info-brand  w-[100%] justify-center  align-middle flex items-center ">&copy; Wanderlust Private Limited</div>
+            <div class ="f-info-links hover:underline w-[100%] align-middle flex items-center justify-center">
+                <a href="/privacy">Privacy</a>
+                <a href="/terms">Terms</a>
+            </div>
+        </div> 
+    
+    </footer> 
+    <script>
+       //  Get the button:
+let mybutton = document.getElementById("myBtn");
+
+ //When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;  //For Safari
+  document.documentElement.scrollTop = 0;  //For Chrome, Firefox, IE and Opera
+}
+    </script>
+
+<script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+   
+    document.getElementById("defaultOpen").click();
+    </script>
+
+    </body> 
+  

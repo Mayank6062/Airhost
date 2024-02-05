@@ -1,0 +1,39 @@
+
+<% if(success && success.length) { %>
+   <div class=" rounded-2xl w-[35rem] mx-auto max-[570px]:w-[20rem]">
+    <div class=" relative block  rounded-xl bg-[#C7F5BA]  text-base text-black" data-dismissible="alert">
+       <div class="absolute top-1 left-2">
+           <i class="fa-solid fa-circle-check"></i>
+       </div>
+       <div class="ml-8 mr-12 bolder-[1px] ">
+          <h5 class="block  text-xl font-semibold  text-black antialiased">Successfully</h5>
+          <p class="mt-2 block text-base font-normal leading-relaxed text-black antialiased"> <%= success %></p>
+       </div>
+       <div data-dismissible-target="alert" data-ripple-dark="true" class="absolute top-3 right-3 w-max  hover:border-[1.5px] hover:border-gray-900 hover:bg-white" >
+           <div role="button" class="w-max pl-1 pr-1">
+              <i class="fa-solid fa-circle-xmark text-xl"></i>
+           </div>
+       </div>
+     </div>
+   </div>
+     <% } %>
+   
+     <% if(error && error.length) { %>
+       <div class=" rounded-2xl w-[35rem] mx-auto max-[570px]:w-[20rem]">
+        <div class=" relative block  rounded-xl bg-[#f05e60]  text-base text-black" data-dismissible="alert">
+           <div class="absolute top-0 left-2">
+               <i class="fa-solid fa-circle-exclamation text-xl"></i>
+           </div>
+           <div class="ml-8 mr-12 bolder-[1px] ">
+              <h5 class="block  text-xl font-semibold  text-black antialiased">Error Occour</h5>
+              <p class="mt-2 block text-base font-normal leading-relaxed text-black antialiased"> <%=error%></p>
+           </div>
+           <div data-dismissible-target="alert" data-ripple-dark="true" class="absolute top-3 right-3 w-max  hover:border-[1.5px] hover:border-gray-900 hover:bg-white" >
+               <div role="button" class="w-max pl-1 pr-1">
+                  <i class="fa-solid fa-circle-xmark text-xl"></i>
+               </div>
+           </div>
+         </div>
+       </div>
+         <% } %>
+       
