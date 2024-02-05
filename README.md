@@ -15,6 +15,12 @@ Full responsiveness
 
 Credential authentication
 
+you can Login by username ->Mayank Soni 
+
+password -> @mayank18
+
+you can also signup and loggedin by your username and password.
+
 Image upload using Cloudinary CDN
 
 Client form validation and server side validation
